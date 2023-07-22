@@ -1,50 +1,135 @@
+'use client'
 import questions from "./questions.json";
 import "../css/style.css";
-
-export const metadata = {
-  title: 'Perfil del inversor',
-  description: 'Crea tu perfil de inversion',
-}
+import { useState } from "react";
+import Head from "next/head";
 
 export default function PerfilInversor() {
+  // estado de pregunta actual
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  // mantener respuesta seleccionada
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  // calcular y mostrar puntaje
+  const [score, setScore] = useState(0);
+  const [showScore, setShowScore] = useState(false);
+
+  // manejo de siguiente y anterior
+  const handlePrevious = () => {
+    const prevQues = currentQuestion - 1;
+    prevQues >= 0 && setCurrentQuestion(prevQues);
+  };
+
+  const handleNext = () => {
+    const nextQues = currentQuestion + 1;
+    nextQues < questions.length && setCurrentQuestion(nextQues);
+  };
+  // setear opcion seleccionada
+  const handleAnswerOption = (answer) => {
+    setSelectedOptions([
+      (selectedOptions[currentQuestion] = { answerByUser: answer }),
+    ]);
+    setSelectedOptions([...selectedOptions]);
+    console.log(selectedOptions);
+  };
+
+  // calcular puntaje segun las respuestas
+  const handleSubmitButton = () => {
+    let newScore = 0;
+    for (let i = 0; i < questions.length; i++) {
+      questions[i].answerOptions.map(
+        (answer) =>
+          answer.isCorrect &&
+          answer.answer === selectedOptions[i]?.answerByUser &&
+          (newScore += 1)
+      );
+    }
+    setScore(newScore);
+    setShowScore(true);
+  };
+
   return (
     <>
-      <section>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="py-12 md:py-20">
+      <Head>
+        <title>Perfil del inversor</title>
+        <meta
+          name='description'
+          content='Crea tu perfil de inversion'
+        />
+      </Head>
 
-            {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-              <h2 className="h2 mb-4">Perfil del Inversor</h2>
-              <p className="text-xl text-gray-400">Responde unas preguntas para definir tus estrategias</p>
-            </div>
+      {showScore ? (
+        <h1 className="text-3xl font-semibold text-center text-white">
+          You scored {score} out of {questions.length}
+        </h1>
+      ) : (
 
-            <div className="flex flex-col w-screen px-5 h-screen bg-[#1A1A1A] justify-center items-center">
-              <div className="flex flex-col items-start w-full">
-                <h4 className="mt-10 text-xl text-white/60">Question 1 of 5</h4>
-                <div className="mt-4 text-2xl text-white">
-                  What type of framework is Next.js?
+        <section>
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="py-12 md:py-20">
+
+              {/* Section header */}
+              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+                <h2 className="h2 mb-4">Perfil del Inversor</h2>
+                <p className="text-xl text-gray-400">Responde unas preguntas para definir tus estrategias</p>
+              </div>
+              {/* Preguntas */}
+              <div>
+                <div className="flex flex-col px-5 bg-[#1A1A1A] justify-center items-center">
+                  <div className="flex flex-col items-start w-full">
+                    <h4 className="mt-10 text-xl text-white/60">
+                      Question {currentQuestion + 1} of {questions.length}
+                    </h4>
+                    <div className="mt-4 text-2xl text-white">
+                      {questions[currentQuestion].question}
+                    </div>
+                  </div>
+                  {/* mapeo las respuestas */}
+                  <div className="flex flex-col w-full">
+                    {questions[currentQuestion].answerOptions.map
+                      ((answer, index) => (
+                        <div
+                          key={index}
+                          className="flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer bg-white/5 border-white/10 rounded-xl"
+                          onClick={(e) => handleAnswerOption(answer.answer)}
+                        >
+                          <input
+                            type="radio"
+                            name={answer.answer}
+                            value={answer.answer}
+                            onChange={(e) => handleAnswerOption(answer.answer)}
+                            checked={
+                              answer.answer === selectedOptions[currentQuestion]?.answerByUser
+                            }
+                            className="w-6 h-6 bg-black" />
+                          <p className="ml-6 text-white">{answer.answer}</p>
+                        </div>
+                      ))}
+                  </div>
+                  {/* botones de navegacion */}
+                  <div className="flex justify-between w-full mt-4 text-white">
+                    <button
+                      onClick={handlePrevious}
+                      className="w-[49%] py-3 bg-indigo-600 rounded-lg"
+                    >
+                      Previous
+                    </button>
+                    <button
+                      onClick={
+                        currentQuestion + 1 === questions.length ? handleSubmitButton : handleNext
+                      }
+                      className="w-[49%] py-3 bg-indigo-600 rounded-lg"
+                    >
+                      {currentQuestion + 1 === questions.length ? "Submit" : "Next"}
+                    </button>
+                  </div>
+
                 </div>
               </div>
-              <div className="flex flex-col w-full">
-                {questions[0].answerOptions.map((answer, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer bg-white/5 border-white/10 rounded-xl">
-                    <input type="radio" className="w-6 h-6 bg-black" />
-                    <p className="ml-6 text-white">{answer.answer}</p>
-                  </div>
-                ))}
-              </div>
 
             </div>
-
-
-
-
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </>
   )
 }
