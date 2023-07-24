@@ -1,13 +1,33 @@
-export const metadata = {
-    title: 'Perfil del inversor',
-    description: 'Crea tu perfil de inversion',
+'use client'
+
+
+export default function Noticias() {
+
+  const onSubmit = async (e: any) => {
+    e.preventDefault();
+    const response = await fetch('/api/noticias', {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const data = await response.json();
+    console.log(data);
   }
-  
-  import Link from 'next/link'
-  
-  export default function Noticias() {
-    return (
-     <div>hello from noticias</div>
-    )
-  }
-  
+  return (
+    <section>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 justify-center" >
+        <div className="py-12 md:py-20 justify-center">
+          <div>
+            <form onSubmit={onSubmit}>
+              <button className="mt-28">
+                send api
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section >
+  );
+
+}
