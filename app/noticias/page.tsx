@@ -1,6 +1,6 @@
 'use client'
 
-import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal, PromiseLikeOfReactNode, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Icon from "@/components/main-section/icon";
 
 export default function Noticias() {
