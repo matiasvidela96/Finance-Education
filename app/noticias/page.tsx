@@ -7,8 +7,8 @@ export default function Noticias() {
 
   const [newsData, setNewsData] = useState([]);
   const [showNews, setshowNews] = useState(false);
-  const [loading, setLoading] = useState(true);
 
+  // Llamada a api para obtener noticias
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -21,10 +21,8 @@ export default function Noticias() {
         const data = await response.json();
         setNewsData(data.feed);
         setshowNews(true);
-        setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
-        setLoading(false);
       }
     };
     fetchData();
