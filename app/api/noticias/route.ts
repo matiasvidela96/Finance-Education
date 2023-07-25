@@ -12,8 +12,7 @@ export async function GET(request: Request) {
 
     try {
         // const data = await alpha.data.intraday(`msft`); 
-        const data = await alpha.experimental('NEWS_SENTIMENT');
-
+        const data = await alpha.experimental('NEWS_SENTIMENT', { topics: 'blockchain' });
         return NextResponse.json(data);
     } catch (err) {
         console.error(err);
