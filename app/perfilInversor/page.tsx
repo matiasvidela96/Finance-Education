@@ -111,7 +111,7 @@ export default function PerfilInversor() {
                   <div className="flex justify-between w-full mt-4 text-white">
                     <button
                       onClick={handlePrevious}
-                      className="w-[49%] py-3 bg-indigo-600 rounded-lg"
+                      className="w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg"
                     >
                       Previous
                     </button>
@@ -121,7 +121,7 @@ export default function PerfilInversor() {
                           ? handleSubmitButton
                           : handleNext
                       }
-                      className="w-[49%] py-3 bg-indigo-600 rounded-lg"
+                      className="w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg"
                     >
                       {currentQuestion + 1 === questions.length
                         ? "Submit"
