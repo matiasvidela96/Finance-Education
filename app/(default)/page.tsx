@@ -15,11 +15,11 @@ export default function Home() {
   return (
     <>
       <MainPage />
-      {/* <Hero />
-      <Features />
-      <Zigzag />
-      <Testimonials />
-      <Newsletter /> */}
+      {/* <Hero /> */}
+      {/* <Features /> */}
+      {/* <Zigzag /> */}
+      {/* <Testimonials /> */}
+      {/* <Newsletter /> */}
     </>
   );
 }

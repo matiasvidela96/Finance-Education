@@ -88,7 +88,7 @@ export default function PerfilInversor() {
                       (answer, index) => (
                         <div
                           key={index}
-                          className="flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer bg-white/5 border-white/10 rounded-xl"
+                          className="flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer hover:bg-zinc-800 border-white/10 rounded-xl"
                           onClick={(e) => handleAnswerOption(answer.answer)}
                         >
                           <input

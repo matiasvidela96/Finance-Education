@@ -2,6 +2,7 @@
 
 import Icon from "@/components/main-section/icon";
 import BackButton from "@/components/ui/backButton";
+import Zigzag from "@/components/zigzag";
 
 export default function Academy() {
   return (
@@ -66,6 +67,7 @@ export default function Academy() {
           </div>
         </div>
       </section>
+      <Zigzag />
     </>
   );
 }

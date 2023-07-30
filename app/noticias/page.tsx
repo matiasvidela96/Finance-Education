@@ -5,6 +5,8 @@ import Icon from "@/components/main-section/icon";
 
 import BackButton from "@/components/ui/backButton";
 
+import Cards from "@/components/Cards";
+
 export default function Noticias() {
   const [newsData, setNewsData] = useState([]);
   const [showNews, setshowNews] = useState(false);
@@ -20,6 +22,7 @@ export default function Noticias() {
           },
         });
         const data = await response.json();
+        console.log(data);
         setNewsData(data.feed);
         setshowNews(true);
       } catch (error) {
@@ -57,12 +60,18 @@ export default function Noticias() {
                     data-aos-anchor="[data-aos-id-blocks]"
                     key={index}
                   >
-                    <Icon
+                    <Cards
                       title={news.title}
                       description={news.summary}
                       link={news.url}
                       target="_blank"
-                    ></Icon>
+                    />
+                    {/* <Icon
+                      title={news.title}
+                      description={news.summary}
+                      link={news.url}
+                      target="_blank"
+                    ></Icon> */}
                   </div>
                 ))}
               </div>
