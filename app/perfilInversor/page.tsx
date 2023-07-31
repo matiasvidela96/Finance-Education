@@ -1,8 +1,9 @@
-'use client'
+"use client";
 import questions from "./questions.json";
 import "../css/style.css";
 import { useState } from "react";
 import Head from "next/head";
+import BackButton from "@/components/ui/backButton";
 
 export default function PerfilInversor() {
   // estado de pregunta actual
@@ -49,12 +50,10 @@ export default function PerfilInversor() {
 
   return (
     <>
+      <BackButton />
       <Head>
         <title>Perfil del inversor</title>
-        <meta
-          name='description'
-          content='Crea tu perfil de inversion'
-        />
+        <meta name="description" content="Crea tu perfil de inversion" />
       </Head>
 
       {showScore ? (
@@ -62,15 +61,15 @@ export default function PerfilInversor() {
           You scored {score} out of {questions.length}
         </h1>
       ) : (
-
         <section>
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="py-12 md:py-20">
-
               {/* Section header */}
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                 <h2 className="h2 mb-4">Perfil del Inversor</h2>
-                <p className="text-xl text-gray-400">Responde unas preguntas para definir tus estrategias</p>
+                <p className="text-xl text-gray-400">
+                  Responde unas preguntas para definir tus estrategias
+                </p>
               </div>
               {/* Preguntas */}
               <div>
@@ -85,11 +84,11 @@ export default function PerfilInversor() {
                   </div>
                   {/* mapeo las respuestas */}
                   <div className="flex flex-col w-full">
-                    {questions[currentQuestion].answerOptions.map
-                      ((answer, index) => (
+                    {questions[currentQuestion].answerOptions.map(
+                      (answer, index) => (
                         <div
                           key={index}
-                          className="flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer bg-white/5 border-white/10 rounded-xl"
+                          className="flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer hover:bg-zinc-800 border-white/10 rounded-xl"
                           onClick={(e) => handleAnswerOption(answer.answer)}
                         >
                           <input
@@ -98,38 +97,43 @@ export default function PerfilInversor() {
                             value={answer.answer}
                             onChange={(e) => handleAnswerOption(answer.answer)}
                             checked={
-                              answer.answer === selectedOptions[currentQuestion]?.answerByUser
+                              answer.answer ===
+                              selectedOptions[currentQuestion]?.answerByUser
                             }
-                            className="w-6 h-6 bg-black" />
+                            className="w-6 h-6 bg-black"
+                          />
                           <p className="ml-6 text-white">{answer.answer}</p>
                         </div>
-                      ))}
+                      )
+                    )}
                   </div>
                   {/* botones de navegacion */}
                   <div className="flex justify-between w-full mt-4 text-white">
                     <button
                       onClick={handlePrevious}
-                      className="w-[49%] py-3 bg-indigo-600 rounded-lg"
+                      className="w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg"
                     >
                       Previous
                     </button>
                     <button
                       onClick={
-                        currentQuestion + 1 === questions.length ? handleSubmitButton : handleNext
+                        currentQuestion + 1 === questions.length
+                          ? handleSubmitButton
+                          : handleNext
                       }
-                      className="w-[49%] py-3 bg-indigo-600 rounded-lg"
+                      className="w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg"
                     >
-                      {currentQuestion + 1 === questions.length ? "Submit" : "Next"}
+                      {currentQuestion + 1 === questions.length
+                        ? "Submit"
+                        : "Next"}
                     </button>
                   </div>
-
                 </div>
               </div>
-
             </div>
           </div>
         </section>
       )}
     </>
-  )
+  );
 }
