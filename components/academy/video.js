@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Link from "next/link";
 
 const YoutubeEmbed = ({ embedId, title, description }) => (
     <>
-
-
         <div className="video-responsive">
             <iframe
                 width="853"
@@ -17,13 +16,14 @@ const YoutubeEmbed = ({ embedId, title, description }) => (
             />
         </div>
 
-        <div className="flex items-center justify-center">
-            <h4 className="h4 mb-2">{title}</h4>
-        </div>
-        <div>
-            <p className="text-lg text-gray-400 text-center">{description}</p>
-        </div>
-
+        <Link href={`https://youtu.be/${embedId}`} target='_blank'>
+            <div className=" max-w-md rounded overflow-hidden shadow-lg  hover:bg-purple-800 ">
+                <div className="px-6 py-4 ">
+                    <div className="font-bold text-xl mb-2 flex items-center justify-center">{title}</div>
+                    <p className="text-withe text-base text-center">{description}</p>
+                </div>
+            </div>
+        </Link>
     </>
 );
 

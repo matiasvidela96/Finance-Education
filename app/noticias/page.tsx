@@ -2,9 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Icon from "@/components/main-section/icon";
-
 import BackButton from "@/components/ui/backButton";
-
 import Cards from "@/components/Cards";
 
 export default function Noticias() {

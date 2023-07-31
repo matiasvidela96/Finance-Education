@@ -81,7 +81,7 @@ export default function Bolsa() {
                                     weight={"light"}
                                     title={"Plazo fijo"}
                                     description={"Donde y cuando utilizarlo"}
-                                    link={"/perfilInversor"}
+                                    link={"/academy/bolsa/plazoFijo"}
                                 ></Icon>
                             </div>
 
