@@ -1,5 +1,4 @@
 import { Configuration, OpenAIApi } from "openai-edge";
-import { NextResponse } from "next/server";
 import { OpenAIStream, StreamingTextResponse } from 'ai'
 const config = new Configuration({
     apiKey: process.env.OPENAI_APY_KEY
