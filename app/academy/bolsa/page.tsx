@@ -97,7 +97,7 @@ export default function Bolsa() {
                   weight={"light"}
                   title={"Dolar MEP"}
                   description={"Como comprar, ventajas y desventajas"}
-                  link={"/misEstrategias"}
+                  link={"/academy/bolsa/dolarMEP"}
                 ></Icon>
               </div>
 
@@ -114,7 +114,7 @@ export default function Bolsa() {
                   weight={"light"}
                   title={"Fondo comun de inversion"}
                   description={"Que es y donde encontrarlo"}
-                  link={"/misEstrategias"}
+                  link={"/academy/bolsa/FCI"}
                 ></Icon>
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function Bolsa() {
                   description={
                     "Como comprar acciones de empresas, en pesos en un click"
                   }
-                  link={"/perfilInversor"}
+                  link={"/academy/bolsa/Cedears"}
                 ></Icon>
               </div>
 
@@ -173,7 +173,7 @@ export default function Bolsa() {
                   description={
                     "Que son y como obtener rentabilidad en  dolares utilizando pesos"
                   }
-                  link={"/misEstrategias"}
+                  link={"/academy/bolsa/ON"}
                 ></Icon>
               </div>
 
@@ -192,7 +192,7 @@ export default function Bolsa() {
                   description={
                     "Como un plazo fijo en pesos pero menor a 30 dias"
                   }
-                  link={"/misEstrategias"}
+                  link={"/academy/bolsa/Cauciones"}
                 ></Icon>
               </div>
             </div>
@@ -232,7 +232,7 @@ export default function Bolsa() {
                   description={
                     "Apuesta al precio de una accion y obten grandes rentabilidades"
                   }
-                  link={"/perfilInversor"}
+                  link={"/academy/bolsa/Futuros"}
                 ></Icon>
               </div>
 
@@ -251,7 +251,7 @@ export default function Bolsa() {
                   description={
                     "Presta tu dinero y obten rentabilidades trimestrales"
                   }
-                  link={"/misEstrategias"}
+                  link={"/academy/bolsa/Bonos"}
                 ></Icon>
               </div>
 
@@ -268,7 +268,7 @@ export default function Bolsa() {
                   weight={"light"}
                   title={"Acciones en broker extranjeros"}
                   description={"Compra acciones en dolares en el exterior"}
-                  link={"/misEstrategias"}
+                  link={"/academy/bolsa/AccionesExtranjeras"}
                 ></Icon>
               </div>
             </div>
