@@ -80,7 +80,7 @@ export default function Crypto() {
                   weight={"light"}
                   title={"Stablecoins"}
                   description={"Ahorra en dolares sin limites"}
-                  link={"/perfilInversor"}
+                  link={"/academy/crypto/stableCoins"}
                 ></Icon>
               </div>
 
@@ -99,7 +99,7 @@ export default function Crypto() {
                   description={
                     "Obten rentabilidad por bloquear tus criptomonedas"
                   }
-                  link={"/misEstrategias"}
+                  link={"/academy/crypto/staking"}
                 ></Icon>
               </div>
 
@@ -152,7 +152,7 @@ export default function Crypto() {
                   description={
                     "Entra al mundo de las finanzas descentralizadas y obten rentabilidades mas elevadas"
                   }
-                  link={"/perfilInversor"}
+                  link={"/academy/crypto/stakingDefi"}
                 ></Icon>
               </div>
 
@@ -218,7 +218,7 @@ export default function Crypto() {
                   description={
                     "Conviertete en un proveedor de liquidez y obten parte de las ganancias de los exchanges descentralizados"
                   }
-                  link={"/perfilInversor"}
+                  link={"/academy/crypto/liquidezDefi"}
                 ></Icon>
               </div>
 
@@ -237,7 +237,7 @@ export default function Crypto() {
                   description={
                     "Se de los primeros en comprar la preventa de una nueva moneda"
                   }
-                  link={"/misEstrategias"}
+                  link={"/academy/crypto/preventas"}
                 ></Icon>
               </div>
 
@@ -254,7 +254,7 @@ export default function Crypto() {
                   weight={"light"}
                   title={"Liquidez concentrada"}
                   description={"Provee liquidez utilizando el rango de precios"}
-                  link={"/misEstrategias"}
+                  link={"/academy/crypto/liquidezConcentrada"}
                 ></Icon>
               </div>
 
