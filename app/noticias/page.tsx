@@ -5,8 +5,15 @@ import Icon from "@/components/main-section/icon";
 import BackButton from "@/components/ui/backButton";
 import Cards from "@/components/Cards";
 
-export default function Noticias() {
-  const [newsData, setNewsData] = useState([]);
+type NewsProps = {
+  title: string,
+  summary: string,
+  url: string
+}
+
+export default function Noticias(
+) {
+  const [newsData, setNewsData] = useState<NewsProps[]>([]);
   const [showNews, setshowNews] = useState(false);
 
   // Llamada a api para obtener noticias
