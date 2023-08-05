@@ -5,11 +5,16 @@ import { useState } from "react";
 import Head from "next/head";
 import BackButton from "@/components/ui/backButton";
 
+type AnswerProps = {
+  answerByUser?: string,
+  answer?: string,
+}
+
 export default function PerfilInversor() {
   // estado de pregunta actual
   const [currentQuestion, setCurrentQuestion] = useState(0);
   // mantener respuesta seleccionada
-  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [selectedOptions, setSelectedOptions] = useState<AnswerProps[]>([]);
   // calcular y mostrar puntaje
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
@@ -25,7 +30,7 @@ export default function PerfilInversor() {
     nextQues < questions.length && setCurrentQuestion(nextQues);
   };
   // setear opcion seleccionada
-  const handleAnswerOption = (answer) => {
+  const handleAnswerOption = ({ answer }: AnswerProps) => {
     setSelectedOptions([
       (selectedOptions[currentQuestion] = { answerByUser: answer }),
     ]);
@@ -36,14 +41,14 @@ export default function PerfilInversor() {
   // calcular puntaje segun las respuestas
   const handleSubmitButton = () => {
     let newScore = 0;
-    for (let i = 0; i < questions.length; i++) {
-      questions[i].answerOptions.map(
-        (answer) =>
-          answer.isCorrect &&
-          answer.answer === selectedOptions[i]?.answerByUser &&
-          (newScore += 1)
-      );
-    }
+    // for (let i = 0; i < questions.length; i++) {
+    //   questions[i].answerOptions.map(
+    //     (answer) =>
+    //       answer.isCorrect &&
+    //       answer.answer === selectedOptions[i]?.answerByUser &&
+    //       (newScore += 1)
+    //   );
+    // }
     setScore(newScore);
     setShowScore(true);
   };
@@ -89,13 +94,13 @@ export default function PerfilInversor() {
                         <div
                           key={index}
                           className="flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer hover:bg-zinc-800 border-white/10 rounded-xl"
-                          onClick={(e) => handleAnswerOption(answer.answer)}
+                          onClick={(e) => handleAnswerOption({ answer: answer.answer })}
                         >
                           <input
                             type="radio"
                             name={answer.answer}
                             value={answer.answer}
-                            onChange={(e) => handleAnswerOption(answer.answer)}
+                            onChange={(e) => handleAnswerOption({ answer: answer.answer })}
                             checked={
                               answer.answer ===
                               selectedOptions[currentQuestion]?.answerByUser
