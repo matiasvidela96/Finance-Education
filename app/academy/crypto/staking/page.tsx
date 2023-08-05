@@ -5,7 +5,7 @@ import YoutubeEmbed from "@/components/academy/video";
 import Videos from "../../videos.json";
 import BackButton from "@/components/ui/backButton";
 
-export default function ON(this: any) {
+export default function Staking(this: any) {
   return (
     <>
       <section>
@@ -14,8 +14,8 @@ export default function ON(this: any) {
           <div className="py-12">
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-              <h2 className="h2 mb-4">Obligaciones negociables</h2>
-              <p className="text-xl text-gray-400">Obtén intereses en dólares con tu inversión en pesos</p>
+              <h2 className="h2 mb-4">Staking</h2>
+              <p className="text-xl text-gray-400">Bloquea tus monedas para obtener rentabilidad como en un FCI</p>
             </div>
             {/* Items */}
             <div
