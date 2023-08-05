@@ -69,7 +69,6 @@ export default function Crypto() {
             >
               {/* Stablecoins */}
               <div
-                className="relative flex flex-col items-center hover:bg-zinc-800 hover:bg-opacity-25 rounded"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-anchor="[data-aos-id-blocks]"
@@ -87,7 +86,6 @@ export default function Crypto() {
 
               {/* Staking*/}
               <div
-                className="relative flex flex-col items-center hover:bg-zinc-800 hover:bg-opacity-25 rounded"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-anchor="[data-aos-id-blocks]"
@@ -141,7 +139,6 @@ export default function Crypto() {
             >
               {/* Staking defi */}
               <div
-                className="relative flex flex-col items-center hover:bg-zinc-800 hover:bg-opacity-25 rounded"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-anchor="[data-aos-id-blocks]"
@@ -208,7 +205,6 @@ export default function Crypto() {
             >
               {/* LP */}
               <div
-                className="relative flex flex-col items-center hover:bg-zinc-800 hover:bg-opacity-25 rounded"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-anchor="[data-aos-id-blocks]"
@@ -228,7 +224,6 @@ export default function Crypto() {
 
               {/* Preventas*/}
               <div
-                className="relative flex flex-col items-center hover:bg-zinc-800 hover:bg-opacity-25 rounded"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-anchor="[data-aos-id-blocks]"
@@ -248,7 +243,6 @@ export default function Crypto() {
 
               {/* Liquidez concentrada*/}
               <div
-                className="relative flex flex-col items-center hover:bg-zinc-800 hover:bg-opacity-25 rounded"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-anchor="[data-aos-id-blocks]"

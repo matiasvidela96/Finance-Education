@@ -26,7 +26,6 @@ export default function Academy() {
             >
               {/* Bolsa */}
               <div
-                className="relative flex flex-col items-center hover:bg-zinc-800 hover:bg-opacity-25 rounded"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-anchor="[data-aos-id-blocks]"
@@ -46,7 +45,6 @@ export default function Academy() {
 
               {/* Cripto*/}
               <div
-                className="relative flex flex-col items-center hover:bg-zinc-800 hover:bg-opacity-25 rounded"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-anchor="[data-aos-id-blocks]"
