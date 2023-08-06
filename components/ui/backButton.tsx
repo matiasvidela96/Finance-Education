@@ -11,18 +11,15 @@ export default function BackButton() {
       >
         <div className="flex flex-row align-middle">
           <svg
-            className="w-5 mr-2"
-            fill="currentColor"
-            viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#f5f5f5"
+            viewBox="0 0 256 256"
           >
-            <path
-              fill-rule="evenodd"
-              d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
-              clip-rule="evenodd"
-            ></path>
+            <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
           </svg>
-          <p className="ml-2">Prev</p>
+          <p className="justify-between items-center flex">Prev</p>
         </div>
       </button>
     </div>
