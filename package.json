@@ -26,6 +26,7 @@
     "react-dom": "18.2.0",
     "react-tweet": "^3.0.3",
     "react-youtube": "^10.1.0",
+    "resend": "^0.17.2",
     "typescript": "^5.0.4"
   },
   "devDependencies": {
