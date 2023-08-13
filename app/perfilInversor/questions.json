@@ -1,39 +1,73 @@
 [
-    {
-      "question": "What type of framework is Next.js?",
-      "answerOptions": [
-        { "answer": "Frontend" },
-        { "answer": "Backend" },
-        { "answer": "FullStack", "isCorrect": true },
-        { "answer": "None of the above" }
-      ]
-    },
-    {
-      "question": "When was Next.js released?",
-      "answerOptions": [
-        { "answer": "20 September 2019" },
-        { "answer": "14 January 2017" },
-        { "answer": "25 October 2016", "isCorrect": true },
-        { "answer": "28 March 2018" }
-      ]
-    },
-    {
-      "question": "Which CSS Framework are we using?",
-      "answerOptions": [
-        { "answer": "Bootstrap" },
-        { "answer": "TailwindCSS", "isCorrect": true },
-        { "answer": "Chakra UI" },
-        { "answer": "Bulma CSS" }
-      ]
-    },
-    {
-      "question": "Which class in Tailwind is used to set flex direction of column?",
-      "answerOptions": [
-        { "answer": "col" },
-        { "answer": "col-flex" },
-        { "answer": "flex-col", "isCorrect": true },
-        { "answer": "None of the above" }
-      ]
-    }
-  ]
-  
+  {
+    "question": "1. ¿CUÁL ES SU PROPÓSITO PARA ESTA INVERSIÓN?",
+    "answerOptions": [
+      { "answer": "Ahorro para la vejez" },
+      { "answer": "Ahorro para una casa, auto o similar" },
+      { "answer": "Para hacer crecer mi riqueza" },
+      { "answer": "No lo sé" }
+    ]
+  },
+  {
+    "question": "2. ¿CUÁNTO TIEMPO DESEA ESPERAR PARA USAR EL DINERO INVERTIDO? (PUEDE RETIRAR LOS FONDOS EN CUALQUIER MOMENTO)",
+    "answerOptions": [
+      { "answer": "0-2 AÑOS" },
+      { "answer": "3-6 AÑOS" },
+      { "answer": "7-15 AÑOS" },
+      { "answer": "No lo sé" }
+    ]
+  },
+  {
+    "question": "3. EL MERCADO DE VALORES PUEDE TENER FLUCTUACIONES MUY GRANDES. SI EL VALOR DE SU CARTERA CAYERA UN 10% EN 1 MES, ¿QUÉ HARÍA?",
+    "answerOptions": [
+      { "answer": "Vender todas mis inversiones" },
+      { "answer": "Vender algunas de mis inversiones o" },
+      { "answer": "Mantener mis inversiones e incluso comprar más" },
+      { "answer": "No lo sé" }
+    ]
+  },
+  {
+    "question": "4. ¿HA INVERTIDO ANTERIORMENTE EN VALORES (POR EJEMPLO, ACCIONES, BONOS, FONDOS MUTUOS)?",
+    "answerOptions": [
+      { "answer": "No nunca" },
+      { "answer": "Solo en algunas" },
+      { "answer": "Todo el tiempo compro" },
+      { "answer": "No lo sé" }
+    ]
+  },
+  {
+    "question": "5. LA CRISIS FINANCIERA DE 2008 HIZO QUE EL PRECIO DE LAS ACCIONES CAYERA HASTA UN 45%. ¿QUÉ HARÁS SI VUELVE A SUCEDER?",
+    "answerOptions": [
+      { "answer": "Esperaré a que los mercados vuelvan a subir" },
+      { "answer": "Vender todo para no vender más" },
+      { "answer": "Quiero comprar, ya que hora están baratos" },
+      { "answer": "No lo sé" }
+    ]
+  },
+  {
+    "question": "6. ¿CUÁL ES TU EDAD AHORA?",
+    "answerOptions": [
+      { "answer": "Menos de 25" },
+      { "answer": "25 - 45 años" },
+      { "answer": "Más de 45 años" }
+    ]
+  },
+  {
+    "question": "7. ¿QUÉ PROPORCIÓN DE SU RIQUEZA ES LA CANTIDAD QUE ESTÁ CONSIDERANDO INVERTIR?",
+    "answerOptions": [
+      { "answer": "0 - 15%" },
+      { "answer": "15 - 50% " },
+      { "answer": "Más de 50%", "isCorrect": true },
+      { "answer": "No lo sé" }
+    ]
+  },
+  {
+    "question": "8. ¿CUÁNDO ESPERA COMENZAR/CAMBIAR SU INVERSIÓN?",
+    "answerOptions": [
+      { "answer": "Lo antes posible" },
+      { "answer": "Dentro de 6 meses" },
+      { "answer": "Más de 6 meses", "isCorrect": true },
+      { "answer": "No lo sé" }
+    ]
+  }
+]
