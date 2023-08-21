@@ -4,12 +4,7 @@ import { useState, useEffect } from "react";
 import Icon from "@/components/main-section/icon";
 import BackButton from "@/components/ui/backButton";
 import Cards from "@/components/Cards";
-
-type NewsProps = {
-  title: string,
-  summary: string,
-  url: string
-}
+import { NewsProps } from "news";
 
 export default function Noticias(
 ) {
@@ -27,7 +22,7 @@ export default function Noticias(
           },
         });
         const data = await response.json();
-        console.log(data);
+        console.log("data feed", data.feed);
         setNewsData(data.feed);
         setshowNews(true);
       } catch (error) {
@@ -70,13 +65,9 @@ export default function Noticias(
                       description={news.summary}
                       link={news.url}
                       target="_blank"
+                      image={news.banner_image}
+                      tags={news.topics}
                     />
-                    {/* <Icon
-                      title={news.title}
-                      description={news.summary}
-                      link={news.url}
-                      target="_blank"
-                    ></Icon> */}
                   </div>
                 ))}
               </div>

@@ -1,7 +1,6 @@
 import { Tweet } from "react-tweet";
-type TweetProps = {
-  id: string;
-};
+import { TweetProps } from "tweet";
+
 function TweetComponent({ id }: TweetProps) {
   return (
     <div>

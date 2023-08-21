@@ -4,11 +4,7 @@ import "../css/style.css";
 import { useState } from "react";
 import Head from "next/head";
 import BackButton from "@/components/ui/backButton";
-
-type AnswerProps = {
-  answerByUser?: string,
-  answer?: string,
-}
+import { AnswerProps } from "answer";
 
 export default function PerfilInversor() {
   // estado de pregunta actual
