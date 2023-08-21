@@ -4,11 +4,13 @@ import "../css/style.css";
 import { useState } from "react";
 import Head from "next/head";
 import BackButton from "@/components/ui/backButton";
+import { AnswerProps } from "answer";
 
-type AnswerProps = {
-  answerByUser?: string,
-  answer?: string,
-}
+// export const metadata = {
+//   title: "Educación Financiera",
+//   description:
+//     "Educacion Financiera para todos los usuarios que esten interesados en aprender mas sobre el mundo de las inversiones",
+// };
 
 export default function PerfilInversor() {
   // estado de pregunta actual
@@ -94,13 +96,17 @@ export default function PerfilInversor() {
                         <div
                           key={index}
                           className="flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer hover:bg-zinc-800 border-white/10 rounded-xl"
-                          onClick={(e) => handleAnswerOption({ answer: answer.answer })}
+                          onClick={(e) =>
+                            handleAnswerOption({ answer: answer.answer })
+                          }
                         >
                           <input
                             type="radio"
                             name={answer.answer}
                             value={answer.answer}
-                            onChange={(e) => handleAnswerOption({ answer: answer.answer })}
+                            onChange={(e) =>
+                              handleAnswerOption({ answer: answer.answer })
+                            }
                             checked={
                               answer.answer ===
                               selectedOptions[currentQuestion]?.answerByUser

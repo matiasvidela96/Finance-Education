@@ -1,10 +1,4 @@
-
-interface PreguntasProps {
-    pregunta: string;
-    opcion1: string
-    opcion2: string
-    opcion3: string,
-}
+import { PreguntasProps } from "preguntas"
 
 export default function Preguntas({
     pregunta,
