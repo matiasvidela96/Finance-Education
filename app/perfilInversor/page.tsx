@@ -6,12 +6,11 @@ import Head from "next/head";
 import BackButton from "@/components/ui/backButton";
 import { AnswerProps } from "answer";
 
-export const metadata = {
-  title: "Educación Financiera",
-  description:
-    "Educacion Financiera para todos los usuarios que esten interesados en aprender mas sobre el mundo de las inversiones",
-};
-
+// export const metadata = {
+//   title: "Educación Financiera",
+//   description:
+//     "Educacion Financiera para todos los usuarios que esten interesados en aprender mas sobre el mundo de las inversiones",
+// };
 
 export default function PerfilInversor() {
   // estado de pregunta actual
