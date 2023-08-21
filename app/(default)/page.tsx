@@ -1,4 +1,10 @@
 import Link from "next/link";
+
+export const metadata = {
+  title: "Educación Financiera",
+  description:
+    "Educacion Financiera para todos los usuarios que esten interesados en aprender mas sobre el mundo de las inversiones",
+};
 function main() {
   return (
     <section className="flex justify-center items-center h-screen">
