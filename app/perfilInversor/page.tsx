@@ -65,7 +65,7 @@ export default function PerfilInversor() {
     if (score <= 8) {
       return "Perfil Conservador";
     } else if (score > 8 && score <= 16) {
-      return "Perfil Medio o Moderado";
+      return "Perfil Moderado";
     } else {
       return "Perfil Arriesgado";
     }

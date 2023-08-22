@@ -1,18 +1,26 @@
 import Link from "next/link";
+import { Roboto } from "next/font/google";
 
 export const metadata = {
   title: "Educación Financiera",
   description:
     "Educacion Financiera para todos los usuarios que esten interesados en aprender mas sobre el mundo de las inversiones",
 };
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+});
 function main() {
   return (
     <section className="flex justify-center items-center h-screen">
-      <div className="w-full h-auto  bg-gradient-to-r p-8 flex flex-col items-center justify-center items-centerbg-gradient-to-r  from-purple-800 to-purple-950 ">
+      <div
+        className={`w-full h-auto  bg-gradient-to-r p-8 flex flex-col items-center justify-center items-centerbg-gradient-to-r  from-purple-800 to-purple-950 ${roboto.className}`}
+      >
         <h1 className="text-white text-3xl font-normal leading-normal tracking-widest uppercase font-item">
           Are you ready to invest?
         </h1>
-        <p className="text-white text-xs mt-3">
+        <p className="text-white text-xs mt-3 ">
           Estamos ante la mas impresionante web para aprender sobre inversion
         </p>
 

@@ -6,6 +6,11 @@ import Header from "@/components/ui/header";
 import Banner from "@/components/banner";
 import Footer from "@/components/ui/footer";
 
+export const metadata = {
+  title: "Educación Financiera",
+  description:
+    "Educacion Financiera para todos los usuarios que esten interesados en aprender mas sobre el mundo de las inversiones",
+};
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
