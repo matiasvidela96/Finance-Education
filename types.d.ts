@@ -30,6 +30,7 @@ declare module 'answer' {
     export interface AnswerProps {
         answerByUser?: string,
         answer?: string,
+        value?: number
     }
 }
 

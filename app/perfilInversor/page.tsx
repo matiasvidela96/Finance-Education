@@ -5,6 +5,7 @@ import { useState } from "react";
 import Head from "next/head";
 import BackButton from "@/components/ui/backButton";
 import { AnswerProps } from "answer";
+import Icon from "@/components/main-section/icon";
 
 // export const metadata = {
 //   title: "Educación Financiera",
@@ -32,29 +33,43 @@ export default function PerfilInversor() {
     nextQues < questions.length && setCurrentQuestion(nextQues);
   };
   // setear opcion seleccionada
-  const handleAnswerOption = ({ answer }: AnswerProps) => {
+  const handleAnswerOption = ({ answer, value }: AnswerProps) => {
     setSelectedOptions([
-      (selectedOptions[currentQuestion] = { answerByUser: answer }),
+      (selectedOptions[currentQuestion] = { answerByUser: answer, value }),
     ]);
     setSelectedOptions([...selectedOptions]);
-    console.log(selectedOptions);
+    console.log(selectedOptions[currentQuestion].value);
   };
 
-  // calcular puntaje segun las respuestas
   const handleSubmitButton = () => {
     let newScore = 0;
-    // for (let i = 0; i < questions.length; i++) {
-    //   questions[i].answerOptions.map(
-    //     (answer) =>
-    //       answer.isCorrect &&
-    //       answer.answer === selectedOptions[i]?.answerByUser &&
-    //       (newScore += 1)
-    //   );
-    // }
+
+    for (let i = 0; i < questions.length; i++) {
+      const userAnswer = selectedOptions[i];
+
+      if (userAnswer) {
+        const selectedAnswerOption = questions[i].answerOptions.find(
+          (answer) => answer.answer === userAnswer.answerByUser
+        );
+
+        if (selectedAnswerOption) {
+          newScore += selectedAnswerOption.value;
+        }
+      }
+    }
+
     setScore(newScore);
     setShowScore(true);
   };
-
+  function getRiskProfile(score: number) {
+    if (score <= 8) {
+      return "Perfil Conservador";
+    } else if (score > 8 && score <= 16) {
+      return "Perfil Medio o Moderado";
+    } else {
+      return "Perfil Arriesgado";
+    }
+  }
   return (
     <>
       <BackButton />
@@ -64,9 +79,33 @@ export default function PerfilInversor() {
       </Head>
 
       {showScore ? (
-        <h1 className="text-3xl font-semibold text-center text-white">
-          You scored {score} out of {questions.length}
-        </h1>
+        <>
+          <h1 className="text-4xl font-semibold text-center text-white">
+            Tu Puntaje es: {score}
+          </h1>
+          <p className="text-4xl font-semibold text-center text-white">
+            {" "}
+            Tu Perfil de riesgo es: {getRiskProfile(score)}
+          </p>
+          {/* Mis estrategias*/}
+          <div
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-anchor="[data-aos-id-blocks]"
+          >
+            <Icon
+              name="Strategy"
+              size={48}
+              color={"#f5f5f5"}
+              weight={"light"}
+              title={"Mis estrategias"}
+              description={
+                "Revisa las estrategias personalizadas en base a tu perfil del inversor."
+              }
+              link={"/misEstrategias"}
+            ></Icon>
+          </div>
+        </>
       ) : (
         <section>
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -97,7 +136,10 @@ export default function PerfilInversor() {
                           key={index}
                           className="flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer hover:bg-zinc-800 border-white/10 rounded-xl"
                           onClick={(e) =>
-                            handleAnswerOption({ answer: answer.answer })
+                            handleAnswerOption({
+                              answer: answer.answer,
+                              value: answer.value,
+                            })
                           }
                         >
                           <input
@@ -105,7 +147,10 @@ export default function PerfilInversor() {
                             name={answer.answer}
                             value={answer.answer}
                             onChange={(e) =>
-                              handleAnswerOption({ answer: answer.answer })
+                              handleAnswerOption({
+                                answer: answer.answer,
+                                value: answer.value,
+                              })
                             }
                             checked={
                               answer.answer ===
@@ -119,20 +164,29 @@ export default function PerfilInversor() {
                     )}
                   </div>
                   {/* botones de navegacion */}
-                  <div className="flex justify-between w-full mt-4 text-white">
+                  <div className="flex justify-between w-full mt-4 text-white ${}">
                     <button
                       onClick={handlePrevious}
-                      className="w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg"
+                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${
+                        currentQuestion === 0
+                          ? "opacity-50 cursor-not-allowed  "
+                          : ""
+                      }`}
                     >
                       Previous
                     </button>
                     <button
+                      disabled={!selectedOptions[currentQuestion]}
                       onClick={
                         currentQuestion + 1 === questions.length
                           ? handleSubmitButton
                           : handleNext
                       }
-                      className="w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg"
+                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${
+                        currentQuestion + 1 === questions.length
+                          ? "bg-red-600 hover:bg-red-700 text-white"
+                          : "bg-purple-700 hover:bg-purple-600 text-white"
+                      }`}
                     >
                       {currentQuestion + 1 === questions.length
                         ? "Submit"

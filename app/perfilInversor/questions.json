@@ -1,73 +1,79 @@
 [
   {
-    "question": "1. ¿CUÁL ES SU PROPÓSITO PARA ESTA INVERSIÓN?",
+    "question": "1. ¿Cuál es su propósito para esta inversión?",
     "answerOptions": [
-      { "answer": "Ahorro para la vejez" },
-      { "answer": "Ahorro para una casa, auto o similar" },
-      { "answer": "Para hacer crecer mi riqueza" },
-      { "answer": "No lo sé" }
+      { "answer": "Ahorro para la vejez", "value": 1 },
+      { "answer": "Ahorro para una casa, auto o similar", "value": 2 },
+      { "answer": "Para hacer crecer mi riqueza", "value": 3 },
+      { "answer": "No lo sé", "value": 0 }
     ]
   },
   {
-    "question": "2. ¿CUÁNTO TIEMPO DESEA ESPERAR PARA USAR EL DINERO INVERTIDO? (PUEDE RETIRAR LOS FONDOS EN CUALQUIER MOMENTO)",
+    "question": "2. ¿Cuánto tiempo desea esperar para usar el dinero invertido? (puede retirar los fondos en cualquier momento)",
     "answerOptions": [
-      { "answer": "0-2 AÑOS" },
-      { "answer": "3-6 AÑOS" },
-      { "answer": "7-15 AÑOS" },
-      { "answer": "No lo sé" }
+      { "answer": "0-2 AÑOS", "value": 1 },
+      { "answer": "3-6 AÑOS", "value": 2 },
+      { "answer": "7-15 AÑOS", "value": 3 },
+      { "answer": "No lo sé", "value": 0 }
     ]
   },
   {
-    "question": "3. EL MERCADO DE VALORES PUEDE TENER FLUCTUACIONES MUY GRANDES. SI EL VALOR DE SU CARTERA CAYERA UN 10% EN 1 MES, ¿QUÉ HARÍA?",
+    "question": "3. El mercado de valores puede tener fluctuaciones muy grandes. si el valor de su cartera cayera un 10% en 1 mes, ¿qué haría?",
     "answerOptions": [
-      { "answer": "Vender todas mis inversiones" },
-      { "answer": "Vender algunas de mis inversiones o" },
-      { "answer": "Mantener mis inversiones e incluso comprar más" },
-      { "answer": "No lo sé" }
+      { "answer": "Vender todas mis inversiones", "value": 1 },
+      { "answer": "Vender algunas de mis inversiones", "value": 2 },
+      {
+        "answer": "Mantener mis inversiones e incluso comprar más",
+        "value": 3
+      },
+      { "answer": "No lo sé", "value": 0 }
     ]
   },
   {
-    "question": "4. ¿HA INVERTIDO ANTERIORMENTE EN VALORES (POR EJEMPLO, ACCIONES, BONOS, FONDOS MUTUOS)?",
+    "question": "4. ¿Ha invertido anteriormente en valores (por ejemplo, acciones, bonos, fondos mutuos)?",
     "answerOptions": [
-      { "answer": "No nunca" },
-      { "answer": "Solo en algunas" },
-      { "answer": "Todo el tiempo compro" },
-      { "answer": "No lo sé" }
+      { "answer": "No nunca", "value": 1 },
+      { "answer": "Solo en algunas", "value": 2 },
+      {
+        "answer": "Todo el tiempo compro o tengo experiencia en el tema",
+        "value": 3
+      },
+      { "answer": "No lo sé", "value": 0 }
     ]
   },
   {
-    "question": "5. LA CRISIS FINANCIERA DE 2008 HIZO QUE EL PRECIO DE LAS ACCIONES CAYERA HASTA UN 45%. ¿QUÉ HARÁS SI VUELVE A SUCEDER?",
+    "question": "5. La crisis financiera de 2008 hizo que el precio de las acciones cayera hasta un 45%. ¿Qué harás si vuelve a suceder?",
     "answerOptions": [
-      { "answer": "Esperaré a que los mercados vuelvan a subir" },
-      { "answer": "Vender todo para no vender más" },
-      { "answer": "Quiero comprar, ya que hora están baratos" },
-      { "answer": "No lo sé" }
+      { "answer": "Esperaré a que los mercados vuelvan a subir", "value": 1 },
+      { "answer": "Vender todo para no perder más", "value": 2 },
+      { "answer": "Quiero comprar, ya que hora están baratos", "value": 3 },
+      { "answer": "No lo sé", "value": 0 }
     ]
   },
   {
-    "question": "6. ¿CUÁL ES TU EDAD AHORA?",
+    "question": "6. ¿Cuál es tu edad ahora?",
     "answerOptions": [
-      { "answer": "Menos de 25" },
-      { "answer": "25 - 45 años" },
-      { "answer": "Más de 45 años" }
+      { "answer": "Menos de 25", "value": 1 },
+      { "answer": "25 - 45 años", "value": 2 },
+      { "answer": "Más de 45 años", "value": 3 }
     ]
   },
   {
-    "question": "7. ¿QUÉ PROPORCIÓN DE SU RIQUEZA ES LA CANTIDAD QUE ESTÁ CONSIDERANDO INVERTIR?",
+    "question": "7. ¿Qué proporción de su riqueza es la cantidad que está considerando invertir?",
     "answerOptions": [
-      { "answer": "0 - 15%" },
-      { "answer": "15 - 50% " },
-      { "answer": "Más de 50%", "isCorrect": true },
-      { "answer": "No lo sé" }
+      { "answer": "0 - 15%", "value": 1 },
+      { "answer": "15 - 50% ", "value": 2 },
+      { "answer": "Más de 50%", "value": 3 },
+      { "answer": "No lo sé", "value": 0 }
     ]
   },
   {
-    "question": "8. ¿CUÁNDO ESPERA COMENZAR/CAMBIAR SU INVERSIÓN?",
+    "question": "8. ¿Cuándo espera comenzar/cambiar su inversión?",
     "answerOptions": [
-      { "answer": "Lo antes posible" },
-      { "answer": "Dentro de 6 meses" },
-      { "answer": "Más de 6 meses", "isCorrect": true },
-      { "answer": "No lo sé" }
+      { "answer": "Lo antes posible", "value": 1 },
+      { "answer": "Dentro de 6 meses", "value": 2 },
+      { "answer": "Más de 6 meses", "value": 3 },
+      { "answer": "No lo sé", "value": 0 }
     ]
   }
 ]
