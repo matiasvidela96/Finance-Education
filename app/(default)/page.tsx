@@ -15,18 +15,19 @@ function main() {
   return (
     <section className="flex justify-center items-center h-screen">
       <div
-        className={`w-full h-auto  bg-gradient-to-r p-8 flex flex-col items-center justify-center items-centerbg-gradient-to-r  from-purple-800 to-purple-950 ${roboto.className}`}
+        className={`w-full h-auto  bg-gradient-to-r p-8 flex flex-col items-center justify-center items-centerbg-gradient-to-r  from-purple-800 to-purple-950 `}
       >
-        <h1 className="text-white text-3xl font-normal leading-normal tracking-widest uppercase font-item">
-          Are you ready to invest?
+        <h1 className=" text-4xl leading-normal tracking-widest uppercase font-serif">
+          Estas listo para invertir?
         </h1>
-        <p className="text-white text-xs mt-3 ">
-          Estamos ante la mas impresionante web para aprender sobre inversion
+        <p className="text-gray-200 text-sm mt-3 font-serif">
+          "Explorando un Universo de Conocimiento Financiero: Tu Destino
+          Definitivo para Aprender sobre Inversiones de Manera Asombrosa"
         </p>
 
         <Link
           href="/startPage"
-          className="btn-sm text-white bg-zinc-950 hover:bg-purple-700  px-6 py-2 ml-3 mt-28"
+          className="btn-sm text-white bg-zinc-950 hover:bg-purple-700  px-6 py-2 ml-3 mt-28 rounded-xl"
         >
           GET START
         </Link>

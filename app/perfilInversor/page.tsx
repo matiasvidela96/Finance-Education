@@ -108,10 +108,10 @@ export default function PerfilInversor() {
         </>
       ) : (
         <section>
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
             <div className="py-12 md:py-20">
               {/* Section header */}
-              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20 ">
                 <h2 className="h2 mb-4">Perfil del Inversor</h2>
                 <p className="text-xl text-gray-400">
                   Responde unas preguntas para definir tus estrategias
@@ -119,7 +119,7 @@ export default function PerfilInversor() {
               </div>
               {/* Preguntas */}
               <div>
-                <div className="flex flex-col px-5 bg-[#1A1A1A] justify-center items-center">
+                <div className="flex flex-col px-5 bg-[#1a1a1a] justify-center items-center mb-8">
                   <div className="flex flex-col items-start w-full">
                     <h4 className="mt-10 text-xl text-white/60">
                       Question {currentQuestion + 1} of {questions.length}
@@ -164,7 +164,7 @@ export default function PerfilInversor() {
                     )}
                   </div>
                   {/* botones de navegacion */}
-                  <div className="flex justify-between w-full mt-4 text-white ${}">
+                  <div className="flex justify-between w-full mt-4 text-white m-5">
                     <button
                       onClick={handlePrevious}
                       className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${
@@ -173,7 +173,7 @@ export default function PerfilInversor() {
                           : ""
                       }`}
                     >
-                      Previous
+                      Anterior
                     </button>
                     <button
                       disabled={!selectedOptions[currentQuestion]}
@@ -189,8 +189,8 @@ export default function PerfilInversor() {
                       }`}
                     >
                       {currentQuestion + 1 === questions.length
-                        ? "Submit"
-                        : "Next"}
+                        ? "Enviar"
+                        : "Siguiente"}
                     </button>
                   </div>
                 </div>
