@@ -2,19 +2,19 @@
   {
     "question": "1. ¿Cuál es su propósito para esta inversión?",
     "answerOptions": [
-      { "answer": "Ahorro para la vejez", "value": 1 },
+      { "answer": "Ahorro para la jubilación", "value": 1 },
       { "answer": "Ahorro para una casa, auto o similar", "value": 2 },
       { "answer": "Para hacer crecer mi riqueza", "value": 3 },
       { "answer": "No lo sé", "value": 0 }
     ]
   },
   {
-    "question": "2. ¿Cuánto tiempo desea esperar para usar el dinero invertido? (puede retirar los fondos en cualquier momento)",
+    "question": "2. ¿Cuánto tiempo está dispuesto a esperar para usar el dinero invertido?",
     "answerOptions": [
-      { "answer": "0-2 AÑOS", "value": 1 },
-      { "answer": "3-6 AÑOS", "value": 2 },
-      { "answer": "7-15 AÑOS", "value": 3 },
-      { "answer": "No lo sé", "value": 0 }
+      { "answer": "0-3 Meses", "value": 4 },
+      { "answer": "3-6 Meses", "value": 3 },
+      { "answer": "Hasta 1 año", "value": 2 },
+      { "answer": "Más de un año", "value": 1 }
     ]
   },
   {
@@ -23,57 +23,46 @@
       { "answer": "Vender todas mis inversiones", "value": 1 },
       { "answer": "Vender algunas de mis inversiones", "value": 2 },
       {
-        "answer": "Mantener mis inversiones e incluso comprar más",
+        "answer": "Mantener mis inversiones, esperando que vuelvan a subir",
         "value": 3
       },
-      { "answer": "No lo sé", "value": 0 }
+      { "answer": "Compro más", "value": 4 }
     ]
   },
   {
-    "question": "4. ¿Ha invertido anteriormente en valores (por ejemplo, acciones, bonos, fondos mutuos)?",
+    "question": "4. ¿Ha invertido anteriormente en intrumentos financiertos (acciones, bonos, fondos)?",
     "answerOptions": [
-      { "answer": "No nunca", "value": 1 },
-      { "answer": "Solo en algunas", "value": 2 },
+      { "answer": "Nunca", "value": 1 },
+      { "answer": "Solo en algunos", "value": 2 },
       {
         "answer": "Todo el tiempo compro o tengo experiencia en el tema",
         "value": 3
-      },
-      { "answer": "No lo sé", "value": 0 }
+      }
     ]
   },
   {
-    "question": "5. La crisis financiera de 2008 hizo que el precio de las acciones cayera hasta un 45%. ¿Qué harás si vuelve a suceder?",
+    "question": "5. ¿Cuál es tu edad ahora?",
     "answerOptions": [
-      { "answer": "Esperaré a que los mercados vuelvan a subir", "value": 1 },
-      { "answer": "Vender todo para no perder más", "value": 2 },
-      { "answer": "Quiero comprar, ya que hora están baratos", "value": 3 },
-      { "answer": "No lo sé", "value": 0 }
-    ]
-  },
-  {
-    "question": "6. ¿Cuál es tu edad ahora?",
-    "answerOptions": [
-      { "answer": "Menos de 25", "value": 1 },
+      { "answer": "Menos de 25", "value": 3 },
       { "answer": "25 - 45 años", "value": 2 },
-      { "answer": "Más de 45 años", "value": 3 }
+      { "answer": "Más de 45 años", "value": 1 }
     ]
   },
   {
-    "question": "7. ¿Qué proporción de su riqueza es la cantidad que está considerando invertir?",
+    "question": "6. ¿Qué proporción de su riqueza es la cantidad que está considerando invertir?",
     "answerOptions": [
       { "answer": "0 - 15%", "value": 1 },
-      { "answer": "15 - 50% ", "value": 2 },
-      { "answer": "Más de 50%", "value": 3 },
-      { "answer": "No lo sé", "value": 0 }
+      { "answer": "15 - 30% ", "value": 2 },
+      { "answer": "30 - 50%", "value": 3 },
+      { "answer": "Más del 50%", "value": 4 }
     ]
   },
   {
-    "question": "8. ¿Cuándo espera comenzar/cambiar su inversión?",
+    "question": "7. ¿Que sabes de criptomonedas?",
     "answerOptions": [
-      { "answer": "Lo antes posible", "value": 1 },
-      { "answer": "Dentro de 6 meses", "value": 2 },
-      { "answer": "Más de 6 meses", "value": 3 },
-      { "answer": "No lo sé", "value": 0 }
+      { "answer": "No conozco", "value": 1 },
+      { "answer": "Conozco pero no he comprado", "value": 2 },
+      { "answer": "He comprado", "value": 3 }
     ]
   }
 ]

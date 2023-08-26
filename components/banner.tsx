@@ -13,20 +13,21 @@ export default function Banner() {
             <div className="text-slate-500 inline-flex">
               <a
                 className="font-medium hover:underline text-slate-50"
-                href="https://github.com/cruip/open-react-template"
+                href="https://github.com/matiasvidela96/Financial-Education"
                 target="_blank"
                 rel="noreferrer"
               >
-                Download<span className="hidden sm:inline"> on GitHub</span>
+                <span className="hidden sm:inline">¿Te gusto? </span>
               </a>{" "}
-              <span className="italic px-1.5">or</span>{" "}
+              <span className="italic px-1.5">Entonces </span>
+              {"=>"}
               <a
                 className="font-medium hover:underline text-emerald-400"
-                href="https://cruip.com/open-pro/"
+                href="https://www.mercadopago.com.ar/"
                 target="_blank"
                 rel="noreferrer"
               >
-                PERRO ELIMINA ESTO CUANDO LO LEAS (NO SIRVE)
+                Pásate por cafecito
               </a>
             </div>
             <button
