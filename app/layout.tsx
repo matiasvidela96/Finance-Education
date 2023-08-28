@@ -1,3 +1,4 @@
+'use client'
 import "./css/style.css";
 
 import { Inter, Architects_Daughter } from "next/font/google";
@@ -5,12 +6,13 @@ import { Inter, Architects_Daughter } from "next/font/google";
 import Header from "@/components/ui/header";
 import Banner from "@/components/banner";
 import Footer from "@/components/ui/footer";
+import Context from "../app/contexts/perfilInversor";
 
-export const metadata = {
-  title: "Educación Financiera",
-  description:
-    "Educacion Financiera para todos los usuarios que esten interesados en aprender mas sobre el mundo de las inversiones",
-};
+// export const metadata = {
+//   title: "Educación Financiera",
+//   description:
+//     "Educacion Financiera para todos los usuarios que esten interesados en aprender mas sobre el mundo de las inversiones",
+// };
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -35,17 +37,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-zinc-950 text-gray-200 tracking-tight`}
-      >
-        <div className="flex flex-col min-h-screen overflow-hidden">
-          <Header />
-          {children}
-          <Footer />
-          <Banner />
-        </div>
-      </body>
-    </html>
+    <>
+      <Context>
+        <html lang="en">
+          <body
+            className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-zinc-950 text-gray-200 tracking-tight`}
+          >
+            <div className="flex flex-col min-h-screen overflow-hidden">
+              <Header />
+              {children}
+              <Footer />
+              <Banner />
+            </div>
+          </body>
+        </html>
+      </Context>
+    </>
   );
 }
