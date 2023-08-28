@@ -61,6 +61,20 @@ declare module 'preguntas' {
     }
 }
 
+declare module 'perfilInversorProvider' {
+    export interface PerfilInversorProviderProps {
+        children: ReactNode;
+    }
+}
+
+// declare module 'perfilInversor' {
+//     export interface PerfilInversorProps {
+//         perfilInversor: string;
+//         setPerfilInversor: React.Dispatch<React.SetStateAction<string>>;
+//     }
+// }
+
+
 
 
 

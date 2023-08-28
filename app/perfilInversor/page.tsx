@@ -1,11 +1,12 @@
 "use client";
 import questions from "./questions.json";
 import "../css/style.css";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Head from "next/head";
 import BackButton from "@/components/ui/backButton";
 import { AnswerProps } from "answer";
 import Icon from "@/components/main-section/icon";
+import { PerfilInversorContext } from "../contexts/perfilInversor";
 
 // export const metadata = {
 //   title: "Educación Financiera",
@@ -14,6 +15,8 @@ import Icon from "@/components/main-section/icon";
 // };
 
 export default function PerfilInversor() {
+  // guardar perfil en contexto
+  const { perfilInversor, setPerfilInversor } = useContext(PerfilInversorContext);
   // estado de pregunta actual
   const [currentQuestion, setCurrentQuestion] = useState(0);
   // mantener respuesta seleccionada
@@ -63,12 +66,13 @@ export default function PerfilInversor() {
   };
   function getRiskProfile(score: number) {
     if (score <= 8) {
-      return "Perfil Conservador";
+      setPerfilInversor("Perfil Conservador");
     } else if (score > 8 && score <= 16) {
-      return "Perfil Moderado";
+      setPerfilInversor("Perfil Moderado");
     } else {
-      return "Perfil Arriesgado";
+      setPerfilInversor("Perfil Arriesgado");
     }
+    return perfilInversor
   }
   return (
     <>
@@ -167,11 +171,10 @@ export default function PerfilInversor() {
                   <div className="flex justify-between w-full mt-4 text-white m-5">
                     <button
                       onClick={handlePrevious}
-                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${
-                        currentQuestion === 0
-                          ? "opacity-50 cursor-not-allowed  "
-                          : ""
-                      }`}
+                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${currentQuestion === 0
+                        ? "opacity-50 cursor-not-allowed  "
+                        : ""
+                        }`}
                     >
                       Anterior
                     </button>
@@ -182,11 +185,10 @@ export default function PerfilInversor() {
                           ? handleSubmitButton
                           : handleNext
                       }
-                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${
-                        currentQuestion + 1 === questions.length
-                          ? "bg-red-600 hover:bg-red-700 text-white"
-                          : "bg-purple-700 hover:bg-purple-600 text-white"
-                      }`}
+                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${currentQuestion + 1 === questions.length
+                        ? "bg-red-600 hover:bg-red-700 text-white"
+                        : "bg-purple-700 hover:bg-purple-600 text-white"
+                        }`}
                     >
                       {currentQuestion + 1 === questions.length
                         ? "Enviar"

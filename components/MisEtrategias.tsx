@@ -1,11 +1,13 @@
 "use client";
 import { format } from "path";
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { PerfilInversorContext } from "../app/contexts/perfilInversor";
 
 function MisEtrategias() {
   const [Income, setIncome] = useState(0);
   const [ShowResult, setShowResult] = useState(false);
+  const { perfilInversor } = useContext(PerfilInversorContext);
   return (
     <>
       <form
@@ -17,10 +19,16 @@ function MisEtrategias() {
       >
         <div className="flex flex-wrap -mx-3 mb-4">
           <div className="w-full px-2">
-            <h1 className="text-2xl font-bold mb-2">Dinero de Inversion:</h1>
+            {perfilInversor ? (
+              <h1 className="text-2xl font-bold mb-2">Tu perfil es: {perfilInversor}</h1>
+            ) : (<></>)
+            }
+
+            <h2 className="text-2xl font-bold mb-2">Dinero de Inversion:</h2>
             <input
               onChange={(e) => {
                 setShowResult(false);
+                setIncome(Number(e.target.value))
                 console.log(Number(e.target.value));
               }}
               id="income"

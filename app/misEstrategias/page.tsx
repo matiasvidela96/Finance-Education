@@ -3,13 +3,14 @@ export const metadata = {
   description: "Mis Estrategias - Finance Education",
 };
 
-import Link from "next/link";
 import MisEtrategias from "@/components/MisEtrategias";
+import BackButton from "@/components/ui/backButton";
 
 export default function misEstrategias() {
   return (
     <section className="relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <BackButton />
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Page header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
