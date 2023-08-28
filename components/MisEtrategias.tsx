@@ -28,6 +28,7 @@ function MisEtrategias() {
             <input
               onChange={(e) => {
                 setShowResult(false);
+                setIncome(Number(e.target.value))
                 console.log(Number(e.target.value));
               }}
               id="income"
