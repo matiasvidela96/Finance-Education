@@ -16,6 +16,7 @@ import { PerfilInversorContext } from "../contexts/perfilInversor";
 
 export default function PerfilInversor() {
   // guardar perfil en contexto
+  // @ts-ignore
   const { perfilInversor, setPerfilInversor } = useContext(PerfilInversorContext);
   // estado de pregunta actual
   const [currentQuestion, setCurrentQuestion] = useState(0);

@@ -7,6 +7,7 @@ import { PerfilInversorContext } from "../app/contexts/perfilInversor";
 function MisEtrategias() {
   const [Income, setIncome] = useState(0);
   const [ShowResult, setShowResult] = useState(false);
+  // @ts-ignore
   const { perfilInversor } = useContext(PerfilInversorContext);
   return (
     <>
