@@ -1,8 +1,7 @@
 "use client";
-import { format } from "path";
-import React from "react";
 import { useState, useContext } from "react";
 import { PerfilInversorContext } from "../app/contexts/perfilInversor";
+import Icon from "@/components/main-section/icon";
 
 function MisEtrategias() {
   const [Income, setIncome] = useState(0);
@@ -21,15 +20,44 @@ function MisEtrategias() {
         <div className="flex flex-wrap -mx-3 mb-4">
           <div className="w-full px-2">
             {perfilInversor ? (
-              <h1 className="text-2xl font-bold mb-2">Tu perfil es: {perfilInversor}</h1>
-            ) : (<></>)
-            }
+              <h1 className="text-2xl font-bold mb-2">
+                Tu perfil es: {perfilInversor}
+              </h1>
+            ) : (
+              <>
+                {/* Perfil del inversor */}
 
-            <h2 className="text-2xl font-bold mb-2">Dinero de Inversion:</h2>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-anchor="[data-aos-id-blocks]"
+                >
+                  <h1 className="text-xl">
+                    No has realizado tu perfil del inversor (Es necesario para
+                    poder calcular tus estrategias){" "}
+                  </h1>
+                  <Icon
+                    name="HandCoins"
+                    size={48}
+                    color={"#f5f5f5"}
+                    weight={"light"}
+                    title={"Perfil del Inversor"}
+                    description={
+                      "Contesta las preguntas para definir tu perfil y ver las estrategias que mas se adaptan a ti."
+                    }
+                    link={"/perfilInversor"}
+                  ></Icon>
+                </div>
+              </>
+            )}
+
+            <h2 className="text-2xl font-bold mt-3 mb-2">
+              Dinero de Inversion:
+            </h2>
             <input
               onChange={(e) => {
                 setShowResult(false);
-                setIncome(Number(e.target.value))
+                setIncome(Number(e.target.value));
                 console.log(Number(e.target.value));
               }}
               id="income"
