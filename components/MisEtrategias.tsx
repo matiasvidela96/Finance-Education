@@ -13,33 +13,36 @@ function MisEtrategias() {
   // Mostrar el formulario solo si el perfil del inversor está completado
   if (!perfilInversor) {
     return (
-      <div
-        data-aos="fade-up"
-        data-aos-delay="100"
-        data-aos-anchor="[data-aos-id-blocks]"
-      >
-        <div className=" p-6 hover:bg-zinc-700 rounded-lg shadow-md">
-          <h1 className="text-2xl font-bold text-red-600 mb-2">
-            ¡Aún no has completado tu perfil de inversor!
-          </h1>
-          <p className="text-gray-400 mb-5">
-            Por favor, completa tu perfil de inversor para que podamos calcular
-            las mejores estrategias para ti.
-          </p>
+      <Link href={"/perfilInversor"}>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-anchor="[data-aos-id-blocks]"
+          className="flex flex-wrap text-center -mx-40 mb-4"
+        >
+          <div className=" p-6 hover:bg-zinc-700 rounded-lg shadow-md">
+            <h1 className="text-2xl font-bold text-red-600 mb-2">
+              ¡Aún no has completado tu perfil de inversor!
+            </h1>
+            <p className="text-gray-400 mb-5">
+              Por favor, completa tu perfil de inversor para que podamos
+              calcular las mejores estrategias para ti.
+            </p>
 
-          <Icon
-            name="HandCoins"
-            size={48}
-            color={"#f5f5f5"}
-            weight={"light"}
-            title={"Perfil del Inversor"}
-            description={
-              "Contesta las preguntas para definir tu perfil y ver las estrategias que mas se adaptan a ti."
-            }
-            link={"/perfilInversor"}
-          ></Icon>
+            <Icon
+              name="HandCoins"
+              size={48}
+              color={"#f5f5f5"}
+              weight={"light"}
+              title={"Perfil del Inversor"}
+              description={
+                "Contesta las preguntas para definir tu perfil y ver las estrategias que mas se adaptan a ti."
+              }
+              link={"/perfilInversor"}
+            ></Icon>
+          </div>
         </div>
-      </div>
+      </Link>
     );
   }
 
