@@ -7,6 +7,7 @@ import BackButton from "@/components/ui/backButton";
 import { AnswerProps } from "answer";
 import Icon from "@/components/main-section/icon";
 import { PerfilInversorContext } from "../contexts/perfilInversor";
+import Link from "next/link";
 
 // export const metadata = {
 //   title: "Educación Financiera",
@@ -17,7 +18,9 @@ import { PerfilInversorContext } from "../contexts/perfilInversor";
 export default function PerfilInversor() {
   // guardar perfil en contexto
   // @ts-ignore
-  const { perfilInversor, setPerfilInversor } = useContext(PerfilInversorContext);
+  const { perfilInversor, setPerfilInversor } = useContext(
+    PerfilInversorContext
+  );
   // estado de pregunta actual
   const [currentQuestion, setCurrentQuestion] = useState(0);
   // mantener respuesta seleccionada
@@ -73,7 +76,7 @@ export default function PerfilInversor() {
     } else {
       setPerfilInversor("Perfil Arriesgado");
     }
-    return perfilInversor
+    return perfilInversor;
   }
   return (
     <>
@@ -85,31 +88,45 @@ export default function PerfilInversor() {
 
       {showScore ? (
         <>
-          <h1 className="text-4xl font-semibold text-center text-white">
-            Tu Puntaje es: {score}
-          </h1>
-          <p className="text-4xl font-semibold text-center text-white">
-            {" "}
-            Tu Perfil de riesgo es: {getRiskProfile(score)}
-          </p>
-          {/* Mis estrategias*/}
-          <div
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-anchor="[data-aos-id-blocks]"
-          >
-            <Icon
-              name="Strategy"
-              size={48}
-              color={"#f5f5f5"}
-              weight={"light"}
-              title={"Mis estrategias"}
-              description={
-                "Revisa las estrategias personalizadas en base a tu perfil del inversor."
-              }
-              link={"/misEstrategias"}
-            ></Icon>
-          </div>
+          <Link href={"/misEstrategias"}>
+            <div className="max-w-4xl mx-auto rounded-xl sm:px-6 flex flex-col px-5  hover:bg-zinc-700 justify-center items-center mb-8">
+              <h1 className="text-3xl font-bold text-purple-600 mb-2">
+                Felicitaciones haz realizado tu perfil de inversor!
+              </h1>
+              <p className="text-gray-400 mb-5">
+                Ahora puedes revisar tus estrategias personalizadas en base a tu
+                perfil de riesgo y el monto de inversión
+              </p>
+
+              <div className=" p-6 hover:bg-zinc-700 rounded-lg shadow-md">
+                <h1 className="text-3xl font-semibold text-center text-purple-600">
+                  Tu Puntaje es: {score}
+                </h1>
+                <p className="text-3xl  font-semibold text-center  mb-10 text-purple-600">
+                  {" "}
+                  Tu Perfil de riesgo es: {getRiskProfile(score)}
+                </p>
+                {/* Mis estrategias*/}
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-anchor="[data-aos-id-blocks]"
+                >
+                  <Icon
+                    name="Strategy"
+                    size={48}
+                    color={"#f5f5f5"}
+                    weight={"light"}
+                    title={"Mis estrategias"}
+                    description={
+                      "Revisa las estrategias personalizadas en base a tu perfil del inversor."
+                    }
+                    link={"/misEstrategias"}
+                  ></Icon>
+                </div>
+              </div>
+            </div>
+          </Link>
         </>
       ) : (
         <section>
@@ -172,10 +189,11 @@ export default function PerfilInversor() {
                   <div className="flex justify-between w-full mt-4 text-white m-5">
                     <button
                       onClick={handlePrevious}
-                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${currentQuestion === 0
-                        ? "opacity-50 cursor-not-allowed  "
-                        : ""
-                        }`}
+                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${
+                        currentQuestion === 0
+                          ? "opacity-50 cursor-not-allowed  "
+                          : ""
+                      }`}
                     >
                       Anterior
                     </button>
@@ -186,10 +204,11 @@ export default function PerfilInversor() {
                           ? handleSubmitButton
                           : handleNext
                       }
-                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${currentQuestion + 1 === questions.length
-                        ? "bg-red-600 hover:bg-red-700 text-white"
-                        : "bg-purple-700 hover:bg-purple-600 text-white"
-                        }`}
+                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${
+                        currentQuestion + 1 === questions.length
+                          ? "bg-red-600 hover:bg-red-700 text-white"
+                          : "bg-purple-700 hover:bg-purple-600 text-white"
+                      }`}
                     >
                       {currentQuestion + 1 === questions.length
                         ? "Enviar"
