@@ -1,8 +1,8 @@
 import Image from "next/image";
-
-import FeatImage01 from "@/public/images/features-03-image-01.png";
-import FeatImage02 from "@/public/images/features-03-image-02.png";
-import FeatImage03 from "@/public/images/features-03-image-03.png";
+//images extraidas, libre de derechos de https://unsplash.com/es/s/fotos/finance
+import FeatImage01 from "@/public/images/6.png";
+import FeatImage02 from "@/public/images/2.png";
+import FeatImage03 from "@/public/images/4.png";
 
 export default function Zigzag() {
   return (
@@ -45,13 +45,12 @@ export default function Zigzag() {
               >
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                    More speed. Less spend
+                    Momento de empezar
                   </div>
                   <h3 className="h3 mb-3">Empieza desde cero</h3>
                   <p className="text-xl text-gray-400 mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Si estás buscando construir una base sólida en el mundo de
+                    las finanzas. Aprende desde los conceptos fundamentales
                   </p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
@@ -62,7 +61,10 @@ export default function Zigzag() {
                       >
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Duis aute irure dolor in reprehenderit</span>
+                      <span>
+                        Domina la creación y seguimiento de portafolios
+                        efectivos
+                      </span>
                     </li>
                     <li className="flex items-center mb-2">
                       <svg
@@ -72,7 +74,10 @@ export default function Zigzag() {
                       >
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Excepteur sint occaecat</span>
+                      <span>
+                        Aprende a establecer metas financieras realistas y
+                        alcanzables
+                      </span>
                     </li>
                     <li className="flex items-center">
                       <svg
@@ -82,7 +87,10 @@ export default function Zigzag() {
                       >
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Amet consectetur adipiscing elit</span>
+                      <span>
+                        Explora estrategias para construir un fondo de
+                        emergencia sólido
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -111,13 +119,16 @@ export default function Zigzag() {
               >
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                    More speed. Less spend
+                    Amplia tu portafolio de inversiones
                   </div>
-                  <h3 className="h3 mb-3">Cryptos, NFT & Smart Contracts</h3>
+                  <h3 className="h3 mb-3">
+                    Acciones, S&P500, NASDAQ y mas indicadores.
+                  </h3>
                   <p className="text-xl text-gray-400 mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Aprende conocimientos esenciales para entender cómo
+                    funcionan los mercados financieros. Descubre cómo analizar
+                    indicadores clave, tomar decisiones informadas y explorar
+                    nuevas oportunidades.
                   </p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
@@ -128,7 +139,10 @@ export default function Zigzag() {
                       >
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Duis aute irure dolor in reprehenderit</span>
+                      <span>
+                        Aprende a analizar y comparar el rendimiento de
+                        diferentes acciones
+                      </span>
                     </li>
                     <li className="flex items-center mb-2">
                       <svg
@@ -138,7 +152,10 @@ export default function Zigzag() {
                       >
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Excepteur sint occaecat</span>
+                      <span>
+                        Comprende la importancia del índice S&P500 como
+                        referencia del mercado
+                      </span>
                     </li>
                     <li className="flex items-center">
                       <svg
@@ -148,7 +165,10 @@ export default function Zigzag() {
                       >
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Amet consectetur adipiscing elit</span>
+                      <span>
+                        Explora cómo funcionan los indicadores técnicos en el
+                        análisis financiero
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -177,15 +197,14 @@ export default function Zigzag() {
               >
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                    More speed. Less spend
+                    Adéntrate al universo de las criptomonedas
                   </div>
-                  <h3 className="h3 mb-3">
-                    Acciones, S&P500, NASDAC y mas indicadores
-                  </h3>
+                  <h3 className="h3 mb-3">Cryptos, NFT & Smart Contracts </h3>
                   <p className="text-xl text-gray-400 mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Descubre cómo funcionan estas innovadoras tecnologías y cómo
+                    están cambiando la forma en que interactuamos con los
+                    activos digitales, la propiedad intelectual. Desde Bitcoin
+                    hasta DeFi y mas allá...
                   </p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
@@ -196,7 +215,9 @@ export default function Zigzag() {
                       >
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Duis aute irure dolor in reprehenderit</span>
+                      <span>
+                        Explora las oportunidades de inversión en criptomonedas
+                      </span>
                     </li>
                     <li className="flex items-center mb-2">
                       <svg
@@ -206,7 +227,10 @@ export default function Zigzag() {
                       >
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Excepteur sint occaecat</span>
+                      <span>
+                        Comprende el impacto de los NFT en la industria del arte
+                        digital
+                      </span>
                     </li>
                     <li className="flex items-center">
                       <svg
@@ -216,7 +240,10 @@ export default function Zigzag() {
                       >
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Amet consectetur adipiscing elit</span>
+                      <span>
+                        Descubre cómo funcionan los SmartContracts de las
+                        Blockchain
+                      </span>
                     </li>
                   </ul>
                 </div>
