@@ -22,9 +22,9 @@ function MisEtrategias() {
           data-aos="fade-up"
           data-aos-delay="100"
           data-aos-anchor="[data-aos-id-blocks]"
-          className="flex flex-wrap text-center -mx-40 mb-4"
+          className="flex flex-wrap text-center -mx-40 mb-4 hover:bg-zinc-700"
         >
-          <div className=" p-6 hover:bg-zinc-700 rounded-lg shadow-md">
+          <div className=" p-6 rounded-lg shadow-md">
             <h1 className="text-2xl font-bold text-red-600 mb-2">
               ¡Aún no has completado tu perfil de inversor!
             </h1>
@@ -63,7 +63,7 @@ function MisEtrategias() {
         <div className="flex flex-wrap -mx-3 mb-4">
           <div className="w-full px-2">
             <h1 className="text-2xl font-bold mb-2 text-purple-600">
-              Tu perfil es: {perfilInversor}
+              {"-"} {perfilInversor}
             </h1>
             <div className="mt-8">
               <label
@@ -79,7 +79,7 @@ function MisEtrategias() {
                 }}
                 id="income"
                 type="number"
-                className="form-input w-full p-3 border border-gray-300 rounded-md focus:ring-purple-600 focus:border-purple-600"
+                className="form-input w-full p-3 border border-gray-300 rounded-md  focus:border-purple-600"
                 placeholder="Monto a invertir (Mínimo $1000)"
                 required
               />
@@ -107,9 +107,15 @@ function MisEtrategias() {
             <p className="text-lg text-gray-400">{perfilInversor}</p>
           </div>
           <div>
-            {perfilInversor === "Perfil Moderado" && <ModerateProfile />}
-            {perfilInversor === "Perfil Conservador" && <ConservativeProfile />}
-            {perfilInversor === "Perfil Arriesgado" && <AggressiveProfile />}
+            {perfilInversor === "Perfil Moderado" && (
+              <ModerateProfile income={Income} />
+            )}
+            {perfilInversor === "Perfil Conservador" && (
+              <ConservativeProfile income={Income} />
+            )}
+            {perfilInversor === "Perfil Arriesgado" && (
+              <AggressiveProfile income={Income} />
+            )}
           </div>
         </>
       )}
