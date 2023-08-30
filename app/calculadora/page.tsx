@@ -1,26 +1,21 @@
-"use client";
+import React from "react";
+import "../css/LoadingPage.css"; // Asegúrate de que el nombre del archivo CSS sea correcto y esté en la misma ubicación que este componente
 
-import Link from "next/link";
-
-export default function Calculadora() {
+function LoadingPage() {
   return (
-    <>
-      <div>hello from calculadora</div>
-      <div>
-        <button
-          className="bg-sky-500 text-white p-2 rounded-md"
-          onClick={async () => {
-            const res = await fetch("../api/send", {
-              method: "POST",
-            });
-            const data = await res.json();
-
-            console.log(data);
-          }}
-        >
-          Send Email
-        </button>
+    <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="py-12 md:py-20">
+        <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+          <h2 className="tl:text-5xl text-4xl mb-4 text-purple-600">
+            Loading...
+          </h2>
+          <div className="flex justify-center items-center loader-container">
+            <div className="loader "></div>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
+
+export default LoadingPage;
