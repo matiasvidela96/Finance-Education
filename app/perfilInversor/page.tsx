@@ -89,7 +89,7 @@ export default function PerfilInversor() {
       {showScore ? (
         <>
           <Link href={"/misEstrategias"}>
-            <div className="max-w-4xl mx-auto rounded-xl sm:px-6 flex flex-col px-5  hover:bg-zinc-700 justify-center items-center mb-8">
+            <div className="max-w-4xl mx-auto rounded-xl sm:px-6 flex flex-col px-5  hover:bg-zinc-900 justify-center items-center mb-8">
               <h1 className="text-3xl font-bold text-purple-600 mb-2">
                 Felicitaciones haz realizado tu perfil de inversor!
               </h1>
@@ -98,7 +98,7 @@ export default function PerfilInversor() {
                 perfil de riesgo y el monto de inversión
               </p>
 
-              <div className=" p-6 hover:bg-zinc-700 rounded-lg shadow-md">
+              <div className=" p-6  rounded-lg shadow-md">
                 <h1 className="text-3xl font-semibold text-center text-purple-600">
                   Tu Puntaje es: {score}
                 </h1>
@@ -111,6 +111,7 @@ export default function PerfilInversor() {
                   data-aos="fade-up"
                   data-aos-delay="100"
                   data-aos-anchor="[data-aos-id-blocks]"
+                  className="hover:bg-zinc-950 "
                 >
                   <Icon
                     name="Strategy"

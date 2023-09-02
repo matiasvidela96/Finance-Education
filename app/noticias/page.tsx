@@ -5,9 +5,9 @@ import Icon from "@/components/main-section/icon";
 import BackButton from "@/components/ui/backButton";
 import Cards from "@/components/Cards";
 import { NewsProps } from "news";
+import "../css/LoadingPage.css"; // Asegúrate de que el nombre del archivo CSS sea correcto y esté en la misma ubicación que este componente
 
-export default function Noticias(
-) {
+export default function Noticias() {
   const [newsData, setNewsData] = useState<NewsProps[]>([]);
   const [showNews, setshowNews] = useState(false);
 
@@ -77,8 +77,10 @@ export default function Noticias(
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="py-12 md:py-20">
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                <h2 className="h2 mb-4">Noticias</h2>
-                <p className="text-xl text-gray-400">Cargando noticias...</p>
+                <h2 className="h2 mb-10">Noticias</h2>
+                <div className="loader-container">
+                  <div className="loader"></div>
+                </div>
               </div>
             </div>
           </div>
