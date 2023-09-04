@@ -1,9 +1,14 @@
+"use client";
 import Link from "next/link";
 import MobileMenu from "./mobile-menu";
 import Image from "next/image";
 import Logo from "@/public/images/logo.png";
 
+import { signIn, useSession, signOut } from "next-auth/react";
+
 export default function Header() {
+  const { data: session } = useSession();
+
   return (
     <header className=" w-full z-30 shadow-md py-2 md:py-4 px-4 md:px-6 ">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -29,22 +34,53 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
-              <li>
-                {/* <Link
+              {/* <li>
+                <Link
                   href="/signin"
                   className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Sign in
-                </Link> */}
-              </li>
-              <li>
-                {/* <Link
+                </Link>
+              </li> */}
+              {session?.user ? (
+                <div className="space-y-2">
+                  <li className="flex items-center space-x-3">
+                    <p className="text-lg font-semibold">
+                      Hola {session.user.name}
+                    </p>
+                    <p className="text-gray-600">{session.user.email}</p>
+                    <img
+                      src={session.user.image || ""}
+                      className="w-10 h-10 rounded-full cursor-pointer"
+                      alt="User Profile"
+                    />
+                    <button
+                      className="px-3 py-1 text-white bg-purple-600 hover:bg-purple-700 ml-3 rounded-md transition duration-300 ease-in-out"
+                      onClick={async () => await signOut({ callbackUrl: "/" })}
+                    >
+                      Log Out
+                    </button>
+                  </li>
+                </div>
+              ) : (
+                <li>
+                  <button
+                    className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3"
+                    onClick={() => signIn()}
+                  >
+                    Sign in
+                  </button>
+                </li>
+              )}
+              {/* <li>
+                <Link
                   href="/signup"
+                  onClick={() => signIn()}
                   className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3"
                 >
                   Sign up
-                </Link> */}
-              </li>
+                </Link>
+              </li> */}
             </ul>
           </nav>
 
