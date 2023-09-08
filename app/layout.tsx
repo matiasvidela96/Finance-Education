@@ -7,6 +7,8 @@ import Header from "@/components/ui/header";
 import Banner from "@/components/banner";
 import Footer from "@/components/ui/footer";
 import Context from "../app/contexts/perfilInversor";
+import { ClerkProvider } from "@clerk/nextjs";
+
 export const metadata = {
   title: "Educación Financiera",
   description:
@@ -32,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <ClerkProvider>
       <Context>
         <html lang="en">
           <body
@@ -47,6 +49,6 @@ export default function RootLayout({
           </body>
         </html>
       </Context>
-    </>
+    </ClerkProvider>
   );
 }

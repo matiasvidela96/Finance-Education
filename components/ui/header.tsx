@@ -1,14 +1,11 @@
-"use client";
 import Link from "next/link";
 import MobileMenu from "./mobile-menu";
 import Image from "next/image";
 import Logo from "@/public/images/logo.png";
-
-import { signIn, useSession, signOut } from "next-auth/react";
+import { UserButton } from "@clerk/nextjs";
+import ClerkUser from "../ClerkUser";
 
 export default function Header() {
-  const { data: session } = useSession();
-
   return (
     <header className=" w-full z-30 shadow-md py-2 md:py-4 px-4 md:px-6 ">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -42,7 +39,7 @@ export default function Header() {
                   Sign in
                 </Link>
               </li> */}
-              {session?.user ? (
+              {/* {session?.user ? (
                 <div className="space-y-2">
                   <li className="flex items-center space-x-3">
                     <p className="text-lg font-semibold">
@@ -71,19 +68,35 @@ export default function Header() {
                     Sign in
                   </button>
                 </li>
-              )}
+              )} */}
+
               {/* <li>
                 <Link
-                  href="/signup"
-                  onClick={() => signIn()}
+                  href="/sign-in"
+                  className="btn-sm text-white  hover:text-purple-600 ml-3"
+                >
+                  Sign in
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sign-up"
                   className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3"
                 >
                   Sign up
                 </Link>
+              </li>
+              <li>
+                <UserButton afterSignOutUrl="/" />
+              </li>
+              <li>
+                <ClerkUser />
               </li> */}
+              <li>
+                <ClerkUser />
+              </li>
             </ul>
           </nav>
-
           <MobileMenu />
         </div>
       </div>
