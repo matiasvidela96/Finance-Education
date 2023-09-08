@@ -2,7 +2,7 @@ import Link from "next/link";
 import MobileMenu from "./mobile-menu";
 import Image from "next/image";
 import Logo from "@/public/images/logo.png";
-import { UserButton } from "@clerk/nextjs";
+
 import ClerkUser from "../ClerkUser";
 
 export default function Header() {
