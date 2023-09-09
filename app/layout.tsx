@@ -8,6 +8,7 @@ import Banner from "@/components/banner";
 import Footer from "@/components/ui/footer";
 import Context from "../app/contexts/perfilInversor";
 import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 export const metadata = {
   title: "Educación Financiera",
@@ -34,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider appearance={{ baseTheme: dark }}>
       <Context>
         <html lang="en">
           <body
