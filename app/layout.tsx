@@ -35,8 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider appearance={{ baseTheme: dark }}>
-      <Context>
+    <Context>
+      <ClerkProvider appearance={{ baseTheme: dark }}>
         <html lang="en">
           <body
             className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-zinc-950 text-gray-200 tracking-tight`}
@@ -49,7 +49,7 @@ export default function RootLayout({
             </div>
           </body>
         </html>
-      </Context>
-    </ClerkProvider>
+      </ClerkProvider>
+    </Context>
   );
 }

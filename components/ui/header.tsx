@@ -4,7 +4,6 @@ import Image from "next/image";
 import Logo from "@/public/images/logo.png";
 
 import ClerkAuth from "../ClerkAuth";
-// import ClerkUser from "../ClerkUser";
 
 export default function Header() {
   return (
@@ -29,7 +28,6 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li className="mt-">
                 <ClerkAuth />
-                {/* <ClerkUser /> */}
               </li>
             </ul>
           </nav>
