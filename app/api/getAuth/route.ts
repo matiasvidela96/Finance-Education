@@ -2,10 +2,10 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/libs/prisma";
 
 
+
 export async function GET() {
     const showUser = await prisma.user.findMany()
     return NextResponse.json(showUser)
-
 }
 
 export async function POST(request: Request) {
@@ -14,14 +14,15 @@ export async function POST(request: Request) {
     await prisma.user.create({
         data: {
             id,
-            income, // Puedes establecer un valor por defecto
-            riskProfile, // Puedes establecer un valor por defecto
-            // Otras propiedades del usuario si las tienes
+            income,
+            riskProfile,
         },
     });
     return NextResponse.json({
+        "message": "User created successfully",
         "id": id,
         "income": income,
         "riskProfile": riskProfile,
     })
 }
+
