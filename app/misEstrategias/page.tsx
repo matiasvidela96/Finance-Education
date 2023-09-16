@@ -5,7 +5,6 @@ export const metadata = {
 
 import MisEtrategias from "@/components/MisEtrategias";
 import BackButton from "@/components/ui/backButton";
-
 export default function misEstrategias() {
   return (
     <>

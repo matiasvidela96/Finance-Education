@@ -1,12 +1,12 @@
 "use client";
 import questions from "./questions.json";
 import "../css/style.css";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import Head from "next/head";
 import BackButton from "@/components/ui/backButton";
 import { AnswerProps } from "answer";
 import Icon from "@/components/main-section/icon";
-import { PerfilInversorContext } from "../contexts/perfilInversor";
+import { PerfilContext } from "@/app/context/perfilContext";
 import Link from "next/link";
 
 // export const metadata = {
@@ -17,10 +17,13 @@ import Link from "next/link";
 
 export default function PerfilInversor() {
   // guardar perfil en contexto
-  // @ts-ignore
-  const { perfilInversor, setPerfilInversor } = useContext(
-    PerfilInversorContext
-  );
+
+  const { riskProfile, loadRikProfile } = useContext(PerfilContext);
+  console.log(riskProfile);
+  useEffect(() => {
+    loadRikProfile();
+  }, []);
+
   // estado de pregunta actual
   const [currentQuestion, setCurrentQuestion] = useState(0);
   // mantener respuesta seleccionada
