@@ -34,6 +34,7 @@ export async function PUT(request: Request, { params }: Params) {
             id: params.id
         },
         data: {
+            id: params.id,
             income,
             riskProfile
         }

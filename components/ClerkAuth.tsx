@@ -4,9 +4,6 @@ import { prisma } from "@/libs/prisma";
 
 export default function ClerkAuth() {
   const { userId }: { userId: string | null } = auth();
-  // console.log(userId);
-
-  // Si el usuario no existe, créalo en la base de datos
   const dataToSend = {
     id: userId,
     income: 0,
@@ -15,7 +12,7 @@ export default function ClerkAuth() {
   async function getData() {
     const res = await fetch("http://localhost:3000/api/getAuth");
     const data = await res.json();
-    console.log(data[1]);
+    console.log(data);
   }
   async function createUser(dataToSend: {
     id: string | null;
@@ -27,6 +24,18 @@ export default function ClerkAuth() {
       body: JSON.stringify(dataToSend),
       headers: { "Content-Type": "application/json" },
     });
+    const responseJson = await res.json();
+    console.log({ responseJson });
+  }
+
+  async function user(dataToSend: { id: string | null }) {
+    const res = await fetch(
+      `http://localhost:3000/api/getAuth/${dataToSend.id}}`,
+      {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+      }
+    );
     const responseJson = await res.json();
     console.log({ responseJson });
   }
@@ -45,6 +54,7 @@ export default function ClerkAuth() {
         } else {
           console.log("Usuario ya existe");
           getData();
+          user(dataToSend);
         }
       } catch (error) {
         console.error("Error al interactuar con la base de datos:", error);
