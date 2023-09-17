@@ -9,13 +9,26 @@ import Icon from "@/components/main-section/icon";
 import { PerfilInversorContext } from "../contexts/perfilInversor";
 import Link from "next/link";
 
+import { useUser } from "@clerk/nextjs";
+
 // export const metadata = {
 //   title: "Educación Financiera",
 //   description:
 //     "Educacion Financiera para todos los usuarios que esten interesados en aprender mas sobre el mundo de las inversiones",
 // };
-
 export default function PerfilInversor() {
+  const user = useUser();
+  const id = user.user?.id;
+  //Aca tengo que buscar hacer un update del riskPrifile, identificando con el userId, por lo que deberia hacer un backend que reciba dos parametros (userId y riskProfile) y actualice esto
+  const getUsers = async (id: string | undefined, perfilInversor: any) => {
+    const res = await fetch("http://localhost:3000/api/hello", {
+      method: "PUT",
+      body: JSON.stringify({ id, perfilInversor }),
+      headers: { "Content-Type": "application/json" },
+    });
+    const data = await res.json();
+    console.log(data);
+  };
   // guardar perfil en contexto
   // @ts-ignore
   const { perfilInversor, setPerfilInversor } = useContext(
@@ -76,6 +89,7 @@ export default function PerfilInversor() {
     } else {
       setPerfilInversor("Perfil Arriesgado");
     }
+    getUsers(id, perfilInversor);
     return perfilInversor;
   }
   return (
