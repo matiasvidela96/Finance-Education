@@ -2,9 +2,6 @@ import { prisma } from "@/app/libs/prisma";
 import { NextResponse } from "next/server";
 export async function PUT(request) {
   const { id, perfilInversor, income } = await request.json();
-  console.log("Recibido en el Back");
-  console.log(id, perfilInversor, income);
-
   const updateUsers = await prisma.user.update({
     where: {
       id,
@@ -14,6 +11,10 @@ export async function PUT(request) {
       income: income,
     },
   });
-
-  return NextResponse.json(updateUsers);
+  return NextResponse.json({
+    message: "Usuario actualizado",
+    id: updateUsers.id,
+    perfilInversor: updateUsers.riskProfile,
+    income: updateUsers.income,
+  });
 }

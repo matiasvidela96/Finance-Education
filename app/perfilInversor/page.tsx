@@ -61,7 +61,7 @@ export default function PerfilInversor() {
       (selectedOptions[currentQuestion] = { answerByUser: answer, value }),
     ]);
     setSelectedOptions([...selectedOptions]);
-    console.log(selectedOptions[currentQuestion].value);
+    // console.log(selectedOptions[currentQuestion].value);
   };
 
   const handleSubmitButton = () => {

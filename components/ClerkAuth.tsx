@@ -4,8 +4,7 @@ import { useUser, UserButton } from "@clerk/nextjs";
 
 export default function ClerkAuth() {
   const user = useUser();
-
-  console.log(user);
+  // console.log(user);
   return (
     <div className="text-center">
       {user.isSignedIn ? (
