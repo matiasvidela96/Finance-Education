@@ -1,11 +1,14 @@
+"use client";
 import Link from "next/link";
-import { auth, UserButton } from "@clerk/nextjs";
+import { useUser, UserButton } from "@clerk/nextjs";
 
 export default function ClerkAuth() {
-  const { userId }: { userId: string | null } = auth();
+  const user = useUser();
+
+  console.log(user);
   return (
     <div className="text-center">
-      {userId ? (
+      {user.isSignedIn ? (
         <div className="flex items-center justify-center flex-wrap">
           <div className="ml-2">
             <UserButton afterSignOutUrl="/" />
