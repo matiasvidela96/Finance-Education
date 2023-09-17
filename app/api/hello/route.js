@@ -5,10 +5,11 @@ export async function PUT(request) {
   console.log(id, perfilInversor, income);
   const updateUsers = await prisma.user.update({
     where: {
-      id: "user_2V6xtPvpCAD71OOuD9lb3uy0cnZ ",
+      id: "user_2V6xtPvpCAD71OOuD9lb3uy0cnZ",
     },
     data: {
-      income: perfilInversor,
+      riskProfile: perfilInversor,
+      income: income,
     },
   });
   return NextResponse.json(updateUsers);

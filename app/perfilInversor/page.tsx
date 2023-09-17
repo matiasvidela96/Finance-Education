@@ -20,7 +20,10 @@ export default function PerfilInversor() {
   const user = useUser();
   const id = user.user?.id;
   //Aca tengo que buscar hacer un update del riskPrifile, identificando con el userId, por lo que deberia hacer un backend que reciba dos parametros (userId y riskProfile) y actualice esto
-  const getUsers = async (id: string | undefined, perfilInversor: any) => {
+  const updateRiskProfile = async (
+    id: string | undefined,
+    perfilInversor: any
+  ) => {
     const res = await fetch("http://localhost:3000/api/hello", {
       method: "PUT",
       body: JSON.stringify({ id, perfilInversor }),
@@ -89,7 +92,7 @@ export default function PerfilInversor() {
     } else {
       setPerfilInversor("Perfil Arriesgado");
     }
-    getUsers(id, perfilInversor);
+    updateRiskProfile(id, perfilInversor);
     return perfilInversor;
   }
   return (
