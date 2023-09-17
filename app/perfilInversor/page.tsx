@@ -19,7 +19,6 @@ import { useUser } from "@clerk/nextjs";
 export default function PerfilInversor() {
   const user = useUser();
   const id = user.user?.id;
-  //Aca tengo que buscar hacer un update del riskPrifile, identificando con el userId, por lo que deberia hacer un backend que reciba dos parametros (userId y riskProfile) y actualice esto
   const updateRiskProfile = async (
     id: string | undefined,
     perfilInversor: any
@@ -30,6 +29,7 @@ export default function PerfilInversor() {
       headers: { "Content-Type": "application/json" },
     });
     const data = await res.json();
+    console.log("Respuesta en PI");
     console.log(data);
   };
   // guardar perfil en contexto

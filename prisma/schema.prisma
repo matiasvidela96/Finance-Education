@@ -13,5 +13,5 @@ datasource db {
 model User {
   id          String @id
   riskProfile String
-  income      String
+  income      Int
 }

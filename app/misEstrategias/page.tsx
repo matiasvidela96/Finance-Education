@@ -1,7 +1,4 @@
-export const metadata = {
-  title: "Mis Estrategias - Finance Education",
-  description: "Mis Estrategias - Finance Education",
-};
+"use client";
 
 import MisEtrategias from "@/components/MisEtrategias";
 import BackButton from "@/components/ui/backButton";
