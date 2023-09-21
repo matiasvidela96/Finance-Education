@@ -4,7 +4,28 @@ import { useUser, UserButton } from "@clerk/nextjs";
 
 export default function ClerkAuth() {
   const user = useUser();
-  // console.log(user);
+  const id = user.user?.id;
+
+  const verifyIfUserExist = async (id: any) => {
+    try {
+      const res = await fetch("http://localhost:3000/api/hello", {
+        method: "POST",
+        body: JSON.stringify({ id }),
+        headers: { "Content-Type": "application/json" },
+      });
+      const data = await res.json();
+      console.log("Respuesta en CLerkAuth");
+      console.log(data);
+    } catch (error) {
+      console.error("Error al actualizar el perfil inversor:", error);
+    }
+  };
+
+  if (user.isSignedIn) {
+    // Llamar a la función para verificar y crear el usuario
+    verifyIfUserExist(id);
+  }
+
   return (
     <div className="text-center">
       {user.isSignedIn ? (

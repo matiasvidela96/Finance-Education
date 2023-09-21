@@ -18,3 +18,43 @@ export async function PUT(request) {
     income: updateUsers.income,
   });
 }
+
+export async function GET(request) {
+  const id = await request.json();
+  console.log(id);
+  // const getUsers = await prisma.user.findFirst({
+  //   where: {
+  //     id: id,
+  //   },
+  // });
+  return NextResponse.json({
+    message: "Usuario obtenido",
+    getUsers,
+  });
+}
+
+export async function POST(request) {
+  const { id } = await request.json();
+  const getUsers = await prisma.user.findFirst({
+    where: {
+      id: id,
+    },
+  });
+  if (!getUsers) {
+    const createUser = await prisma.user.create({
+      data: {
+        id: id,
+        riskProfile: "",
+        income: 0,
+      },
+    });
+    return NextResponse.json({
+      message: "Usuario creado",
+      createUser,
+    });
+  }
+
+  return NextResponse.json({
+    message: "Usuario ya existe",
+  });
+}
