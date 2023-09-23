@@ -8,11 +8,15 @@ import ConservativeProfile from "./misEstrategias/ConservativeProfile";
 import ModerateProfile from "./misEstrategias/ModerateProfile";
 import AggressiveProfile from "./misEstrategias/AggressiveProfile";
 
+import { useRef } from "react";
+
 function MisEtrategias() {
   const [Income, setIncome] = useState(0);
   const [ShowResult, setShowResult] = useState(false);
   // @ts-ignore
   const { perfilInversor } = useContext(PerfilInversorContext);
+
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   // Mostrar el formulario solo si el perfil del inversor está completado
   if (!perfilInversor) {
@@ -58,6 +62,9 @@ function MisEtrategias() {
           e.preventDefault();
           setShowResult(true);
           e.currentTarget.reset();
+          if (inputRef.current) {
+            inputRef.current.blur(); // Verificar si inputRef.current no es null antes de usarlo
+          }
         }}
       >
         <div className="max-w-sm mx-auto ">
@@ -84,6 +91,7 @@ function MisEtrategias() {
                   className="form-input w-full p-3 border border-gray-300 rounded-md  focus:border-purple-600"
                   placeholder="Monto a invertir (Mínimo $1000)"
                   required
+                  ref={inputRef} // Asignar la referencia al input
                 />
               </div>
             </div>
