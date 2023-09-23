@@ -60,62 +60,79 @@ function MisEtrategias() {
           e.currentTarget.reset();
         }}
       >
-        <div className="flex flex-wrap -mx-3 mb-4">
-          <div className="w-full px-2">
-            <h1 className="text-2xl font-bold mb-2 text-purple-600">
-              {"-"} {perfilInversor}
-            </h1>
-            <div className="mt-8">
-              <label
-                htmlFor="income"
-                className="block text-lg font-semibold text-gray-100 mb-2"
-              >
-                Monto de Inversión:
-              </label>
-              <input
-                onChange={(e) => {
-                  setShowResult(false);
-                  setIncome(Number(e.target.value));
-                }}
-                id="income"
-                type="number"
-                className="form-input w-full p-3 border border-gray-300 rounded-md  focus:border-purple-600"
-                placeholder="Monto a invertir (Mínimo $1000)"
-                required
-              />
+        <div className="max-w-sm mx-auto ">
+          <div className="flex items-center"></div>
+          <div className="flex flex-wrap -mx-3 mb-4">
+            <div className="w-full px-2">
+              <h1 className="text-2xl font-bold mb-2 text-purple-600">
+                {"-"} {perfilInversor}
+              </h1>
+              <div className="mt-8">
+                <label
+                  htmlFor="income"
+                  className="block text-lg font-semibold text-gray-100 mb-2"
+                >
+                  Monto de Inversión:
+                </label>
+                <input
+                  onChange={(e) => {
+                    setShowResult(false);
+                    setIncome(Number(e.target.value));
+                  }}
+                  id="income"
+                  type="number"
+                  className="form-input w-full p-3 border border-gray-300 rounded-md  focus:border-purple-600"
+                  placeholder="Monto a invertir (Mínimo $1000)"
+                  required
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="flex flex-wrap -mx-3 mt-6">
-          <div className="w-full px-2">
-            <button
-              disabled={Income < 1000}
-              className="btn text-white bg-purple-600 hover:bg-purple-700 w-full h-11 disabled:opacity-50"
-            >
-              Enviar
-            </button>
+          <div className="flex flex-wrap -mx-3 mt-6">
+            <div className="w-full px-2">
+              <button
+                disabled={Income < 1000}
+                className="btn text-white bg-purple-600 hover:bg-purple-700 w-full h-11 disabled:opacity-50"
+              >
+                Enviar
+              </button>
+            </div>
           </div>
         </div>
       </form>
       {ShowResult && (
         <>
-          <div className="mt-5">
+          {/* <div className="mt-5">
             <h1 className="text-xl font-bold text-gray-400 mb-2">
               Resultado de la inversión:
             </h1>
             <p className="text-lg text-gray-400">{Income} Pesos</p>
             <p className="text-lg text-gray-400">{perfilInversor}</p>
-          </div>
+          </div> */}
           <div>
-            {perfilInversor === "Perfil Moderado" && (
-              <ModerateProfile income={Income} />
-            )}
-            {perfilInversor === "Perfil Conservador" && (
-              <ConservativeProfile income={Income} />
-            )}
-            {perfilInversor === "Perfil Arriesgado" && (
-              <AggressiveProfile income={Income} />
-            )}
+
+            <section>
+              <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                <div className="py-12 md:py-20">
+                  <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+                    <h2 className="h2 mb-4">Posibles estrategias</h2>
+                    <p className="text-xl text-gray-400">
+                      Aquí tienes unas sugerencias de cómo podrías distribuir tu inversión
+                    </p>
+                  </div>
+                  {perfilInversor === "Perfil Moderado" && (
+                    <ModerateProfile income={Income} />
+                  )}
+                  {perfilInversor === "Perfil Conservador" && (
+                    <ConservativeProfile income={Income} />
+                  )}
+                  {perfilInversor === "Perfil Arriesgado" && (
+                    <AggressiveProfile income={Income} />
+                  )}
+                </div>
+              </div>
+
+            </section>
           </div>
         </>
       )}
