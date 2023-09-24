@@ -20,10 +20,10 @@ export default function misEstrategias() {
             </div>
 
             {/* Form */}
-            <div className="max-w-sm mx-auto ">
-              <div className="flex items-center"></div>
-              <MisEtrategias />
-            </div>
+            {/* <div className="max-w-sm mx-auto ">
+              <div className="flex items-center"></div> */}
+            <MisEtrategias />
+            {/* </div> */}
           </div>
         </div>
       </section>

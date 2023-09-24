@@ -85,9 +85,9 @@ export default function PerfilInversor() {
     setShowScore(true);
   };
   function getRiskProfile(score: number) {
-    if (score <= 8) {
+    if (score <= 10) {
       setPerfilInversor("Perfil Conservador");
-    } else if (score > 8 && score <= 16) {
+    } else if (score > 10 && score <= 16) {
       setPerfilInversor("Perfil Moderado");
     } else {
       setPerfilInversor("Perfil Arriesgado");
@@ -207,11 +207,10 @@ export default function PerfilInversor() {
                   <div className="flex justify-between w-full mt-4 text-white m-5">
                     <button
                       onClick={handlePrevious}
-                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${
-                        currentQuestion === 0
+                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${currentQuestion === 0
                           ? "opacity-50 cursor-not-allowed  "
                           : ""
-                      }`}
+                        }`}
                     >
                       Anterior
                     </button>
@@ -222,11 +221,10 @@ export default function PerfilInversor() {
                           ? handleSubmitButton
                           : handleNext
                       }
-                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${
-                        currentQuestion + 1 === questions.length
+                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${currentQuestion + 1 === questions.length
                           ? "bg-red-600 hover:bg-red-700 text-white"
                           : "bg-purple-700 hover:bg-purple-600 text-white"
-                      }`}
+                        }`}
                     >
                       {currentQuestion + 1 === questions.length
                         ? "Enviar"
