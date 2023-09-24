@@ -23,7 +23,7 @@ export default function Banner() {
               {"=>"}
               <a
                 className="font-medium hover:underline text-emerald-400"
-                href="https://www.mercadopago.com.ar/"
+                href="https://mpago.la/1spNzdS"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -29,7 +29,7 @@ function main() {
           href="/startPage"
           className="btn-sm text-white bg-zinc-950 hover:bg-purple-700  px-6 py-2 ml-3 mt-28 rounded-xl"
         >
-          GET START
+          ADELANTE
         </Link>
       </div>
     </section>

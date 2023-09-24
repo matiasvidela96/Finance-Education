@@ -9,13 +9,29 @@ import Icon from "@/components/main-section/icon";
 import { PerfilInversorContext } from "../contexts/perfilInversor";
 import Link from "next/link";
 
+import { useUser } from "@clerk/nextjs";
+
 // export const metadata = {
 //   title: "Educación Financiera",
 //   description:
 //     "Educacion Financiera para todos los usuarios que esten interesados en aprender mas sobre el mundo de las inversiones",
 // };
-
 export default function PerfilInversor() {
+  const user = useUser();
+  const id = user.user?.id;
+  const updateRiskProfile = async (
+    id: string | undefined,
+    perfilInversor: any
+  ) => {
+    const res = await fetch("http://localhost:3000/api/hello", {
+      method: "PUT",
+      body: JSON.stringify({ id, perfilInversor }),
+      headers: { "Content-Type": "application/json" },
+    });
+    const data = await res.json();
+    console.log("Respuesta en PI");
+    console.log(data);
+  };
   // guardar perfil en contexto
   // @ts-ignore
   const { perfilInversor, setPerfilInversor } = useContext(
@@ -45,7 +61,7 @@ export default function PerfilInversor() {
       (selectedOptions[currentQuestion] = { answerByUser: answer, value }),
     ]);
     setSelectedOptions([...selectedOptions]);
-    console.log(selectedOptions[currentQuestion].value);
+    // console.log(selectedOptions[currentQuestion].value);
   };
 
   const handleSubmitButton = () => {
@@ -76,6 +92,7 @@ export default function PerfilInversor() {
     } else {
       setPerfilInversor("Perfil Arriesgado");
     }
+    updateRiskProfile(id, perfilInversor);
     return perfilInversor;
   }
   return (

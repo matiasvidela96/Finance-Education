@@ -9,9 +9,24 @@ import ModerateProfile from "./misEstrategias/ModerateProfile";
 import AggressiveProfile from "./misEstrategias/AggressiveProfile";
 
 import { useRef } from "react";
+import { useUser } from "@clerk/nextjs";
 
 function MisEtrategias() {
+  const user = useUser();
+  const id = user.user?.id;
+  const updateRiskProfile = async (id: string | undefined, income: any) => {
+    const res = await fetch("http://localhost:3000/api/hello", {
+      method: "PUT",
+      body: JSON.stringify({ id, income }),
+      headers: { "Content-Type": "application/json" },
+    });
+    const data = await res.json();
+    console.log("Respuesta en ME");
+    console.log(data);
+  };
+
   const [Income, setIncome] = useState(0);
+
   const [ShowResult, setShowResult] = useState(false);
   // @ts-ignore
   const { perfilInversor } = useContext(PerfilInversorContext);
@@ -65,6 +80,7 @@ function MisEtrategias() {
           if (inputRef.current) {
             inputRef.current.blur(); // Verificar si inputRef.current no es null antes de usarlo
           }
+          updateRiskProfile(id, Income);
         }}
       >
         <div className="max-w-sm mx-auto ">
