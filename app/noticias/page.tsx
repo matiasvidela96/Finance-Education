@@ -6,6 +6,7 @@ import BackButton from "@/components/ui/backButton";
 import Cards from "@/components/Cards";
 import { NewsProps } from "news";
 import "../css/LoadingPage.css"; // Asegúrate de que el nombre del archivo CSS sea correcto y esté en la misma ubicación que este componente
+import defaultImage from "../../public/images/newsDefault.png";
 
 export default function Noticias() {
   const [newsData, setNewsData] = useState<NewsProps[]>([]);
@@ -52,7 +53,7 @@ export default function Noticias() {
                 data-aos-id-blocks
               >
                 {/* Mapeo las noticias */}
-                {newsData.slice(-10).map((news, index) => (
+                {newsData.slice(-50).map((news, index) => (
                   <div
                     className="relative flex flex-col items-center hover:bg-zinc-800 hover:bg-opacity-25 rounded"
                     data-aos="fade-up"
@@ -65,7 +66,7 @@ export default function Noticias() {
                       description={news.summary}
                       link={news.url}
                       target="_blank"
-                      image={news.banner_image}
+                      image={news.banner_image !== null ? news.banner_image : "https://plus.unsplash.com/premium_photo-1664197368374-605ce8ec8f54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"}
                       tags={news.topics}
                     />
                   </div>
