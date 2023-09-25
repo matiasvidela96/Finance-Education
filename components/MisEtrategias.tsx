@@ -31,11 +31,15 @@ function MisEtrategias() {
   // @ts-ignore
   const { perfilInversor } = useContext(PerfilInversorContext);
 
+
+  console.log("perfil inversor", perfilInversor);
+
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   // Mostrar el formulario solo si el perfil del inversor está completado
   if (!perfilInversor) {
     return (
+
       <Link href={"/perfilInversor"}>
         <div
           data-aos="fade-up"
@@ -48,21 +52,20 @@ function MisEtrategias() {
               ¡Aún no has completado tu perfil de inversor!
             </h1>
             <p className="text-gray-400 mb-5">
-              Por favor, completa tu perfil de inversor para que podamos
-              calcular las mejores estrategias para ti.
+              Por favor, haz click aqui para completar tu perfil de inversor y calcular las mejores estrategias para ti.
             </p>
 
-            <Icon
-              name="HandCoins"
-              size={48}
-              color={"#f5f5f5"}
-              weight={"light"}
-              title={"Perfil del Inversor"}
-              description={
-                "Contesta las preguntas para definir tu perfil y ver las estrategias que mas se adaptan a ti."
-              }
-              link={"/perfilInversor"}
-            ></Icon>
+            {/* <Icon
+                name="HandCoins"
+                size={48}
+                color={"#f5f5f5"}
+                weight={"light"}
+                title={"Perfil del Inversor"}
+                description={
+                  "Contesta las preguntas para definir tu perfil y ver las estrategias que mas se adaptan a ti."
+                }
+                link={"/perfilInversor"}
+              ></Icon> */}
           </div>
         </div>
       </Link>
@@ -126,22 +129,14 @@ function MisEtrategias() {
       </form>
       {ShowResult && (
         <>
-          {/* <div className="mt-5">
-            <h1 className="text-xl font-bold text-gray-400 mb-2">
-              Resultado de la inversión:
-            </h1>
-            <p className="text-lg text-gray-400">{Income} Pesos</p>
-            <p className="text-lg text-gray-400">{perfilInversor}</p>
-          </div> */}
           <div>
-
             <section>
               <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="py-12 md:py-20">
                   <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                     <h2 className="h2 mb-4">Posibles estrategias</h2>
-                    <p className="text-xl text-gray-400">
-                      Aquí tienes unas sugerencias de cómo podrías distribuir tu inversión
+                    <p className="text-xl text-gray-400" >
+                      Aquí tienes unas sugerencias de cómo podrías distribuir tu inversión de {Income}$
                     </p>
                   </div>
                   {perfilInversor === "Perfil Moderado" && (

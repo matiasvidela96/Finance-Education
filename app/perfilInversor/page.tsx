@@ -1,7 +1,7 @@
 "use client";
 import questions from "./questions.json";
 import "../css/style.css";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import Head from "next/head";
 import BackButton from "@/components/ui/backButton";
 import { AnswerProps } from "answer";
@@ -32,6 +32,7 @@ export default function PerfilInversor() {
     console.log("Respuesta en PI");
     console.log(data);
   };
+
   // guardar perfil en contexto
   // @ts-ignore
   const { perfilInversor, setPerfilInversor } = useContext(
@@ -208,8 +209,8 @@ export default function PerfilInversor() {
                     <button
                       onClick={handlePrevious}
                       className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${currentQuestion === 0
-                          ? "opacity-50 cursor-not-allowed  "
-                          : ""
+                        ? "opacity-50 cursor-not-allowed  "
+                        : ""
                         }`}
                     >
                       Anterior
@@ -222,8 +223,8 @@ export default function PerfilInversor() {
                           : handleNext
                       }
                       className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${currentQuestion + 1 === questions.length
-                          ? "bg-red-600 hover:bg-red-700 text-white"
-                          : "bg-purple-700 hover:bg-purple-600 text-white"
+                        ? "bg-red-600 hover:bg-red-700 text-white"
+                        : "bg-purple-700 hover:bg-purple-600 text-white"
                         }`}
                     >
                       {currentQuestion + 1 === questions.length

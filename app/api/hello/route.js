@@ -19,14 +19,14 @@ export async function PUT(request) {
   });
 }
 
-export async function GET(request) {
-  const id = await request.json();
-  console.log(id);
-  // const getUsers = await prisma.user.findFirst({
-  //   where: {
-  //     id: id,
-  //   },
-  // });
+export async function GET() {
+  // const id = await request.json();
+  // console.log(id);
+  const getUsers = await prisma.user.findMany()
+  // where: {
+  //   id: id,
+  // },
+
   return NextResponse.json({
     message: "Usuario obtenido",
     getUsers,
