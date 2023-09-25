@@ -23,7 +23,7 @@ export default function PerfilInversor() {
     id: string | undefined,
     perfilInversor: any
   ) => {
-    const res = await fetch("http://localhost:3000/api/hello", {
+    const res = await fetch("/api/prismaDB", {
       method: "PUT",
       body: JSON.stringify({ id, perfilInversor }),
       headers: { "Content-Type": "application/json" },

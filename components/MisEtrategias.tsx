@@ -15,7 +15,7 @@ function MisEtrategias() {
   const user = useUser();
   const id = user.user?.id;
   const updateRiskProfile = async (id: string | undefined, income: any) => {
-    const res = await fetch("http://localhost:3000/api/hello", {
+    const res = await fetch("/api/prismaDB", {
       method: "PUT",
       body: JSON.stringify({ id, income }),
       headers: { "Content-Type": "application/json" },
