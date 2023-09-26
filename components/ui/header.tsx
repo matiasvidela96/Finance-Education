@@ -3,7 +3,7 @@ import MobileMenu from "./mobile-menu";
 import Image from "next/image";
 import Logo from "@/public/images/logo.png";
 
-import ClerkAuth from "../ClerkAuth";
+// import ClerkAuth from "../ClerkAuth";
 
 export default function Header() {
   return (
