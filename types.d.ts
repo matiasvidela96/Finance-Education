@@ -30,6 +30,7 @@ declare module 'answer' {
     export interface AnswerProps {
         answerByUser?: string,
         answer?: string,
+        value?: number
     }
 }
 
@@ -59,6 +60,20 @@ declare module 'preguntas' {
         opcion3: string,
     }
 }
+
+declare module 'perfilInversorProvider' {
+    export interface PerfilInversorProviderProps {
+        children: ReactNode;
+    }
+}
+
+// declare module 'perfilInversor' {
+//     export interface PerfilInversorProps {
+//         perfilInversor: string;
+//         setPerfilInversor: React.Dispatch<React.SetStateAction<string>>;
+//     }
+// }
+
 
 
 

@@ -1,3 +1,4 @@
+"use client";
 import * as logo from "@phosphor-icons/react";
 import type { IconWeight } from "@phosphor-icons/react";
 import Link from "next/link";

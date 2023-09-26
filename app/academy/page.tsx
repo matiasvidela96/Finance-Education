@@ -1,8 +1,9 @@
-"use client";
-
 import Icon from "@/components/main-section/icon";
 import BackButton from "@/components/ui/backButton";
 import Zigzag from "@/components/zigzag";
+import FeatImage01 from "@/public/images/6.png";
+import FeatImage02 from "@/public/images/2.png";
+import FeatImage03 from "@/public/images/4.png";
 
 export default function Academy() {
   return (
@@ -65,7 +66,32 @@ export default function Academy() {
           </div>
         </div>
       </section>
-      <Zigzag />
+      <Zigzag
+        text1=" Momento de empezar"
+        title1="Empieza desde cero"
+        description1="Si estás buscando construir una base sólida en el mundo de
+                    las finanzas. Aprende desde los conceptos fundamentales"
+        points1_1="Domina la creación y seguimiento de portafolios efectivos"
+        points1_2="Aprende a establecer metas financieras realistas y alcanzables"
+        points1_3="Explora estrategias para construir un fondo de emergencia sólido"
+        imageSrc1={FeatImage01}
+        ///////
+        text2=" Amplia tu portafolio de inversiones"
+        title2="Acciones, S&P500, NASDAQ y mas indicadores."
+        description2="Aprende conocimientos esenciales para entender cómo funcionan los mercados financieros. Descubre cómo analizar indicadores clave, tomar decisiones informadas y explorar nuevas oportunidades."
+        points2_1="Aprende a analizar y comparar el rendimiento de diferentes acciones"
+        points2_2="Comprende la importancia del índice S&P500 como referencia del mercado"
+        points2_3="Explora cómo funcionan los indicadores técnicos en el análisis financiero"
+        imageSrc2={FeatImage02}
+        ///////
+        text3="Adéntrate al universo de las criptomonedas"
+        title3="Cryptos, NFT & Smart Contracts"
+        description3="Descubre cómo funcionan estas innovadoras tecnologías y cómo están cambiando la forma en que interactuamos con los activos digitales, la propiedad intelectual. Desde Bitcoin hasta DeFi y mas allá..."
+        points3_1="Explora las oportunidades de inversión en criptomonedas"
+        points3_2="Comprende el impacto de los NFT en la industria del arte digital"
+        points3_3="EDescubre cómo funcionan los SmartContracts de las Blockchain"
+        imageSrc3={FeatImage03}
+      />
     </>
   );
 }

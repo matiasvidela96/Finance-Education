@@ -1,73 +1,68 @@
 [
   {
-    "question": "1. ¿CUÁL ES SU PROPÓSITO PARA ESTA INVERSIÓN?",
+    "question": "1. ¿Cuál es su propósito para esta inversión?",
     "answerOptions": [
-      { "answer": "Ahorro para la vejez" },
-      { "answer": "Ahorro para una casa, auto o similar" },
-      { "answer": "Para hacer crecer mi riqueza" },
-      { "answer": "No lo sé" }
+      { "answer": "Ahorro para la jubilación", "value": 1 },
+      { "answer": "Ahorro para una casa, auto o similar", "value": 2 },
+      { "answer": "Para hacer crecer mi riqueza", "value": 3 },
+      { "answer": "No lo sé", "value": 0 }
     ]
   },
   {
-    "question": "2. ¿CUÁNTO TIEMPO DESEA ESPERAR PARA USAR EL DINERO INVERTIDO? (PUEDE RETIRAR LOS FONDOS EN CUALQUIER MOMENTO)",
+    "question": "2. ¿Cuánto tiempo está dispuesto a esperar para usar el dinero invertido?",
     "answerOptions": [
-      { "answer": "0-2 AÑOS" },
-      { "answer": "3-6 AÑOS" },
-      { "answer": "7-15 AÑOS" },
-      { "answer": "No lo sé" }
+      { "answer": "0-3 Meses", "value": 4 },
+      { "answer": "3-6 Meses", "value": 3 },
+      { "answer": "Hasta 1 año", "value": 2 },
+      { "answer": "Más de un año", "value": 1 }
     ]
   },
   {
-    "question": "3. EL MERCADO DE VALORES PUEDE TENER FLUCTUACIONES MUY GRANDES. SI EL VALOR DE SU CARTERA CAYERA UN 10% EN 1 MES, ¿QUÉ HARÍA?",
+    "question": "3. El mercado de valores puede tener fluctuaciones muy grandes. si el valor de su cartera cayera un 10% en 1 mes, ¿qué haría?",
     "answerOptions": [
-      { "answer": "Vender todas mis inversiones" },
-      { "answer": "Vender algunas de mis inversiones o" },
-      { "answer": "Mantener mis inversiones e incluso comprar más" },
-      { "answer": "No lo sé" }
+      { "answer": "Vender todas mis inversiones", "value": 1 },
+      { "answer": "Vender algunas de mis inversiones", "value": 2 },
+      {
+        "answer": "Mantener mis inversiones, esperando que vuelvan a subir",
+        "value": 3
+      },
+      { "answer": "Compro más", "value": 4 }
     ]
   },
   {
-    "question": "4. ¿HA INVERTIDO ANTERIORMENTE EN VALORES (POR EJEMPLO, ACCIONES, BONOS, FONDOS MUTUOS)?",
+    "question": "4. ¿Ha invertido anteriormente en intrumentos financiertos (acciones, bonos, fondos)?",
     "answerOptions": [
-      { "answer": "No nunca" },
-      { "answer": "Solo en algunas" },
-      { "answer": "Todo el tiempo compro" },
-      { "answer": "No lo sé" }
+      { "answer": "Nunca", "value": 1 },
+      { "answer": "Solo en algunos", "value": 2 },
+      {
+        "answer": "Todo el tiempo compro o tengo experiencia en el tema",
+        "value": 3
+      }
     ]
   },
   {
-    "question": "5. LA CRISIS FINANCIERA DE 2008 HIZO QUE EL PRECIO DE LAS ACCIONES CAYERA HASTA UN 45%. ¿QUÉ HARÁS SI VUELVE A SUCEDER?",
+    "question": "5. ¿Cuál es tu edad ahora?",
     "answerOptions": [
-      { "answer": "Esperaré a que los mercados vuelvan a subir" },
-      { "answer": "Vender todo para no vender más" },
-      { "answer": "Quiero comprar, ya que hora están baratos" },
-      { "answer": "No lo sé" }
+      { "answer": "Menos de 25", "value": 3 },
+      { "answer": "25 - 45 años", "value": 2 },
+      { "answer": "Más de 45 años", "value": 1 }
     ]
   },
   {
-    "question": "6. ¿CUÁL ES TU EDAD AHORA?",
+    "question": "6. ¿Qué proporción de su riqueza es la cantidad que está considerando invertir?",
     "answerOptions": [
-      { "answer": "Menos de 25" },
-      { "answer": "25 - 45 años" },
-      { "answer": "Más de 45 años" }
+      { "answer": "0 - 15%", "value": 1 },
+      { "answer": "15 - 30% ", "value": 2 },
+      { "answer": "30 - 50%", "value": 3 },
+      { "answer": "Más del 50%", "value": 4 }
     ]
   },
   {
-    "question": "7. ¿QUÉ PROPORCIÓN DE SU RIQUEZA ES LA CANTIDAD QUE ESTÁ CONSIDERANDO INVERTIR?",
+    "question": "7. ¿Que sabes de criptomonedas?",
     "answerOptions": [
-      { "answer": "0 - 15%" },
-      { "answer": "15 - 50% " },
-      { "answer": "Más de 50%", "isCorrect": true },
-      { "answer": "No lo sé" }
-    ]
-  },
-  {
-    "question": "8. ¿CUÁNDO ESPERA COMENZAR/CAMBIAR SU INVERSIÓN?",
-    "answerOptions": [
-      { "answer": "Lo antes posible" },
-      { "answer": "Dentro de 6 meses" },
-      { "answer": "Más de 6 meses", "isCorrect": true },
-      { "answer": "No lo sé" }
+      { "answer": "No conozco", "value": 1 },
+      { "answer": "Conozco pero no he comprado", "value": 2 },
+      { "answer": "He comprado", "value": 3 }
     ]
   }
 ]
