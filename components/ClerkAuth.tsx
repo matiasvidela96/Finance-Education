@@ -8,7 +8,7 @@ export default function ClerkAuth() {
 
   const verifyIfUserExist = async (id: any) => {
     try {
-      const res = await fetch("http://localhost:3000/api/hello", {
+      const res = await fetch("/api/prismaDB", {
         method: "POST",
         body: JSON.stringify({ id }),
         headers: { "Content-Type": "application/json" },
