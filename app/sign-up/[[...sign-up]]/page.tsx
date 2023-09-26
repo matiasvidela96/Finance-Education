@@ -1,4 +1,4 @@
-import { SignUp } from "@clerk/nextjs";
+// import { SignUp } from "@clerk/nextjs";
 
 export default function Page() {
   return (
@@ -9,7 +9,7 @@ export default function Page() {
             Crear Usuario
           </h2>
         </div>
-        <SignUp
+        {/* <SignUp
           appearance={{
             elements: {
               card: "bg-zinc-950",
@@ -17,7 +17,7 @@ export default function Page() {
               formFieldInput: "bg-zinc-950",
             },
           }}
-        />
+        /> */}
       </div>
     </div>
   );

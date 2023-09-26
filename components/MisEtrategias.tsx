@@ -9,7 +9,7 @@ import ModerateProfile from "./misEstrategias/ModerateProfile";
 import AggressiveProfile from "./misEstrategias/AggressiveProfile";
 
 import { useRef } from "react";
-import { useUser } from "@clerk/nextjs";
+// import { useUser } from "@clerk/nextjs";
 
 function MisEtrategias() {
   // const user = useUser();

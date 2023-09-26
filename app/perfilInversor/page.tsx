@@ -9,7 +9,7 @@ import Icon from "@/components/main-section/icon";
 import { PerfilInversorContext } from "../contexts/perfilInversor";
 import Link from "next/link";
 
-import { useUser } from "@clerk/nextjs";
+// import { useUser } from "@clerk/nextjs";
 
 // export const metadata = {
 //   title: "Educación Financiera",
