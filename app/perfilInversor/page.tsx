@@ -17,21 +17,21 @@ import { useUser } from "@clerk/nextjs";
 //     "Educacion Financiera para todos los usuarios que esten interesados en aprender mas sobre el mundo de las inversiones",
 // };
 export default function PerfilInversor() {
-  const user = useUser();
-  const id = user.user?.id;
-  const updateRiskProfile = async (
-    id: string | undefined,
-    perfilInversor: any
-  ) => {
-    const res = await fetch("/api/prismaDB", {
-      method: "PUT",
-      body: JSON.stringify({ id, perfilInversor }),
-      headers: { "Content-Type": "application/json" },
-    });
-    const data = await res.json();
-    console.log("Respuesta en PI");
-    console.log(data);
-  };
+  // const user = useUser();
+  // const id = user.user?.id;
+  // const updateRiskProfile = async (
+  //   id: string | undefined,
+  //   perfilInversor: any
+  // ) => {
+  //   const res = await fetch("/api/prismaDB", {
+  //     method: "PUT",
+  //     body: JSON.stringify({ id, perfilInversor }),
+  //     headers: { "Content-Type": "application/json" },
+  //   });
+  //   const data = await res.json();
+  //   console.log("Respuesta en PI");
+  //   console.log(data);
+  // };
 
   // guardar perfil en contexto
   // @ts-ignore
@@ -93,7 +93,7 @@ export default function PerfilInversor() {
     } else {
       setPerfilInversor("Perfil Arriesgado");
     }
-    updateRiskProfile(id, perfilInversor);
+    // updateRiskProfile(id, perfilInversor);
     return perfilInversor;
   }
   return (

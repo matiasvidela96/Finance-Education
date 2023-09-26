@@ -27,7 +27,7 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li className="mt-">
-                <ClerkAuth />
+                {/* <ClerkAuth /> */}
               </li>
             </ul>
           </nav>
