@@ -31,13 +31,15 @@ function MisEtrategias() {
   // @ts-ignore
   const { perfilInversor } = useContext(PerfilInversorContext);
 
-
   console.log("perfil inversor", perfilInversor);
 
   const inputRef = useRef<HTMLInputElement | null>(null);
 
+  const perfilLocalStorage = window.localStorage.getItem("perfil");
+  console.log("local storage", perfilLocalStorage);
+
   // Mostrar el formulario solo si el perfil del inversor está completado
-  if (!perfilInversor) {
+  if (!perfilLocalStorage) {
     return (
 
       <Link href={"/perfilInversor"}>
@@ -91,7 +93,7 @@ function MisEtrategias() {
           <div className="flex flex-wrap -mx-3 mb-4">
             <div className="w-full px-2">
               <h1 className="text-2xl font-bold mb-2 text-purple-600">
-                {"-"} {perfilInversor}
+                {"-"} {perfilLocalStorage}
               </h1>
               <div className="mt-8">
                 <label
@@ -139,13 +141,13 @@ function MisEtrategias() {
                       Aquí tienes unas sugerencias de cómo podrías distribuir tu inversión de {Income}$
                     </p>
                   </div>
-                  {perfilInversor === "Perfil Moderado" && (
+                  {perfilLocalStorage === "Perfil Moderado" && (
                     <ModerateProfile income={Income} />
                   )}
-                  {perfilInversor === "Perfil Conservador" && (
+                  {perfilLocalStorage === "Perfil Conservador" && (
                     <ConservativeProfile income={Income} />
                   )}
-                  {perfilInversor === "Perfil Arriesgado" && (
+                  {perfilLocalStorage === "Perfil Arriesgado" && (
                     <AggressiveProfile income={Income} />
                   )}
                 </div>

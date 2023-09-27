@@ -94,6 +94,11 @@ export default function PerfilInversor() {
       setPerfilInversor("Perfil Arriesgado");
     }
     // updateRiskProfile(id, perfilInversor);
+
+    window.localStorage.setItem("perfil", perfilInversor);
+
+    console.log("local storage", window.localStorage.getItem("perfil"));
+
     return perfilInversor;
   }
   return (
