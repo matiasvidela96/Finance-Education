@@ -1,5 +1,5 @@
 "use client";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { PerfilInversorContext } from "../app/contexts/perfilInversor";
 import Icon from "@/components/main-section/icon";
 import Link from "next/link";
@@ -12,6 +12,8 @@ import { useRef } from "react";
 // import { useUser } from "@clerk/nextjs";
 
 function MisEtrategias() {
+
+  // guardar perfil en base de datos
   // const user = useUser();
   // const id = user.user?.id;
   // const updateRiskProfile = async (id: string | undefined, income: any) => {
@@ -25,19 +27,29 @@ function MisEtrategias() {
   //   console.log(data);
   // };
 
+  useEffect(() => {
+
+    if (typeof window !== 'undefined' && window.localStorage) {
+      const perfilLocalStorage = window.localStorage.getItem("perfil");
+      setperfilLocalStorage(perfilLocalStorage);
+    }
+
+  }, [])
+
+  const [perfilLocalStorage, setperfilLocalStorage] = useState<string | null>(null);
+
   const [Income, setIncome] = useState(0);
 
   const [ShowResult, setShowResult] = useState(false);
-  // @ts-ignore
-  const { perfilInversor } = useContext(PerfilInversorContext);
 
-
-  console.log("perfil inversor", perfilInversor);
+  // use context
+  // // @ts-ignore
+  // const { perfilInversor } = useContext(PerfilInversorContext); 
 
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   // Mostrar el formulario solo si el perfil del inversor está completado
-  if (!perfilInversor) {
+  if (!perfilLocalStorage) {
     return (
 
       <Link href={"/perfilInversor"}>
@@ -54,7 +66,6 @@ function MisEtrategias() {
             <p className="text-gray-400 mb-5">
               Por favor, haz click aqui para completar tu perfil de inversor y calcular las mejores estrategias para ti.
             </p>
-
             {/* <Icon
                 name="HandCoins"
                 size={48}
@@ -91,7 +102,7 @@ function MisEtrategias() {
           <div className="flex flex-wrap -mx-3 mb-4">
             <div className="w-full px-2">
               <h1 className="text-2xl font-bold mb-2 text-purple-600">
-                {"-"} {perfilInversor}
+                {"-"} {perfilLocalStorage}
               </h1>
               <div className="mt-8">
                 <label
@@ -139,13 +150,13 @@ function MisEtrategias() {
                       Aquí tienes unas sugerencias de cómo podrías distribuir tu inversión de {Income}$
                     </p>
                   </div>
-                  {perfilInversor === "Perfil Moderado" && (
+                  {perfilLocalStorage === "Perfil Moderado" && (
                     <ModerateProfile income={Income} />
                   )}
-                  {perfilInversor === "Perfil Conservador" && (
+                  {perfilLocalStorage === "Perfil Conservador" && (
                     <ConservativeProfile income={Income} />
                   )}
-                  {perfilInversor === "Perfil Arriesgado" && (
+                  {perfilLocalStorage === "Perfil Arriesgado" && (
                     <AggressiveProfile income={Income} />
                   )}
                 </div>
