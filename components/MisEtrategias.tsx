@@ -12,6 +12,8 @@ import { useRef } from "react";
 // import { useUser } from "@clerk/nextjs";
 
 function MisEtrategias() {
+
+  // guardar perfil en base de datos
   // const user = useUser();
   // const id = user.user?.id;
   // const updateRiskProfile = async (id: string | undefined, income: any) => {
@@ -30,7 +32,6 @@ function MisEtrategias() {
     if (typeof window !== 'undefined' && window.localStorage) {
       const perfilLocalStorage = window.localStorage.getItem("perfil");
       setperfilLocalStorage(perfilLocalStorage);
-      console.log("local storage use effect", perfilLocalStorage);
     }
 
   }, [])
@@ -41,10 +42,9 @@ function MisEtrategias() {
 
   const [ShowResult, setShowResult] = useState(false);
 
+  // use context
   // // @ts-ignore
-  // const { perfilInversor } = useContext(PerfilInversorContext);
-
-  // console.log("perfil inversor", perfilInversor);
+  // const { perfilInversor } = useContext(PerfilInversorContext); 
 
   const inputRef = useRef<HTMLInputElement | null>(null);
 
@@ -66,7 +66,6 @@ function MisEtrategias() {
             <p className="text-gray-400 mb-5">
               Por favor, haz click aqui para completar tu perfil de inversor y calcular las mejores estrategias para ti.
             </p>
-
             {/* <Icon
                 name="HandCoins"
                 size={48}

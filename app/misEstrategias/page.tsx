@@ -18,12 +18,7 @@ export default function misEstrategias() {
                 tu presupuesto y de tu perfil de riesgo"
               </h3>
             </div>
-
-            {/* Form */}
-            {/* <div className="max-w-sm mx-auto ">
-              <div className="flex items-center"></div> */}
             <MisEtrategias />
-            {/* </div> */}
           </div>
         </div>
       </section>
