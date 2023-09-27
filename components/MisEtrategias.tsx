@@ -1,5 +1,5 @@
 "use client";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { PerfilInversorContext } from "../app/contexts/perfilInversor";
 import Icon from "@/components/main-section/icon";
 import Link from "next/link";
@@ -25,18 +25,28 @@ function MisEtrategias() {
   //   console.log(data);
   // };
 
+  useEffect(() => {
+
+    if (typeof window !== 'undefined' && window.localStorage) {
+      const perfilLocalStorage = window.localStorage.getItem("perfil");
+      setperfilLocalStorage(perfilLocalStorage);
+      console.log("local storage use effect", perfilLocalStorage);
+    }
+
+  }, [])
+
+  const [perfilLocalStorage, setperfilLocalStorage] = useState<string | null>(null);
+
   const [Income, setIncome] = useState(0);
 
   const [ShowResult, setShowResult] = useState(false);
-  // @ts-ignore
-  const { perfilInversor } = useContext(PerfilInversorContext);
 
-  console.log("perfil inversor", perfilInversor);
+  // // @ts-ignore
+  // const { perfilInversor } = useContext(PerfilInversorContext);
+
+  // console.log("perfil inversor", perfilInversor);
 
   const inputRef = useRef<HTMLInputElement | null>(null);
-
-  const perfilLocalStorage = window.localStorage.getItem("perfil");
-  console.log("local storage", perfilLocalStorage);
 
   // Mostrar el formulario solo si el perfil del inversor está completado
   if (!perfilLocalStorage) {
