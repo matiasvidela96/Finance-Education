@@ -86,9 +86,9 @@ export default function PerfilInversor() {
     setShowScore(true);
   };
   function getRiskProfile(score: number) {
-    if (score <= 10) {
+    if (score <= 14) {
       setPerfilInversor("Perfil Conservador");
-    } else if (score > 10 && score <= 16) {
+    } else if (score > 14 && score <= 21) {
       setPerfilInversor("Perfil Moderado");
     } else {
       setPerfilInversor("Perfil Arriesgado");

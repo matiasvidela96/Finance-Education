@@ -67,12 +67,14 @@ declare module 'perfilInversorProvider' {
     }
 }
 
-// declare module 'perfilInversor' {
-//     export interface PerfilInversorProps {
-//         perfilInversor: string;
-//         setPerfilInversor: React.Dispatch<React.SetStateAction<string>>;
-//     }
-// }
+declare module 'blog' {
+    export interface blogProps {
+        title: string;
+        imageSrc: string;
+
+    }
+}
+
 
 
 
