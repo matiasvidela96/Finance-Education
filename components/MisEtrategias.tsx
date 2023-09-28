@@ -147,7 +147,7 @@ function MisEtrategias() {
                   <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                     <h2 className="h2 mb-4">Posibles estrategias</h2>
                     <p className="text-xl text-gray-400" >
-                      Aquí tienes unas sugerencias de cómo podrías distribuir tu inversión de {Income}$
+                      Aquí tienes unas sugerencias de cómo podrías distribuir tu inversión de <a className="text-white-800 font-bold">{Income}$</a>
                     </p>
                   </div>
                   {perfilLocalStorage === "Perfil Moderado" && (

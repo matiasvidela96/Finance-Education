@@ -28,9 +28,9 @@ function ModerateProfile({ income }: ProfileProps) {
   return (
     <>
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-        <p className="text-2xl font-bold mb-2 text-purple-600">
+        <h2 className="text-3xl font-bold mb-2 text-purple-600">
           Estrategia 1
-        </p>
+        </h2>
       </div>
       <div
         className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-16 items-start md:max-w-2xl lg:max-w-none text-center"
@@ -51,15 +51,16 @@ function ModerateProfile({ income }: ProfileProps) {
               title={item.instrument}
               description={(Math.round(item.allocation * income)).toString() + "$"}
               link={item.link}
+              descriptionColor={"text-green-500"}
             ></Icon>
           </div>
         ))}
       </div>
 
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-        <p className="text-2xl font-bold mb-2 text-purple-600">
-          Estrategia 2
-        </p>
+        <h2 className="text-3xl font-bold mb-2 text-purple-600">
+          Estrategia 1
+        </h2>
       </div>
       <div
         className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none text-center"
@@ -80,6 +81,7 @@ function ModerateProfile({ income }: ProfileProps) {
               title={item.instrument}
               description={(Math.round(item.allocation * income)).toString() + "$"}
               link={"/perfilInversor"}
+              descriptionColor={"text-green-500"}
             ></Icon>
           </div>
         ))}
