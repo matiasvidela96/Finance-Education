@@ -6,7 +6,7 @@ const BrokerInfo = () => {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-semibold mb-4 text-center">
-        Información de Brokers
+        Brokers
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {brokers.map((broker, index) => (
@@ -20,15 +20,22 @@ const BrokerInfo = () => {
                 alt={broker.name}
                 className="w-32 h-32 object-cover mx-auto mb-4"
               />
-              <h2 className="text-xl font-semibold">{broker.name}</h2>
-              <p className="text-gray-500">{broker.description}</p>
+              <h2 className="text-xl font-semibold text-center">{broker.name}</h2>
+              <p className="text-gray-500 text-center mb-4">{broker.description}</p>
+              <ul className="text-gray-400 text-center divide-y divide-purple-600 grid justify-center">
+                {broker.ventajas.map((ventaja, vIndex) => (
+                  <li key={vIndex}>
+                    {ventaja}
+                  </li>
+                ))}
+              </ul>
             </div>
           </Link>
         ))}
       </div>
 
       <h1 className="text-3xl font-semibold text-center mt-8 mb-4">
-        Información de Billeteras Virtuales
+        Billeteras Virtuales
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {wallets.map((wallet, index) => (
@@ -42,15 +49,21 @@ const BrokerInfo = () => {
                 alt={wallet.name}
                 className="w-32 h-32 object-cover mx-auto mb-4"
               />
-              <h2 className="text-xl font-semibold">{wallet.name}</h2>
-              <p className="text-gray-500">{wallet.description}</p>
+              <h2 className="text-xl font-semibold text-center">{wallet.name}</h2>
+              <p className="text-gray-500 text-center mb-4">{wallet.description}</p>
+              <ul className="text-gray-400 text-center divide-y divide-purple-600 grid justify-center">
+                {wallet.ventajas.map((ventaja, vIndex) => (
+                  <li key={vIndex}>
+                    {ventaja}
+                  </li>
+                ))}
+              </ul>
             </div>
           </Link>
         ))}
       </div>
-
       <h1 className="text-3xl font-semibold mt-8 mb-4 text-center">
-        Información de Bancos Digitales
+        Bancos Digitales
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {banks.map((bank, index) => (
@@ -64,8 +77,15 @@ const BrokerInfo = () => {
                 alt={bank.name}
                 className="w-32 h-32 object-cover mx-auto mb-4"
               />
-              <h2 className="text-xl font-semibold">{bank.name}</h2>
-              <p className="text-gray-500">{bank.description}</p>
+              <h2 className="text-xl font-semibold text-center">{bank.name}</h2>
+              <p className="text-gray-500 text-center mb-4">{bank.description}</p>
+              <ul className="text-gray-400 text-center divide-y divide-purple-600 grid justify-center">
+                {bank.ventajas.map((ventaja, vIndex) => (
+                  <li key={vIndex}>
+                    {ventaja}
+                  </li>
+                ))}
+              </ul>
             </div>
           </Link>
         ))}
