@@ -1,0 +1,62 @@
+{
+  "brokers": [
+    {
+      "name": "Invertir Online",
+      "image": "https://play-lh.googleusercontent.com/-MEugfHF1aqqg7x45AbasCbLSNEXmDs5YtFU0ikfthzu2FbrdpTm2h8AU3m72F_L6f0",
+      "description": "Plataforma de inversión con amplia oferta y recursos.",
+      "link": "https://www.invertironline.com/"
+    },
+    {
+      "name": "BullMarket",
+      "image": "https://play-lh.googleusercontent.com/UKKBvuGcq5hH-5ZxhpV9tXFQCEpiHpJSqp6i776kZKWsK_BMjNL0kK7_8FOlt44H7g",
+      "description": "Broker especializado en inversiones.",
+      "link": "https://bullmarketbrokers.com/"
+    },
+    {
+      "name": "Cocos Capital",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABQVBMVEXx8fHx8fAAW+QAZOYBEjbv8fMAZOPy8PEAACO/2uotdN748vIAACYAAC6Ws+QAYuQAACAAXN8AABoAACoAAB739vQAACwAZuEAEzQAY+kAYOr2+/ZsmeHN2ui2y+T09u8AEjrY5vAAABMAAADd7vIAAAoAVtfz7/UAABIAETwAADJyeIgoL0QAADb5+vsAFDPk6ezEx8uQlKAAVdEAXuyKruX1/PGqq7ZQVWdjaXnW1d1QVmikqq+ytsF4gY5DSWFdYXczOlGAg5OHj5oVHT1fYGmbnajn5ewdKUC8ucgaIEPBx8vNz9rV2NYoMUo3PU88Q1S1vL/K0tOWudsSZdBOgdV7pNk6ed60zuNcjt2JrNkjctLl7voAUOA3d80AXc/K5etLhcrc8OmZvdn//up8ouL/8uiLrOgASukAXMOGtdy1k6owAAAMK0lEQVR4nO2aC1fayhbHmSSTAAFCwDGEiBMskoJ2RIxQPWIfVLBH+zqgFa3F6tF7b7//B7h78HlcXe1Zd91bc87dv7W6SIaZOv/ZM/sREoshCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgf09ILKCUBvTmnlC4ptB+hWEYky8DQm7HGHBv3P4fNAgMIxbcDooShLeEYK1bQSZnTHB2tws0CMH5TUNA4Z5x83YM4zCKCRqLHixoLzx9utZdF9cNtL3wCzT8Jq5Ek6uW5k0XYWzIMbcNTHQ2nz/b2uwELBYpCDG9jVw2DeTnnlMmjSF6j1OXDb80OGzMwBQbufi0bHm0RuVGDUTzcTydrk+nHj9vgF0NbnZSqVS6Xs+nchsiYjtVbOZqvgYUtPwiJTEi1qZq2oTCk/obWAMiFq5baukXFBSJranC5N7XnhT68j/pPPYLWj39pFDQpl4K44d/9edBYW61Wi31OJf1/UJ+QRDRnVoCsbncVFpbqr8Cm/F2DgSm5uay8AFdYFHioC4+Nxev+1p9EUzWyMICTa1tbuV835/biZBCSugrzfezPRp0tFqhNt9n67nakp/rNYydt2nfj3eFQfNgrGzvE+3k/UJtSnYBgdleP1jeToPSpsc24loh3hGe6ExpWn0tSkeRdeJ+AeYIx/F1HHRsiJcpmHRPBAFvwJW2RFk7CxbseZzx11nNn+qIl9Oan9oAz8r6YEx/m7LNaU2bFoQaYvvXX189jZA/NbwF2GjxBqExLmBjzne9F3L6ATFITHRTWiG3461JWzYMMHjwKJd71PQWwewa6KFEitVyu14zLxdBMMZjAcTWCHkaw3ufnswWrlkDCBpp8BhPZQww6PKUX4B5v5/2/VdeAH1Yvy+7pJb8+pocw4MPYMR4W+xODvNit9MXHicREhgz2AtwDYue3FYGmI3E+tmClt6U0zfZG5h+usneaoX8i4lCIoHmJX+6y8CdEOMN7OA8GK87pxX8WjqefdFsROkUQq616Gv+W+/y4Mj59yEOwPSJDHJv4CCmu2wbztiziUJwTTRmSIWp7uWqSIWpphljvel4WisU/HTWX+bf+5M/GSLegTfc9i5v5L9+HGb58nLbrmf9wnSTLYLCF1cKYQdKVbV8l4FCEvw28UKmQUSj9z6fnZYxMrseIYlEPAWFS1f7ioIzaYBN4RzKLSk6EOXybfEsrfkFMVEoE3KjkdZq9eeTLkFbet62KX2MKfrL3SVwXKkF70FF/ZGgm/ZrU+sMdp9Y3N5+1fSePQGr9DlEem8BTDK1KxbS4EXWWQDJtewCrqfu1/KUQSkh1mCBcutGu73RXodKQ/S3tUL6XaRO4vIcnLU1D3LPnWytFm97vfgkcfGY2IXA7r8N2M5czU8vQDwUH7J+LdXxmtJwmx5jrWXZ5V3Qf5TPz3XBAZtia7rgR0ohYe/rhULqlw87zVRtqZDrs0beh2M2afALhdwGo97bes2Pr3VedyE70FKUN+CzFt/6sNOV2VuuzQK51yGnYeI1pD31LfHjP/zz4LtzkG2ms1mI2bVsU0CWMw8BpJ6Ky4wm9dSLUb4jc3PoIltyPRbz2nfGpJ4LbuzmnvjaXOr9K2nT+eUI5aVQ3YsPj+uXhYOWW5NFu+jNpwsgElRl31NZTnnt+fRlD38OcvOYIXpzVw1a9mmMc+J1cuCOauBmCvlHPS9KIT9mELb+bB7qwemc1pZlj2GI3Xfz8Xy+PpVrCi7DOvVKz+ahHkxlX32AZE2OWX43n5rO53OQwTLwsJy92ZJjUtn597siUknN5KGM6HeazY1lce0g2HWD4JdzNaHlQ7PZ/k1cxwHmrbebzd6yuH66Y4pGp9fsdRoi+OkSfsDksZMpTMZulp4Qg3mebDCM2wbQC5H9ehhnMIIZwbVCSIfkYxrOImbA/xATCifyfVsFLU+AXh45i/45eCmTaXzfVsZgOEwOE+Z3O0UUStiBbYfDCpGPCGB3Gt/SyjKKqisJ86+4Zw3u7VmWpQxgo/IW562AfyP+SYUqKIxQuf+nIUTs6a5rZxhp7Sc/fjxqfMuIkVNIKTWMP96Te17xpgtlBytKeFQhlM+AMauntwoNyeQqcgrJTWS4ub+v8E6XVnkwC7UF4TO2rtsg9aqLYZoRVcjYZSi7cw8VH7vzLYEcHQLiVZfgAnpTg4ENpcKrntDNk2H08iZCCinzZvf39vb2DyCK0xjhhln+Otr7ODosMW5AIB8MMpkSK0GfmTPI2MC0s18Hma/9xmCw5+q6fjgYNCh4nfJgBkbtJzwO7jVKCs3EkRLqulqsHiU4KGSVUTUMi8WwqHz5xAj/NAxtZX9VcV23GA4TFxAtVm03rJYSx2HogMKiEvY9k8zA4YQ+4fFexYyUQm92RXUt11XVoltNsBg/GbuqXixaqqqHnylkYUlVd0GJM1YdVR2fmKCwWHSVUqKqwibVwa9aleD0KFQdPZQd3XHFjIxCg5snY1W3bMsOXbWoD3nA94qOXhyO9lZAtLIKpyppOSB2DJbULac4YjRYtXXXLpVWVhxXB9H6SqV1HjpOOB6NxjoszxdGzIgojJHWTOio9kyFnuy5qnM8uEgcO2745ZSZiRVLdYeU8SSYs/gxcXqaqTrF4XEiZk4UJljF27d01aqcVsxKFRbhiDBWGbuuY1cMHhGFJKjYsOZ7kJeYlaHr6iN+NkweJQ94ELRmXMtRKsFE4fDUNEx+GOpFfZWzSxuaAZ8BG9qncFE6SiaTZ5xS82uow243o6IQgrcCcxwwWQzMVJXjo8BstVri4oKL3/ch2FXLJklaupX0iMGNiq2r7h73/mHDxi6ZEA8tdRIPOfU87gnTZPwMvI8yy6NyDik/BBsqJRnDSKVcqTS4F3CvPLt6fr7/2blR6F4qbCXh2CUDfl9hQDlpeaeTUSNVj5JCg51DRLPLMg8JJllMYLLE52po24r0jXcVwpd8DzasQ/nqfYWEBicjJbTA2hB4oqSQsPMiOJryTTYTGN7ZMUyyaCsrunut0ClKhVAXjkCCQ9l9hTxgidAtOq6iVO2IKRTnRf2uQs4TVRA0PiyVy+f2fYUMchjrGzbk5qmlw0rtJ07KX5VoKTQzoFApmQa4VW4anmfuF+FgHngQ+ldtVb3ZpS35UMobQoxM8rs21J2VUxg6gHAKFWNgXJzdV0hkhssfTCmfXdH1cMDB6bTOh47+2QMzuUfyseLFqnWj0Eq2wIbkBByvNRLXniZ240u9maKqrjQINS8G4R8VEtprtgPyUAoNToeOpUNcZ7DRXN2eYZ8hZxtWuMFA641CFeK7yb0RuFKofFuXClmMzVhgujJnTAbG6skF9Nm/p1As9Hqdlw/2nJ8ErVXwmcXk4GAwdGUgY6OiTLvKlcRn8EFutXSZ01jDw9nZPR2cybhCrnYpKNwHZ1T8eHbW+BqC6T+fVBIjRYVtP8tAoe5KhcvLa7svN948mEJing4dF1JKBYK5WvzimQfHju5YylhxZGWkJBiRCiEVV+BY6o6yym8V8lk4dOBB/5kor4ARXVtRHAcsH57xG4Ub/a215s7yg/0cRQKznFTA0YO9HOWoDFH9HKzgWlbRToJC+8yMyU9YA1lG6OGIB4RB9qaHJUjBW0nIakMHlGSOHQeWRg+HMvU+5GbGVicK3/S6YrP7g2eP/1uN5qf9saLYoT0+r8ig38qMldAOx/sniqIcj1o06ejWUWJoQ5eV/U8mibHDY/gGKi0ia0tbh+vg91ldKVoK5PD/UmxlyPjX42NoN7noNZdfdh70BRQKSXdikBkcVFggXyClvHFwmBmUWXBSBgIKqRpECzqbWZ0tM1OmPw345gTqf6i1+MFgNZOgcHWaGBwOyt6FHHRCgwZ8lBo8iIn+cv9Bf40yCHhUA3JmNnnYJH9qMuTjeAhyZPLATfpSGfGhh8Ev32cwJo+cYvLtFKgwwcuCWDkKnCqdvLxoQhyCtTIm79nGIv5bBrmT0/w9+f9QqKPCvzbeUXVcPYraT9f/TQLREkKQB6+D/nfI37YJ4X9fE0LZL19UNCL2Aj6CIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIEj0+TflzaqJ/rEeMAAAAABJRU5ErkJggg==",
+      "description": "Empresa de inversión con enfoque estratégico.",
+      "link": "https://cocos.capital/"
+    }
+  ],
+  "wallets": [
+    {
+      "name": "MercadoPago",
+      "image": "https://i.pinimg.com/originals/18/a5/e6/18a5e6e05dffce2ca14b04fd6509bec5.png",
+      "description": "Billetera virtual líder con amplias funciones. ",
+      "link": "https://www.mercadopago.com.ar/home"
+    },
+    {
+      "name": "Naranja X",
+      "image": "https://pbs.twimg.com/profile_images/1607730127575588866/K2VUX3Qs_400x400.jpg",
+      "description": "Billetera virtual con servicios financieros integrados.",
+      "link": "https://www.naranjax.com/"
+    },
+    {
+      "name": "Uala",
+      "image": "https://comeet-euw-app.s3.amazonaws.com/1115/01b7d1420966eafbbd3add5f607ec1d479cd998e",
+      "description": "Billetera virtual versátil y práctica.",
+      "link": "https://www.uala.com.ar/"
+    },
+    {
+      "name": "Personal Pay",
+      "image": "https://play-lh.googleusercontent.com/bbDrQ-kdYTZJb4NCNyIeF0nrNoPtle5mDczz_h18hJ1oXsHBwtXi1_m2qn_-QNsxRKUZ",
+      "description": "Billetera virtual ofrecida por Personal con opciones convenientes.",
+      "link": "https://www.personalpay.com.ar/"
+    }
+  ],
+  "banks": [
+    {
+      "name": "Brubank",
+      "image": "data:image/jpeg;base64,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",
+      "description": "Banco digital innovador con servicios modernos.",
+      "link": "https://www.brubank.com/"
+    },
+    {
+      "name": "Banco del Sol",
+      "image": "https://play-lh.googleusercontent.com/HPKsZxDXWaXkFRUjDy2V6K57VDAkhl0PEuxG0bse01Vj0_Dl-HZqjAQN7CqnSeuaQdzG",
+      "description": "BBanco digital con enfoque en soluciones modernas.",
+      "link": "https://www.bancodelsol.com/cuenta/"
+    }
+  ]
+}
