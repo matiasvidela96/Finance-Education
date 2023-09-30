@@ -23,7 +23,6 @@ export default function Noticias() {
           },
         });
         const data = await response.json();
-        // console.log("data feed", data.feed);
         setNewsData(data.feed);
         setshowNews(true);
       } catch (error) {
@@ -53,7 +52,7 @@ export default function Noticias() {
                 data-aos-id-blocks
               >
                 {/* Mapeo las noticias */}
-                {newsData.slice(-50).map((news, index) => (
+                {newsData.slice(-10).map((news, index) => (
                   <div
                     className="relative flex flex-col items-center hover:bg-zinc-800 hover:bg-opacity-25 rounded"
                     data-aos="fade-up"
