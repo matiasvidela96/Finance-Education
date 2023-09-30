@@ -97,7 +97,7 @@ export default function PerfilInversor() {
 
     window.localStorage.setItem("perfil", perfilInversor);
 
-    console.log("local storage", window.localStorage.getItem("perfil"));
+    // console.log("local storage", window.localStorage.getItem("perfil"));
 
     return perfilInversor;
   }
@@ -122,9 +122,9 @@ export default function PerfilInversor() {
               </p>
 
               <div className=" p-6  rounded-lg shadow-md">
-                <h1 className="text-3xl font-semibold text-center text-purple-600">
+                {/* <h1 className="text-3xl font-semibold text-center text-purple-600">
                   Tu Puntaje es: {score}
-                </h1>
+                </h1> */}
                 <p className="text-3xl  font-semibold text-center  mb-10 text-purple-600">
                   {" "}
                   Tu Perfil de riesgo es: {getRiskProfile(score)}
@@ -213,10 +213,11 @@ export default function PerfilInversor() {
                   <div className="flex justify-between w-full mt-4 text-white m-5">
                     <button
                       onClick={handlePrevious}
-                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${currentQuestion === 0
-                        ? "opacity-50 cursor-not-allowed  "
-                        : ""
-                        }`}
+                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${
+                        currentQuestion === 0
+                          ? "opacity-50 cursor-not-allowed  "
+                          : ""
+                      }`}
                     >
                       Anterior
                     </button>
@@ -227,10 +228,11 @@ export default function PerfilInversor() {
                           ? handleSubmitButton
                           : handleNext
                       }
-                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${currentQuestion + 1 === questions.length
-                        ? "bg-red-600 hover:bg-red-700 text-white"
-                        : "bg-purple-700 hover:bg-purple-600 text-white"
-                        }`}
+                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${
+                        currentQuestion + 1 === questions.length
+                          ? "bg-red-600 hover:bg-red-700 text-white"
+                          : "bg-purple-700 hover:bg-purple-600 text-white"
+                      }`}
                     >
                       {currentQuestion + 1 === questions.length
                         ? "Enviar"
