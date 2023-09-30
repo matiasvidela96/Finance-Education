@@ -23,7 +23,7 @@ export default function Noticias() {
           },
         });
         const data = await response.json();
-        console.log("data feed", data.feed);
+        // console.log("data feed", data.feed);
         setNewsData(data.feed);
         setshowNews(true);
       } catch (error) {
@@ -66,7 +66,11 @@ export default function Noticias() {
                       description={news.summary}
                       link={news.url}
                       target="_blank"
-                      image={news.banner_image !== null ? news.banner_image : "https://plus.unsplash.com/premium_photo-1664197368374-605ce8ec8f54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"}
+                      image={
+                        news.banner_image !== null
+                          ? news.banner_image
+                          : "https://plus.unsplash.com/premium_photo-1664197368374-605ce8ec8f54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                      }
                       tags={news.topics}
                     />
                   </div>

@@ -7,7 +7,7 @@ export default function MainPage() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Educacion Financiera</h2>
+            <h2 className="h2 mb-4">Educación Financiera</h2>
             <p className="text-xl text-gray-400">
               Aprende a invertir tu dinero de forma sencilla y eficiente
             </p>
@@ -94,20 +94,20 @@ export default function MainPage() {
               ></Icon>
             </div>
 
-            {/* Calculadora*/}
+            {/* Blog*/}
             <div
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-anchor="[data-aos-id-blocks]"
             >
               <Icon
-                name="MathOperations"
+                name="NumberSquareZero"
                 size={48}
                 color={"#f5f5f5"}
                 weight={"light"}
-                title={"Calculadora"}
-                description={"Lleva un seguimineto de tus gastos."}
-                link={"/calculadora"}
+                title={"Desde cero"}
+                description={"Primeros pasos antes de invertir"}
+                link={"/blog"}
               ></Icon>
             </div>
 

@@ -12,6 +12,7 @@ interface IconProps {
   description: string;
   link: string;
   target?: string;
+  descriptionColor?: string;
 }
 
 export default function Icon({
@@ -23,9 +24,11 @@ export default function Icon({
   description,
   link,
   target,
+  descriptionColor
 }: IconProps) {
   const IconComponent = name ? (logo[name] as React.ElementType) : null;
   const targetValue = target ? target : "_self";
+  const colorClase = descriptionColor ? descriptionColor : "text-gray-400";
   return (
     <>
       <Link
@@ -44,7 +47,7 @@ export default function Icon({
           <h4 className="h4 mb-2">{title}</h4>
         </div>
         <div>
-          <p className="text-lg text-gray-400 text-center">{description}</p>
+          <p className={`text-lg ${colorClase} text-center`}>{description}</p>
         </div>
       </Link>
     </>

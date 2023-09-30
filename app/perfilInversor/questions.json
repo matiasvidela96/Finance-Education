@@ -1,68 +1,154 @@
 [
   {
-    "question": "1. ¿Cuál es su propósito para esta inversión?",
+    "question": "1. ¿Cuál es el propósito para sus inversiones?",
     "answerOptions": [
-      { "answer": "Ahorro para la jubilación", "value": 1 },
-      { "answer": "Ahorro para una casa, auto o similar", "value": 2 },
-      { "answer": "Para hacer crecer mi riqueza", "value": 3 },
-      { "answer": "No lo sé", "value": 0 }
+      {
+        "answer": "Ganarle a la inflación",
+        "value": 1
+      },
+      {
+        "answer": "Ahorro para una casa, auto o similar",
+        "value": 2
+      },
+      {
+        "answer": "Para hacer crecer mi riqueza",
+        "value": 3
+      },
+      {
+        "answer": "No lo sé",
+        "value": 0
+      }
     ]
   },
   {
     "question": "2. ¿Cuánto tiempo está dispuesto a esperar para usar el dinero invertido?",
     "answerOptions": [
-      { "answer": "0-3 Meses", "value": 4 },
-      { "answer": "3-6 Meses", "value": 3 },
-      { "answer": "Hasta 1 año", "value": 2 },
-      { "answer": "Más de un año", "value": 1 }
-    ]
-  },
-  {
-    "question": "3. El mercado de valores puede tener fluctuaciones muy grandes. si el valor de su cartera cayera un 10% en 1 mes, ¿qué haría?",
-    "answerOptions": [
-      { "answer": "Vender todas mis inversiones", "value": 1 },
-      { "answer": "Vender algunas de mis inversiones", "value": 2 },
       {
-        "answer": "Mantener mis inversiones, esperando que vuelvan a subir",
+        "answer": "0-3 Meses",
         "value": 3
       },
-      { "answer": "Compro más", "value": 4 }
+      {
+        "answer": "3-6 Meses",
+        "value": 2
+      },
+      {
+        "answer": "Hasta 1 año",
+        "value": 1
+      },
+      {
+        "answer": "Más de un año",
+        "value": 0
+      }
     ]
   },
   {
-    "question": "4. ¿Ha invertido anteriormente en intrumentos financiertos (acciones, bonos, fondos)?",
+    "question": "3. El mercado de valores puede tener fluctuaciones muy grandes si el valor de su cartera cayera un 10% en 1 mes, ¿qué haría?",
     "answerOptions": [
-      { "answer": "Nunca", "value": 1 },
-      { "answer": "Solo en algunos", "value": 2 },
       {
-        "answer": "Todo el tiempo compro o tengo experiencia en el tema",
+        "answer": "Vender todas mis inversiones",
+        "value": 0
+      },
+      {
+        "answer": "Vender algunas de mis inversiones",
+        "value": 1
+      },
+      {
+        "answer": "Mantener mis inversiones esperando que vuelvan a subir",
+        "value": 2
+      },
+      {
+        "answer": "Compro más",
         "value": 3
       }
     ]
   },
   {
-    "question": "5. ¿Cuál es tu edad ahora?",
+    "question": "4. ¿Ha invertido anteriormente en intrumentos financiertos (acciones, bonos, fondos)?",
     "answerOptions": [
-      { "answer": "Menos de 25", "value": 3 },
-      { "answer": "25 - 45 años", "value": 2 },
-      { "answer": "Más de 45 años", "value": 1 }
+      {
+        "answer": "Nunca",
+        "value": 1
+      },
+      {
+        "answer": "Solo en algunos",
+        "value": 2
+      },
+      {
+        "answer": "Todo el tiempo, compro o tengo experiencia en el tema",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "question": "5. ¿Ha considerado diversificar su cartera de inversiones?",
+    "answerOptions": [
+      {
+        "answer": "No, no he considerado diversificar",
+        "value": 3
+      },
+      {
+        "answer": "Sí, siempre diversifico mis inversiones",
+        "value": 2
+      },
+      {
+        "answer": "Sí, pero no estoy seguro de cómo hacerlo",
+        "value": 1
+      }
     ]
   },
   {
     "question": "6. ¿Qué proporción de su riqueza es la cantidad que está considerando invertir?",
     "answerOptions": [
-      { "answer": "0 - 15%", "value": 1 },
-      { "answer": "15 - 30% ", "value": 2 },
-      { "answer": "30 - 50%", "value": 3 },
-      { "answer": "Más del 50%", "value": 4 }
+      {
+        "answer": "0 - 15%",
+        "value": 1
+      },
+      {
+        "answer": "15 - 30% ",
+        "value": 2
+      },
+      {
+        "answer": "30 - 50%",
+        "value": 3
+      },
+      {
+        "answer": "Más del 50%",
+        "value": 4
+      }
     ]
   },
   {
-    "question": "7. ¿Que sabes de criptomonedas?",
+    "question": "7. ¿Qué sabes de criptomonedas?",
     "answerOptions": [
-      { "answer": "No conozco", "value": 1 },
-      { "answer": "Conozco pero no he comprado", "value": 2 },
-      { "answer": "He comprado", "value": 3 }
+      {
+        "answer": "No conozco",
+        "value": 1
+      },
+      {
+        "answer": "Conozco pero no he comprado",
+        "value": 2
+      },
+      {
+        "answer": "He comprado",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "question": "8. ¿Cuál es su percepción de la volatilidad del mercado?",
+    "answerOptions": [
+      {
+        "answer": "La volatilidad del mercado me preocupa y prefiero inversiones más estables",
+        "value": 2
+      },
+      {
+        "answer": "Estoy dispuesto a aceptar la volatilidad del mercado en busca de mayores ganancias",
+        "value": 3
+      },
+      {
+        "answer": "No estoy seguro de cómo lidiar con la volatilidad del mercado",
+        "value": 1
+      }
     ]
   }
 ]
