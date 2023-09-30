@@ -119,7 +119,7 @@ function ModerateProfile({ income }: ProfileProps) {
               description={
                 Math.round(item.allocation * income).toString() + "$"
               }
-              link={"/perfilInversor"}
+              link={item.link}
               descriptionColor={"text-green-500"}
             ></Icon>
           </div>

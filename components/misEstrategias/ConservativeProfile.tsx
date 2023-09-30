@@ -14,13 +14,38 @@ interface StrategyItem {
 
 function ConservativeProfile({ income }: ProfileProps) {
   const strategyOne: StrategyItem[] = [
-    { instrument: "Dolar MEP", allocation: 0.7, icon: "CurrencyDollar", link: "/academy/bolsa/dolarMEP" },
-    { instrument: "Plazo Fijo", allocation: 0.3, icon: "Coins", link: "/academy/bolsa/plazoFijo" },
+    {
+      instrument: "Dolar MEP",
+      allocation: 0.7,
+      icon: "CurrencyDollar",
+      link: "/academy/bolsa/dolarMEP",
+    },
+    {
+      instrument: "Plazo Fijo",
+      allocation: 0.3,
+      icon: "Coins",
+      link: "/academy/bolsa/plazoFijo",
+    },
   ];
   const strategyTwo: StrategyItem[] = [
-    { instrument: "Fondo común de inversión", allocation: 0.2, icon: "ChartBar", link: "/academy/bolsa/FCI" },
-    { instrument: "Dolar MEP", allocation: 0.5, icon: "CurrencyDollar", link: "/academy/bolsa/dolarMEP" },
-    { instrument: "Plazo Fijo", allocation: 0.2, icon: "Coins", link: "/academy/bolsa/plazoFijo" },
+    {
+      instrument: "Fondo común de inversión",
+      allocation: 0.2,
+      icon: "ChartBar",
+      link: "/academy/bolsa/FCI",
+    },
+    {
+      instrument: "Dolar MEP",
+      allocation: 0.5,
+      icon: "CurrencyDollar",
+      link: "/academy/bolsa/dolarMEP",
+    },
+    {
+      instrument: "Plazo Fijo",
+      allocation: 0.2,
+      icon: "Coins",
+      link: "/academy/bolsa/plazoFijo",
+    },
   ];
 
   return (
@@ -47,8 +72,10 @@ function ConservativeProfile({ income }: ProfileProps) {
               color={"#f5f5f5"}
               weight={"light"}
               title={item.instrument}
-              description={(Math.round(item.allocation * income)).toString() + "$"}
-              link={"/perfilInversor"}
+              description={
+                Math.round(item.allocation * income).toString() + "$"
+              }
+              link={item.link}
               descriptionColor={"text-green-500"}
             ></Icon>
           </div>
@@ -77,7 +104,9 @@ function ConservativeProfile({ income }: ProfileProps) {
               color={"#f5f5f5"}
               weight={"light"}
               title={item.instrument}
-              description={(Math.round(item.allocation * income)).toString() + "$"}
+              description={
+                Math.round(item.allocation * income).toString() + "$"
+              }
               link={item.link}
               descriptionColor={"text-green-500"}
             ></Icon>
