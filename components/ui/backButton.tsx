@@ -9,11 +9,9 @@ export default function BackButton() {
         type="button"
         className="bg-purple-600 hover:bg-purple-700 text-white rounded  border-gray-100 py-2 px-3 mt-16"
         onClick={(e) => {
-          e.preventDefault()
-          router.back()
-        }
-        }
-
+          e.stopPropagation();
+          router.back();
+        }}
       >
         <div className="flex flex-row align-middle">
           <svg
