@@ -2,7 +2,6 @@
 import * as logo from "@phosphor-icons/react";
 import type { IconWeight } from "@phosphor-icons/react";
 import Link from "next/link";
-import { useRouter } from 'next/router';
 
 interface IconProps {
   name?: keyof typeof logo;
@@ -30,15 +29,7 @@ export default function Icon({
   const IconComponent = name ? (logo[name] as React.ElementType) : null;
   const targetValue = target ? target : "_self";
   const colorClase = descriptionColor ? descriptionColor : "text-gray-400";
-  const router = useRouter();
-  // @ts-ignore
-  const handleLinkClick = (e, linkh) => {
-    // Evitar que el enlace realice la navegación predeterminada
-    e.preventDefault();
 
-    // Navegar a la URL especificada en la prop "link"
-    router.push(linkh);
-  };
   const handleMouseEnter = () => {
     // No hacer nada en el evento onMouseEnter
   };
@@ -48,7 +39,6 @@ export default function Icon({
         href={link}
         target={targetValue}
         className="relative flex flex-col items-center hover:bg-zinc-700 hover:bg-opacity-25 rounded"
-        onClick={(e) => handleLinkClick(e, link)}
         onMouseEnter={() => handleMouseEnter()}
       >
         {IconComponent && (
