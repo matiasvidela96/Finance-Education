@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <Context>
       {/* <ClerkProvider appearance={{ baseTheme: dark }}> */}
       <html lang="en">
         <body
@@ -50,6 +50,6 @@ export default function RootLayout({
         </body>
       </html>
       {/* </ClerkProvider> */}
-    </>
+    </Context>
   );
 }
