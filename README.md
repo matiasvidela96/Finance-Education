@@ -1,6 +1,9 @@
 # Finance Education Web App
 
-![Finance Education Logo](./assets/logo.png)
+<p align="center">
+  <img src="./logo.png" alt="Finance Education Logo" width="200px" />
+</p>
+
 
 ## Table of Contents
 
@@ -17,7 +20,7 @@
 
 The Finance Education web app is designed to provide users with a platform to learn about finance, assess their risk profile, and plan their finances based on their income. Whether you are a beginner looking to understand the basics of finance or an experienced investor wanting to optimize your financial strategy, this app can help you make informed decisions.
 
-![Screenshot](./assets/screenshot.png)
+![Screenshot](./captura.png)
 
 Key features of the app include risk profile assessment, income analysis, and educational resources to enhance your financial literacy.
 
