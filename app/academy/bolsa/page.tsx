@@ -9,7 +9,7 @@ export default function Bolsa() {
       <BackButton />
       <section>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="py-12">
+          <div className="">
             {/* Section header */}
             {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                             <h2 className="h2 mb-4">Finanzas</h2>
@@ -53,9 +53,9 @@ export default function Bolsa() {
       {/* nivel basico */}
       <section>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="py-12 md:py-20">
+          <div className="">
             {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
               <h2 className="h2 mb-4">Nivel basico</h2>
               <p className="text-xl text-gray-400">
                 Realiza tu primera inversion
@@ -127,7 +127,7 @@ export default function Bolsa() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="py-12 md:py-20">
             {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
               <h2 className="h2 mb-4">Nivel intermedio</h2>
               <p className="text-xl text-gray-400">
                 Obten una mejor rentabilidad/riesgo
@@ -203,9 +203,9 @@ export default function Bolsa() {
       {/* nivel avanzado */}
       <section>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="py-12 md:py-20">
+          <div className="">
             {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
               <h2 className="h2 mb-4">Nivel avanzado</h2>
               <p className="text-xl text-gray-400">
                 Saca el mayor provecho a tus inversiones
@@ -214,7 +214,7 @@ export default function Bolsa() {
 
             {/* Items */}
             <div
-              className="max-w-sm mx-auto grid gap-8 md:grid-cols-3 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none"
+              className="max-w-sm mx-auto grid gap-8 md:grid-cols-3 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none text-center"
               data-aos-id-blocks
             >
               {/* Futuros */}

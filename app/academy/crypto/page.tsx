@@ -9,7 +9,7 @@ export default function Crypto() {
       <BackButton />
       <section>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="py-12">
+          <div className="">
             {/* Section header */}
             {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                             <h2 className="h2 mb-4">Finanzas</h2>
@@ -53,9 +53,9 @@ export default function Crypto() {
       {/* nivel basico */}
       <section>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="py-12 md:py-20">
+          <div className="">
             {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
               <h2 className="h2 mb-4">Nivel basico</h2>
               <p className="text-xl text-gray-400">
                 Realiza tu primera inversion
@@ -123,9 +123,9 @@ export default function Crypto() {
       {/* nivel intermedio */}
       <section>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="py-12 md:py-20">
+          <div className="py-6 md:py-10">
             {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
               <h2 className="h2 mb-4">Nivel intermedio</h2>
               <p className="text-xl text-gray-400">
                 Obten una mejor rentabilidad/riesgo
@@ -189,9 +189,9 @@ export default function Crypto() {
       {/* nivel avanzado */}
       <section>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="py-12 md:py-20">
+          <div className="py-6 md:py-10">
             {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
               <h2 className="h2 mb-4">Nivel avanzado</h2>
               <p className="text-xl text-gray-400">
                 Saca el mayor provecho a tus inversiones
