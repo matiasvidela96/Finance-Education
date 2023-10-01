@@ -86,4 +86,4 @@ Please ensure your code adheres to the project's coding standards and includes a
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the [MIT](https://nodejs.org/) License - see the LICENSE file for details.
