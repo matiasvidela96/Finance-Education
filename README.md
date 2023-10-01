@@ -46,10 +46,41 @@ To get the Finance Education web app up and running, follow these steps:
    ```bash
    git clone https://github.com/matiasvidela96/Finance-Education.git
    
-2. Change to the project directory:
-
-  ```bash
-cd Finance-Education 3. Clone the repository:
+2. Change to the project directory::
 
    ```bash
-   git clone https://github.com/matiasvidela96/Finance-Education.git
+   cd Finance-Education
+   
+3. Install the required dependencies:
+
+   ```bash
+   npm install
+   
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   
+The app will be accessible at http://localhost:3000.
+
+## Usage
+- Visit the web app in your browser at http://localhost:3000.
+- Create an account or log in if you already have one.
+- Explore the risk profile assessment tool, income analysis, and educational resources.
+- Use the interactive tools and calculators to plan your financial goals.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
+
+- Fork the repository.
+- Create a new branch for your feature or bug fix.
+- Make your changes and commit them with descriptive messages.
+- Push your branch to your forked repository.
+- Create a pull request to merge your changes into the main repository.
+
+Please ensure your code adheres to the project's coding standards and includes appropriate documentation.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
