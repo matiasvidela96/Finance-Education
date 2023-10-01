@@ -1,90 +1,47 @@
-# Free React / Next.js landing page template
+# Finance Education Web App
 
-![Open React / Next.js template preview](https://user-images.githubusercontent.com/2683512/231426532-c71f4291-4813-401b-a569-ada47fe13efa.png)
+![Finance Education Logo](./assets/logo.png)
 
-**Open** is a **free React / Next.js landing page template built with Tailwind CSS** for developers/makers who want to create a quick and professional landing page for their open source projects, SaaS products, online services, and more.
+## Table of Contents
 
-Use it for whatever you want, and be sure to reach us out on [Twitter](https://twitter.com/Cruip_com) if you build anything cool/useful with it.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Created and maintained with ❤️ by [Cruip.com](https://cruip.com).
+## Introduction
 
-*Version 1.0.0 built with the Cruip CSS is available [here](https://github.com/cruip/open-react-template/releases/tag/1.0.0).*
-*Version 2.0.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/cruip/open-react-template/releases/tag/2.0.3).*
+The Finance Education web app is designed to provide users with a platform to learn about finance, assess their risk profile, and plan their finances based on their income. Whether you are a beginner looking to understand the basics of finance or an experienced investor wanting to optimize your financial strategy, this app can help you make informed decisions.
 
-## Live demo
+![Screenshot](./assets/screenshot.png)
 
-Check the live demo here 👉️ [https://open.cruip.com/](https://open.cruip.com/)
+Key features of the app include risk profile assessment, income analysis, and educational resources to enhance your financial literacy.
 
-## Open PRO
+## Features
 
-[![Open Pro](https://user-images.githubusercontent.com/2683512/151177673-e56ade57-c98d-4c37-b315-d313bd14bb53.png)](https://cruip.com/)
+- **Risk Profile Assessment:** Evaluate your risk tolerance and receive personalized financial recommendations.
+- **Income Analysis:** Analyze your income sources and learn how to manage them effectively.
+- **Educational Resources:** Access a library of educational materials, articles, and guides on various financial topics.
+- **Interactive Tools:** Use interactive calculators and planners to create financial goals and track your progress.
 
-## Design files
+## Getting Started
 
-If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/401KSUS
+### Prerequisites
 
-## Usage
+Before you begin, ensure you have met the following requirements:
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- [Node.js](https://nodejs.org/) installed on your system.
+- [Git](https://git-scm.com/) for version control.
 
-### Getting Started
+### Installation
 
-First, run the development server:
+To get the Finance Education web app up and running, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone the repository:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-### Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-### Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-
-### Support notes
-This template has been developed with the App Router (`app`) and React Server Components. If you’re unfamiliar with these beta features, you can find more information about them on the Next.js beta documentation page. So, please note that any request dealing with React (e.g. extra features, customisations, et cetera) is to be considered out of the support scope.
-
-For more information about what support covers, please see our (FAQs)[https://cruip.com/faq/].
-
-## Credits
-
-- [Nucleo](https://nucleoapp.com/)
-
-## Terms and License
-
-- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
-- Copyright 2023 [Cruip](https://cruip.com/).
-- Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
-- Attribution is not required, although it is really appreciated.
-
-## About Us
-
-We're an Italian developer/designer duo creating high-quality design/code resources for developers, makers, and startups.
-
-## Stay in the loop
-
-If you would like to know when we release new resources, you can follow us on [Twitter](https://twitter.com/Cruip_com), or you can subscribe to our monthly [newsletter](https://cruip.com/#subscribe).
+   ```bash
+   git clone https://github.com/matiasvidela96/Finance-Education.git
