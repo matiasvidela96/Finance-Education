@@ -111,7 +111,7 @@ export default function PerfilInversor() {
 
       {showScore ? (
         <>
-          <Link href={"/misEstrategias"}>
+          <a href={"/misEstrategias"}>
             <div className="max-w-4xl mx-auto rounded-xl sm:px-6 flex flex-col px-5  hover:bg-zinc-900 justify-center items-center mb-8">
               <h1 className="text-3xl font-bold text-purple-600 mb-2">
                 Felicitaciones haz realizado tu perfil de inversor!
@@ -150,7 +150,7 @@ export default function PerfilInversor() {
                 </div>
               </div>
             </div>
-          </Link>
+          </a>
         </>
       ) : (
         <section>
@@ -213,11 +213,10 @@ export default function PerfilInversor() {
                   <div className="flex justify-between w-full mt-4 text-white m-5">
                     <button
                       onClick={handlePrevious}
-                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${
-                        currentQuestion === 0
+                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${currentQuestion === 0
                           ? "opacity-50 cursor-not-allowed  "
                           : ""
-                      }`}
+                        }`}
                     >
                       Anterior
                     </button>
@@ -228,11 +227,10 @@ export default function PerfilInversor() {
                           ? handleSubmitButton
                           : handleNext
                       }
-                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${
-                        currentQuestion + 1 === questions.length
+                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${currentQuestion + 1 === questions.length
                           ? "bg-red-600 hover:bg-red-700 text-white"
                           : "bg-purple-700 hover:bg-purple-600 text-white"
-                      }`}
+                        }`}
                     >
                       {currentQuestion + 1 === questions.length
                         ? "Enviar"

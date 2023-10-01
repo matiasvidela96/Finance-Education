@@ -25,12 +25,12 @@ function main() {
           Definitivo para Aprender sobre Inversiones de Manera Asombrosa"
         </p>
 
-        <Link
+        <a
           href="/startPage"
           className="btn-sm text-white bg-zinc-950 hover:bg-purple-700  px-6 py-2 ml-3 mt-28 rounded-xl"
         >
           ADELANTE
-        </Link>
+        </a>
       </div>
     </section>
   );

@@ -29,12 +29,17 @@ export default function Icon({
   const IconComponent = name ? (logo[name] as React.ElementType) : null;
   const targetValue = target ? target : "_self";
   const colorClase = descriptionColor ? descriptionColor : "text-gray-400";
+
+  const handleMouseEnter = () => {
+    // No hacer nada en el evento onMouseEnter
+  };
   return (
     <>
-      <Link
+      <a
         href={link}
         target={targetValue}
         className="relative flex flex-col items-center hover:bg-zinc-700 hover:bg-opacity-25 rounded"
+        onMouseEnter={() => handleMouseEnter()}
       >
         {IconComponent && (
           <div className="flex items-center justify-center">
@@ -49,7 +54,7 @@ export default function Icon({
         <div>
           <p className={`text-lg ${colorClase} text-center`}>{description}</p>
         </div>
-      </Link>
+      </a>
     </>
   );
 }

@@ -1,14 +1,21 @@
 "use client";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 export default function BackButton() {
-  const router = useRouter();
+  // const router = useRouter();
+  const handleBack = () => {
+    window.history.back();
+  };
   return (
     <div>
       <button
         type="button"
         className="bg-purple-600 hover:bg-purple-700 text-white rounded  border-gray-100 py-2 px-3 mt-16"
-        onClick={() => router.back()}
+        onClick={(e) => {
+          handleBack();
+          e.stopPropagation();
+          // router.back();
+        }}
       >
         <div className="flex flex-row align-middle">
           <svg
