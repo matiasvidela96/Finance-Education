@@ -45,3 +45,11 @@ To get the Finance Education web app up and running, follow these steps:
 
    ```bash
    git clone https://github.com/matiasvidela96/Finance-Education.git
+   
+2. Change to the project directory:
+
+  ```bash
+cd Finance-Education 3. Clone the repository:
+
+   ```bash
+   git clone https://github.com/matiasvidela96/Finance-Education.git
