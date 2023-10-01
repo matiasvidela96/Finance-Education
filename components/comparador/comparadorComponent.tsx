@@ -8,7 +8,7 @@ const BrokerInfo = () => {
       <h1 className="text-3xl font-semibold mb-4 text-center">Brokers</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {brokers.map((broker, index) => (
-          <Link href={broker.link || ""} key={index} target="_blanck">
+          <a href={broker.link || ""} key={index} target="_blanck">
             <div
               key={index}
               className="bg-zinc-800 rounded-lg p-4 shadow-md hover:bg-purple-700"
@@ -30,7 +30,7 @@ const BrokerInfo = () => {
                 ))}
               </ul>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
 
@@ -39,7 +39,7 @@ const BrokerInfo = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {wallets.map((wallet, index) => (
-          <Link href={wallet.link || ""} key={index} target="_blanck">
+          <a href={wallet.link || ""} key={index} target="_blanck">
             <div
               key={index}
               className="bg-zinc-800 rounded-lg p-4 shadow-md hover:bg-purple-700"
@@ -61,7 +61,7 @@ const BrokerInfo = () => {
                 ))}
               </ul>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
       <h1 className="text-3xl font-semibold mt-8 mb-4 text-center">
@@ -69,7 +69,7 @@ const BrokerInfo = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {banks.map((bank, index) => (
-          <Link href={bank.link || ""} key={index} target="_blanck">
+          <a href={bank.link || ""} key={index} target="_blanck">
             <div
               key={index}
               className="bg-zinc-800 rounded-lg p-4 shadow-md hover:bg-purple-700"
@@ -89,7 +89,7 @@ const BrokerInfo = () => {
                 ))}
               </ul>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </div>

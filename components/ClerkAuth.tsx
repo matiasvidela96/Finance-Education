@@ -38,20 +38,20 @@ export default function ClerkAuth() {
         <div>
           <ul className="flex justify-center mt-3">
             <li className="mr-3">
-              <Link
+              <a
                 href="/sign-in"
                 className="text-white hover:text-purple-600"
               >
                 Sign In
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="/sign-up"
                 className="bg-purple-600 hover:bg-purple-700 text-white py-2 px-4"
               >
                 Sign Up
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

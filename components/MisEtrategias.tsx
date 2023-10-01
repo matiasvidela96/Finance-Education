@@ -52,7 +52,7 @@ function MisEtrategias() {
   if (!perfilLocalStorage) {
     return (
 
-      <Link href={"/perfilInversor"}>
+      <a href={"/perfilInversor"}>
         <div
           data-aos="fade-up"
           data-aos-delay="100"
@@ -79,7 +79,7 @@ function MisEtrategias() {
               ></Icon> */}
           </div>
         </div>
-      </Link>
+      </a>
     );
   }
 

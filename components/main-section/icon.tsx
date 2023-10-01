@@ -35,7 +35,7 @@ export default function Icon({
   };
   return (
     <>
-      <Link
+      <a
         href={link}
         target={targetValue}
         className="relative flex flex-col items-center hover:bg-zinc-700 hover:bg-opacity-25 rounded"
@@ -54,7 +54,7 @@ export default function Icon({
         <div>
           <p className={`text-lg ${colorClase} text-center`}>{description}</p>
         </div>
-      </Link>
+      </a>
     </>
   );
 }

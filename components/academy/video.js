@@ -16,14 +16,14 @@ const YoutubeEmbed = ({ embedId, title, description }) => (
             />
         </div>
 
-        <Link href={`https://youtu.be/${embedId}`} target='_blank'>
+        <a href={`https://youtu.be/${embedId}`} target='_blank'>
             <div className=" rounded overflow-hidden shadow-lg  hover:bg-purple-800 ">
                 <div className="px-6 py-4 ">
                     <div className="font-bold text-xl mb-2 flex items-center justify-center">{title}</div>
                     <p className="text-withe text-base text-center">{description}</p>
                 </div>
             </div>
-        </Link>
+        </a>
     </>
 );
 

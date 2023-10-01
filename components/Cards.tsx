@@ -5,7 +5,7 @@ function Cards({ title, description, link, tags, target, image }: CardsProps) {
   const targetValue = target ? target : "_self";
   return (
     <>
-      <Link href={link} target={targetValue}>
+      <a href={link} target={targetValue}>
         <div className=" max-w-md rounded overflow-hidden shadow-lg  hover:bg-purple-800 ">
           <img
             className="w-full"
@@ -25,7 +25,7 @@ function Cards({ title, description, link, tags, target, image }: CardsProps) {
             ))}
           </div>
         </div>
-      </Link>
+      </a>
     </>
   );
 }
