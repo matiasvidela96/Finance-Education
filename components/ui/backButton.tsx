@@ -14,7 +14,6 @@ export default function BackButton() {
         onClick={(e) => {
           handleBack();
           e.stopPropagation();
-          // router.back();
         }}
       >
         <div className="flex flex-row align-middle">
