@@ -62,13 +62,13 @@ function ModerateProfile({ income }: ProfileProps) {
 
   return (
     <>
-      <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+      <div className="max-w-3xl mx-auto text-center ">
         <h2 className="text-3xl font-bold mb-2 text-purple-600">
           Estrategia 1
         </h2>
       </div>
       <div
-        className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-16 items-start md:max-w-2xl lg:max-w-none text-center"
+        className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-16 items-start md:max-w-2xl lg:max-w-none text-center mb-5"
         data-aos-id-blocks
       >
         {strategyOne.map((item, index) => (
@@ -94,7 +94,7 @@ function ModerateProfile({ income }: ProfileProps) {
         ))}
       </div>
 
-      <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+      <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-2 text-purple-600">
           Estrategia 2
         </h2>

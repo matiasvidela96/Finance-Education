@@ -13,7 +13,7 @@ const roboto = Roboto({
 });
 function main() {
   return (
-    <section className="flex justify-center items-center h-screen">
+    <section className="flex justify-center text-center items-center h-screen">
       <div
         className={`w-full h-auto  bg-gradient-to-r p-8 flex flex-col items-center justify-center items-centerbg-gradient-to-r  from-purple-800 to-purple-950 `}
       >
@@ -27,7 +27,7 @@ function main() {
 
         <a
           href="/startPage"
-          className="btn-sm text-white bg-zinc-950 hover:bg-purple-700  px-6 py-2 ml-3 mt-28 rounded-xl"
+          className="btn-sm text-white bg-zinc-950 hover:bg-purple-700  px-6 py-2 ml-3 mt-16 rounded-xl"
         >
           ADELANTE
         </a>

@@ -7,7 +7,7 @@ import BackButton from "@/components/ui/backButton";
 import { AnswerProps } from "answer";
 import Icon from "@/components/main-section/icon";
 import { PerfilInversorContext } from "../contexts/perfilInversor";
-import Link from "next/link";
+// import Link from "next/link";
 
 // import { useUser } from "@clerk/nextjs";
 
@@ -86,9 +86,10 @@ export default function PerfilInversor() {
     setShowScore(true);
   };
   function getRiskProfile(score: number) {
+    console.log(score);
     if (score <= 14) {
       setPerfilInversor("Perfil Conservador");
-    } else if (score > 14 && score <= 21) {
+    } else if (score > 14 && score <= 20) {
       setPerfilInversor("Perfil Moderado");
     } else {
       setPerfilInversor("Perfil Arriesgado");
@@ -104,15 +105,10 @@ export default function PerfilInversor() {
   return (
     <>
       <BackButton />
-      <Head>
-        <title>Perfil del inversor</title>
-        <meta name="description" content="Crea tu perfil de inversion" />
-      </Head>
-
       {showScore ? (
         <>
           <a href={"/misEstrategias"}>
-            <div className="max-w-4xl mx-auto rounded-xl sm:px-6 flex flex-col px-5  hover:bg-zinc-900 justify-center items-center mb-8">
+            <div className="max-w-4xl mx-auto rounded-xl sm:px-6 flex flex-col px-5 py-5 text-center hover:bg-zinc-900 justify-center items-center mb-8">
               <h1 className="text-3xl font-bold text-purple-600 mb-2">
                 Felicitaciones haz realizado tu perfil de inversor!
               </h1>
@@ -121,13 +117,15 @@ export default function PerfilInversor() {
                 perfil de riesgo y el monto de inversión
               </p>
 
-              <div className=" p-6  rounded-lg shadow-md">
+              <div className="rounded-lg shadow-md">
                 {/* <h1 className="text-3xl font-semibold text-center text-purple-600">
                   Tu Puntaje es: {score}
                 </h1> */}
-                <p className="text-3xl  font-semibold text-center  mb-10 text-purple-600">
-                  {" "}
-                  Tu Perfil de riesgo es: {getRiskProfile(score)}
+                <h1 className="text-3xl  font-semibold text-center text-gray-400">
+                  Tu Perfil de riesgo es:
+                </h1>
+                <p className="text-3xl font-semibold text-center mb-5 text-purple-600">
+                  {getRiskProfile(score)}
                 </p>
                 {/* Mis estrategias*/}
                 <div
@@ -155,7 +153,7 @@ export default function PerfilInversor() {
       ) : (
         <section>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
-            <div className="py-12 md:py-20">
+            <div className="py-5 md:py-20">
               {/* Section header */}
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20 ">
                 <h2 className="h2 mb-4">Perfil del Inversor</h2>
@@ -213,10 +211,11 @@ export default function PerfilInversor() {
                   <div className="flex justify-between w-full mt-4 text-white m-5">
                     <button
                       onClick={handlePrevious}
-                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${currentQuestion === 0
+                      className={`w-[49%] py-3 bg-purple-700 hover:bg-purple-600 rounded-lg ${
+                        currentQuestion === 0
                           ? "opacity-50 cursor-not-allowed  "
                           : ""
-                        }`}
+                      }`}
                     >
                       Anterior
                     </button>
@@ -227,10 +226,11 @@ export default function PerfilInversor() {
                           ? handleSubmitButton
                           : handleNext
                       }
-                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${currentQuestion + 1 === questions.length
+                      className={`w-[49%] py-3 rounded-lg disabled:opacity-50 ${
+                        currentQuestion + 1 === questions.length
                           ? "bg-red-600 hover:bg-red-700 text-white"
                           : "bg-purple-700 hover:bg-purple-600 text-white"
-                        }`}
+                      }`}
                     >
                       {currentQuestion + 1 === questions.length
                         ? "Enviar"

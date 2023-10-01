@@ -7,7 +7,7 @@ import Logo from "@/public/images/logo.png";
 
 export default function Header() {
   return (
-    <header className=" w-full z-30 shadow-md py-2 md:py-4 px-4 md:px-6 ">
+    <header className=" w-full z-30 shadow-md py-6 md:py-4 px-4 md:px-6 ">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           <div className="shrink-0 mr-4">
@@ -26,9 +26,7 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
-              <li className="mt-">
-                {/* <ClerkAuth /> */}
-              </li>
+              <li className="mt-">{/* <ClerkAuth /> */}</li>
             </ul>
           </nav>
           {/* <MobileMenu /> */}
