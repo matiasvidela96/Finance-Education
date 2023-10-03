@@ -123,7 +123,7 @@ export default function Crypto() {
       {/* nivel intermedio */}
       <section>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="py-6 md:py-10">
+          <div className="py-6 md:py-20">
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
               <h2 className="h2 mb-4">Nivel intermedio</h2>
@@ -189,9 +189,9 @@ export default function Crypto() {
       {/* nivel avanzado */}
       <section>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="py-6 md:py-10">
+          <div className="py-6 md:py-5">
             {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
+            <div className="max-w-3xl mx-auto text-center pb-6 md:pb-16">
               <h2 className="h2 mb-4">Nivel avanzado</h2>
               <p className="text-xl text-gray-400">
                 Saca el mayor provecho a tus inversiones

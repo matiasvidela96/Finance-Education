@@ -9,14 +9,14 @@ export default function Footer() {
       <div className=" w-full shadow-md  px-4 md:px-6 ">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           {/* Top area: Blocks */}
-          <div className="grid md:grid-cols-12 gap-8 lg:gap-20">
+          <div className=" h-20 flex items-center justify-center md:justify-between ">
             {/* 1st block */}
             <div className="md:col-span-4 lg:col-span-5">
               <div className="mb-2 justify-self-end">
                 {/* Logo */}
                 <a href="/" className="inline-block" aria-label="Cruip">
                   <Image
-                    className="max-w-full mx-auto md:max-w-none h-auto"
+                    className="max-w-full mx-auto md:max-w-none h-auto mt-8"
                     src={Logo}
                     width={75}
                     height={75}
