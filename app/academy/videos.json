@@ -231,48 +231,366 @@
             "description": "¿Es REALMENTE posible VIVIR de las Obligaciones Negociables en Argentina? Hoy te traemos Números y Datos REALES para que compruebes por vos mismo si existe esta posibilidad."
         }
     ],
-    "blockchain": [
+    "stablecoins": [
         {
             "id": "1",
-            "title": " Qué es y Cómo Funcionan las OBLIGACIONES NEGOCIABLES",
-            "url": "JcvaqZNW6bc",
-            "description": "Queres saber ¿Qué es una obligación negociable? ¿Cómo funcionan las ON en Argentina? ¿Cómo se cobran las obligaciones negociables? ¿Cuándo pagan las obligaciones negociables? Enterate de todo esto y MUCHO MÁS en este video!"
+            "title": "ESTAS SON las 5 STABLECOINS más SEGURAS ",
+            "url": "QsdcVxU1ihU",
+            "description": "¿Las STABLECOINS Algorítmicas son seguras? ¿Qué puede pasar con las STABLECOIN centralizadas?"
         },
         {
             "id": "2",
-            "title": "OBLIGACIONES NEGOCIABLES TODO lo que NECESITAS saber ANTES de INVERTIR en ellas",
-            "url": "1GAtVTYOCyA",
-            "description": "A tener en cuenta"
+            "title": "¿Son SEGURAS Las Stablecoins? - Analisis de TODAS",
+            "url": "OGes617VC8I",
+            "description": "Análisis de las stablecoins más seguras"
         },
         {
             "id": "3",
-            "title": "Obligaciones negociables (ON): ¿Que son y como las analizamos?",
-            "url": "TWl0akW2QpU",
-            "description": "En este video vemos lo que son las ON, como podemos encontrar información de cada una y poder analizar su flujo de fondos para poder comprarlas sabiendo cuanto vamos a cobrar en el futuro"
+            "title": "DOLARIZATE CON ESTAS CRIPTOS STABLECOIN",
+            "url": "hQijF-7dRwQ",
+            "description": "HOY VAMOS  A HABLAR DE LAS MONEDAS ESTABLES LAS STABLECOIN"
         },
         {
             "id": "4",
-            "title": "Alternativa al Plazo Fijo Tradicional (Obligaciones Negociables 2024",
-            "url": "jxvsTkJx5Vs",
-            "description": "Una buena alternativa"
+            "title": "COMO COMPRAR CRIPTOMONEDAS EN BINANCE - 2023",
+            "url": "uuWvg5LUCgw",
+            "description": "Aprende a comprar stablecoins"
         },
         {
             "id": "5",
-            "title": "Invertí en DÓLARES con Obligaciones Negociables",
-            "url": "mDY0yZazWdw",
-            "description": "Inversión en dólares"
+            "title": "COMO COMPRAR Y VENDER EN BINANCE",
+            "url": "X9uhpWSYCGQ",
+            "description": "Compra y vende stablecoins"
         },
         {
             "id": "6",
-            "title": "Dolares PASIVOS todos los meses con Obligaciones negociables",
-            "url": "ttyXINhRCQE",
-            "description": "Ingresos pasivos"
+            "title": "Como Comprar StableCoins en BINANCE | Con Tarjeta de CREDITO o DEBITO",
+            "url": "_bu7L8kBMbk",
+            "description": "Hoy veremos como comprar StableCoins en Binance, siguiendo tan solo 5 simples pasos"
+        }
+    ],
+    "staking": [
+        {
+            "id": "1",
+            "title": "Un Mes Haciendo Staking De Criptomonedas En Binance",
+            "url": "w76Sn3FeR2g",
+            "description": "Descubre cuanto dinero he generado de forma totalmente pasiva en tan solo un mes haciendo staking de criptomonedas en Binance."
+        },
+        {
+            "id": "2",
+            "title": "Como hacer STAKING en BINANCE",
+            "url": "sLzMdgIFNMs&t=15s",
+            "description": "Genera rendimientos con tus stablecoins"
+        },
+        {
+            "id": "3",
+            "title": "Cómo Hacer Staking o Farming en Binance 2023 Para Principiantes",
+            "url": "wB6HrX1vLNM",
+            "description": "Empieza a ganar más dinero con las cryptos que ya tienes"
+        },
+        {
+            "id": "4",
+            "title": "INGRESOS PASIVOS REALES TODOS LOS DIAS",
+            "url": "FaMq1AC8k-w",
+            "description": "Generar USDTs con Nexo a traves del staking"
+        },
+        {
+            "id": "5",
+            "title": "Tutorial Completo NEXO en Español Paso a Paso para Principiantes",
+            "url": "CSQj_bpqe1Q",
+            "description": "Guia NEXO"
+        }
+    ],
+    "stakingDefi": [
+        {
+            "id": "1",
+            "title": "Como FUNCIONA el STAKING DEFI en BINANCE",
+            "url": "ZOsfcU4ymBI",
+            "description": "Como funciona el Staking DeFi que nos ofrece Binance"
+        },
+        {
+            "id": "2",
+            "title": "Staking Bloqueado y Staking DeFi ¿Como Funciona? ¿Es Confiable?",
+            "url": "bovGw9Arwbw",
+            "description": "Explicación staking defi"
+        },
+        {
+            "id": "3",
+            "title": "Como Hacer STAKING en PANCAKESWAP 2023 Paso a Paso TUTORIAL",
+            "url": "ZvosdZ1G2MA",
+            "description": "Como hacer stake en pancakeswap actualizado version 2 paso a paso, tutorial, facil y rapido, muy bien explicado, comienza a generar ingresos pasivos gracias a esta inversion"
+        },
+        {
+            "id": "4",
+            "title": "TODO lo que necesitas saber sobre DeFi crypto",
+            "url": "SY5YlK4msck",
+            "description": "DeFi es la abreviación de Decentralized Finance, que traduce al castellano como finanzas descentralizadas."
+        }
+    ],
+    "liquidezConcentrada": [
+        {
+            "id": "1",
+            "title": "Cómo GANAR DINERO con DEFI en 2023",
+            "url": "nbJPyYoNe7A",
+            "description": "Liquidez concentrada por rango de precios"
+        },
+        {
+            "id": "2",
+            "title": "Es UNISWAP la Inversión Más Rentable del Momento? ~ Liquidez Concentrada, Tutorial y Riesgos",
+            "url": "Hsb1Z_raj3U",
+            "description": "Una nueva oportunidad para depositar nuestra liquidez en el exchange descentralizado y potenciar la rentabilidad"
+        },
+        {
+            "id": "3",
+            "title": "FUNCIONA!!! ~ Diseña La Estrategia PERFECTA de Ingresos Pasivos con Criptomonedas en UNISWAPL",
+            "url": "d9R9bLVRSjU",
+            "description": "La liquidez concentrada de Uniswap V3 es una auténtica oportunidad para generar una muy buena rentabilidad con las mejores criptomonedas como Bitcoin o Ethereum. Para ello, es imprescindible entender cómo funciona la liquidez concentrada y cuál es la mejor estrategia para cada tipo de inversor"
+        },
+        {
+            "id": "4",
+            "title": "LIQUIDEZ CONCENTRADA TE MUESTRO LO QUE SE GANA",
+            "url": "U2yx2Q688bA",
+            "description": "Uniswap junto a otras dex en sus nuevas versiones traen la LIQUDEZ CONCENTRADA, estas nos van a servir para poder tener una inversion con una buena rentabilidad. Eso si con su respectivo riesgo. Queres saber de que se trata este tipo de inversion y como poder crear una liquidez, quedate viendo el video"
+        },
+        {
+            "id": "5",
+            "title": "DESCUBRIMIENTO BRUTAL Rentabilidad DE LOCOS en Pancakeswap y Uniswap + Cambios en BNB Chain",
+            "url": "6V_JRqqJTpI",
+            "description": "Compartí varias inversiones a modo de pruebas utilizando liquidez concentrada en Pancakeswap, Uniswap y Apeswap. Hoy es momento de revisar qué rentabilidad he obtenido para sacar conclusiones y depositar más liquidez en las mejores pools de liquidez y descartar las inversiones de menor rentabilidad. Compartiré también nuevas pools desconocidas en las que hay muy poca liquidez y que pueden ser muy rentables utilizando la liquidez concentrada"
+        },
+        {
+            "id": "6",
+            "title": "Increíble Estrategia en BNB Chain (NUEVAS OPORTUNIDADES Recién Salidas)",
+            "url": "_UB6cWk_W4Y",
+            "description": "Tanto pancakeswap como apeswap acaban de implementar la liquidez concentrada (con altísimas rentabilidades)"
+        }
+    ],
+    "liquidezDefi": [
+        {
+            "id": "1",
+            "title": "YIELD FARMING: ¿QUÉ ES? Explicación rápida en Español",
+            "url": "V2oeqhXPYE4",
+            "description": "En el vídeo de hoy explicaremos qué es el yield farming crypto en español, una de las mejores estrategias para generar ingresos pasivos con criptomonedas y que muy poca gente está utilizando"
+        },
+        {
+            "id": "2",
+            "title": "Curso GRATIS De Yield Farming | Ingresos Pasivos Con Criptomonedas",
+            "url": "kQBCc2rGHaQ",
+            "description": "Guía paso a paso para principiantes en la que aprenderás a generar ingresos pasivos con criptomonedas haciendo Yield Farming"
+        },
+        {
+            "id": "3",
+            "title": "STAKING VS YIELD FARMING ¿Qué estrategia es mejor para INGRESOS PASIVOS?",
+            "url": "Gn_gnmF4-Xk",
+            "description": "En este vídeo aprenderás las dos mejores estrategias para generar ingresos pasivos con tus criptomonedas, el staking y el yield farming. ¿Cuál es la mejor estrategia para ingresos pasivos? ¿Qué rentabilidades da cada una? ¿Son seguras? En este vídeo aprenderás todo"
+        },
+        {
+            "id": "4",
+            "title": "Cómo Invertir en DEFI desde CERO ~ Estrategia RENTABLE Para GENERAR INGRESOS PASIVOS",
+            "url": "AlAZiZvwajw",
+            "description": "Gracias a las finanzas descentralizadas (DEFI) y el yield farming podemos obtener rentabilidades mayores del 100% incluso cuando el mercado está en tendencia bajista"
+        },
+        {
+            "id": "5",
+            "title": "Cuánto Puedo GANAR Invirtiendo en Yield Farming y cómo Funcionan las Rentabilidades de las Pools?",
+            "url": "jpY61UQ_SD8",
+            "description": "En esta parte nos vamos a centrar en entender de donde salen las rentabilidades de las pools y cómo calcular cuanto podemos ganar haciendo yield Farming. También analizaremos cual es el mínimo de inversión recomendado"
+        },
+        {
+            "id": "6",
+            "title": "Yield Farming en Español ~ La Inversión + Rentable del Momento ~ Introducción a DEFI y a los DEX",
+            "url": "yPWTaLw6Vwk",
+            "description": "Tutorial de Yield Farming en Español. Introducción a las DEFI (Finanzas Descentralizadas) y a los Exchanges descentralizados (DEX) como Uniswap o Pancakeswap. "
         },
         {
             "id": "7",
-            "title": "¿Se puede VIVIR de las ON?",
-            "url": "beoKcBdgACk",
-            "description": "¿Es REALMENTE posible VIVIR de las Obligaciones Negociables en Argentina? Hoy te traemos Números y Datos REALES para que compruebes por vos mismo si existe esta posibilidad."
+            "title": "Riesgos del Yield Farming y Cómo Evitarlos ~ Impermanent Loss Explicado + Herramientas de Cálculo",
+            "url": "F0ism7rDA2s",
+            "description": "En esta parte nos vamos a centrar en los principales riesgos del Yield Farming entre ellos la posibilidad de sufrir hackeos, rug pulls y se analizará el riesgo al que siempre estamos expuestos, el riesgo de impermament loss."
+        },
+        {
+            "id": "8",
+            "title": "Tiempo Óptimo de Re Inversión en Pools de Farming ~ Cuánto vale un LP Token?",
+            "url": "a50GmF2xy1U",
+            "description": "En esta parte vamos a analizar cada cuanto tiempo debemos reclamar los dividendos generados en las pools para luego re invertirlos de la manera más eficiente posible teniendo en cuenta las comisiones que tenemos que pagar."
+        },
+        {
+            "id": "9",
+            "title": "MASTERCLASS FARMING ~ Cómo ANALIZAR Tus Inversiones y Calcular EXACTAMENTE Tus GANANCIAS o PÉRDIDAS",
+            "url": "liRzyMzY6QY",
+            "description": "Inviertes en Yield Farming? Sufres Impermanent Loss?  Sabes utilizar y analizar la Blockchain en Etherscan o Bscscan? Cuánto Has Ganado o Perdido? Cuánto vale tu inversión ahora mismo? Te enseño todo lo que necesitas saber para realizar correctamente y sin margen de error todos estos cálculos. Este método te servirá para cualquier blockchain y para cualquier pool de liquidez en la que estés haciendo yield farming"
+        }
+    ],
+    "preventas": [
+        {
+            "id": "1",
+            "title": "Preventas de Criptomonedas",
+            "url": "wxt4DVU5wu0",
+            "description": "Saber encontrar preventas dentro del mercado de las criptomonedas puede generarte mucho dinero, inclusive millones de dólares."
+        },
+        {
+            "id": "2",
+            "title": "¿Dónde y Cómo GANAR DINERO con Preventas de Tokens?",
+            "url": "ppPa5VklFgk",
+            "description": "Preventas criptomonedas"
+        },
+        {
+            "id": "3",
+            "title": "Donde Encontrar las Mejores PREVENTAS de CRIPTOMONEDAS - 3 PLATAFORMAS - ICO, IDO, IGO, STO y más !!",
+            "url": "-MuMehw-mCI",
+            "description": "En este video vamos a ver 3 plataformas donde podemos encontrar preventas de proyectos crypto"
+        },
+        {
+            "id": "4",
+            "title": "COINLIST ¡¡ESTA ES LA ESTRATEGIA QUE SIGO PARA ENTRAR EN 2 DE CADA 3 PREVENTAS!!",
+            "url": "-IoW6qpzoZg",
+            "description": "Preventas en coinlist"
+        }
+    ],
+    "cauciones": [
+        {
+            "id": "1",
+            "title": "Cauciones Bursátiles Mas que MERCADO PAGO [PASO A PASO]",
+            "url": "Nun9zPRGONQ",
+            "description": "En esta oportunidad tenemos un mini tutorial de como hacer una Caución Bursatil. Bajo mi punto de vista y en el momento que estamos grabando este video no es un gran instrumento para utilizar, sin embargo sirve para la espera de las oportunidades"
+        },
+        {
+            "id": "2",
+            "title": "CAUCIONES TODO lo que NECESITAS saber ANTES de INVERTIR en ellas",
+            "url": "SX8CBsHNxsY",
+            "description": "Tutorial de cauciones"
+        },
+        {
+            "id": "3",
+            "title": "Invertir en CAUCIONES Guía PASO a PASO (2023)",
+            "url": "67dFGQHK5Og",
+            "description": "Te contamos todo lo que necesitas saber sobre las cauciones y cómo hacer una caución colocadora en el mercado de valores. La caución es considerada el instrumento más seguro y también se lo suele llamar el plazo fijo de la bolsa porque tiene varias similitudes. Sin embargo también tiene varias diferencias, en este video te las contamos"
+        },
+        {
+            "id": "4",
+            "title": "Tips para mejorar las GANANCIAS en una CAUCION BURSATIL",
+            "url": "rSoF6hnXooI",
+            "description": "Consejos para cauciones"
+        },
+        {
+            "id": "5",
+            "title": "Qué es y Cómo Funcionan las CAUCIONES",
+            "url": "WY4DAnCwLHc",
+            "description": "Queres saber ¿Qué es invertir en cauciones? ¿Cómo Funcionan? ¿Cuánto pagan? ¿Qué tan conveniente es invertir en ellas? Hoy vas a aprender todo eso y mucho más!"
+        },
+        {
+            "id": "6",
+            "title": "Como【INVERTIR en CAUCIONES】en BULL MARKET BROKERS - MAS QUE MERCADO PAGO",
+            "url": "8BOjzTLS81k",
+            "description": "Como invertir en CAUCIONES en Bull market brokers! En donde tenemos una tasa anual mas alta que mercado pago!!"
+        }
+    ],
+    "futuros": [
+        {
+            "id": "1",
+            "title": "Contratos de futuros ¿qué son? Bolsa para dummies",
+            "url": "8d4bC4SQj7w",
+            "description": "En este video explicaremos cómo funcionan los así llamados futures o contratos de futuro. Los futuros pueden usarse tanto para hacer operaciones de cobertura como para especular en bolsa"
+        },
+        {
+            "id": "2",
+            "title": "INVERSIONES AVANZADAS: Cómo se operan los FUTUROS",
+            "url": "5-m1-hysbo4",
+            "description": "Conocé todo sobre este instrumento de cobertura!! "
+        },
+        {
+            "id": "3",
+            "title": "CURSO DE FUTUROS GRATIS | INVERTIR EN FUTUROS | ROFEX | FUTUROS DE DOLAR, ORO, COMMODITIES",
+            "url": "h97Z9JnrlUc",
+            "description": "Aprendé a invertir en derivados financieros con los contratos de futuros"
+        },
+        {
+            "id": "4",
+            "title": "El mercado de futuros de manera simple: Aprende cómo funciona este derivado financiero",
+            "url": "X40MYpdH0Ek",
+            "description": "¿Qué es un futuro financiero? ¿Cómo cambia su precio? ¿Para qué sirve? ¿Dónde se encuentran? En este video te explicaré todo esto y mucho más para que puedas comenzar tu camino en este mercado"
+        }
+    ],
+    "bonos": [
+        {
+            "id": "1",
+            "title": "Qué son los Bonos y Cómo Invertir en ellos",
+            "url": "3id4PtNbhp8",
+            "description": "¿Necesitas empezar a invertir en bonos para tener realmente un portafolio completo? Si quieres saber cómo hacerlo quédate hasta el final. Veremos: ¿Qué son los bonos?, ¿Por qué invertir en bonos?, ¿Cuáles son sus riesgos?, ¿Cómo se comparan con las acciones? y Cómo invertir en ellos"
+        },
+        {
+            "id": "2",
+            "title": "APOCALIPSIS DE BONOS ARGENTINOS ¿DESTRUCCIÓN TOTAL?",
+            "url": "608hrnXn_yo",
+            "description": "Bonos argentinos"
+        },
+        {
+            "id": "3",
+            "title": "Cómo invertir en bonos en Argentina: ¿CONVIENE? ¿AL30 o BND?",
+            "url": "zvG3bo8jLh8",
+            "description": "Como comprar bonos"
+        },
+        {
+            "id": "4",
+            "title": "Bono AL30 ¿lo tenes en cartera o estas pensando comprarlo para mantenerlo?",
+            "url": "A_VDzIDFZY0",
+            "description": "Bono AL30"
+        },
+        {
+            "id": "5",
+            "title": "Qué es y Cómo Funcionan los BONOS en Argentina",
+            "url": "0CFjRrlAAvA",
+            "description": "Queres saber ¿Qué bonos existen en Argentina? ¿Cuánto cuesta un bono en Argentina? ¿Cuál es la rentabilidad de los bonos argentinos? ¿Cuáles son los bonos atados al CER? ¿Qué es un Bono Tasa Cero? Enterate de todo esto y MUCHO MÁS en este video!"
+        },
+        {
+            "id": "6",
+            "title": "DOLARIZATE al tipo de cambio Oficial SIN RESTRICCIONES con bonos Dólar Linked",
+            "url": "dpbo2eJq2Ss&t=4s",
+            "description": "Bono Dolar linked"
+        },
+        {
+            "id": "7",
+            "title": "¿Qué son los bonos?",
+            "url": "8O04-Ee6yTg",
+            "description": "Conocé más sobre esta herramienta de inversión"
+        }
+    ],
+    "accionesExtranjeras": [
+        {
+            "id": "1",
+            "title": "Las MEJORES PLATAFORMAS para INVERTIR en la BOLSA (TODO el MUNDO)",
+            "url": "kre6ieB_krU",
+            "description": "Si desde hace tiempo quieres empezar a invertir en la bolsa de valores pero no sabes por dónde empezar este video es para ti. En este video repasamos las mejores plataformas para empezar a invertir en la bolsa de valores, empezamos con las plataformas de México y terminamos con las que sirve para todo el mundo."
+        },
+        {
+            "id": "2",
+            "title": "¿Invertir a través de una SAB o broker extranjero?",
+            "url": "hA7WFNi2Nn4",
+            "description": "En este video te mostrare las ventajas y desventajas de invertir a través de una Sociedad Agente de Bolsa y un Broker Extranjero."
+        },
+        {
+            "id": "3",
+            "title": "Top 5 de los Mejores Brokers Internacionales",
+            "url": "IjK8lXQ3Olc",
+            "description": "Brokers para invertir en acciones de EE.UU. "
+        },
+        {
+            "id": "4",
+            "title": "TOP 3 MEJORES BROKERS para INVERTIR TU DINERO",
+            "url": "G8TDAcucuV0",
+            "description": "En este video voy a estar mostrándote cuál es mi top 3 de mejores brokers para invertir tu dinero"
+        },
+        {
+            "id": "5",
+            "title": "Como COMPRAR ACCIONES Desde Argentina 2023",
+            "url": "NjzT1D0EkPM",
+            "description": "Hablamos un poco de la diferencia entre acciones y CEDEARs para que aprendan como operar cada activo"
+        },
+        {
+            "id": "6",
+            "title": "Mejores BROKERS de FOREX Y TRADING en Estados Unidos",
+            "url": "qvV4cniCEEY",
+            "description": "Los mejores brokers de forex en Estados Unidos y los mejores brokers para hacer trading desde Estados Unidos, unidos en un mismo vídeo"
         }
     ]
 }

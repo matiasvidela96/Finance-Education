@@ -23,7 +23,7 @@ export default function Cauciones(this: any) {
               data-aos-id-blocks
             >
               {/* Mapear los distintos videos */}
-              {Videos.blockchain.map((video, index) => (
+              {Videos.cauciones.map((video, index) => (
                 <div
                   data-aos="fade-up"
                   data-aos-delay="100"

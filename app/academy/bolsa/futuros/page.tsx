@@ -23,7 +23,7 @@ export default function Futuros(this: any) {
               data-aos-id-blocks
             >
               {/* Mapear los distintos videos */}
-              {Videos.blockchain.map((video, index) => (
+              {Videos.futuros.map((video, index) => (
                 <div
                   data-aos="fade-up"
                   data-aos-delay="100"
