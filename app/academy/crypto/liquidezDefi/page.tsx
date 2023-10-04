@@ -14,7 +14,7 @@ export default function StableCoins(this: any) {
           <div className="py-12">
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-              <h2 className="h2 mb-4">Liquidea en defi</h2>
+              <h2 className="h2 mb-4">Liquidez en defi</h2>
               <p className="text-xl text-gray-400">Agrega liquidez en la plataforma para ganar una parte de las ganancias</p>
             </div>
             {/* Items */}
@@ -23,7 +23,7 @@ export default function StableCoins(this: any) {
               data-aos-id-blocks
             >
               {/* Mapear los distintos videos */}
-              {Videos.liquidezConcentrada.map((video, index) => (
+              {Videos.liquidezDefi.map((video, index) => (
                 <div
                   data-aos="fade-up"
                   data-aos-delay="100"
