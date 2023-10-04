@@ -5,7 +5,7 @@ import Logo from "@/public/images/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="sticky bottom-0">
+    <footer className="sticky bottom-0 top-full ">
       <div className=" w-full shadow-md  px-4 md:px-6 ">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           {/* Top area: Blocks */}
