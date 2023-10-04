@@ -153,9 +153,9 @@ export default function PerfilInversor() {
       ) : (
         <section>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
-            <div className="py-5 md:py-20">
+            <div className="py-5 ">
               {/* Section header */}
-              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20 ">
+              <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10 ">
                 <h2 className="h2 mb-4">Perfil del Inversor</h2>
                 <p className="text-xl text-gray-400">
                   Responde unas preguntas para definir tus estrategias
