@@ -68,7 +68,7 @@ function BlogEntry({ title, imageSrc }: blogProps) {
         </p>
         <div className="mb-8">
           <YoutubeEmbed
-            embedId={"33k7LaDlEA0"}
+            embedId={"Y9_YqwsJb8Q"}
             title={"Volatibilidad"}
             description={"Como manejarte en un mercado cambiante"}
           />
