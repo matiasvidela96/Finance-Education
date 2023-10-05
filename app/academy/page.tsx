@@ -10,10 +10,10 @@ export default function Academy() {
     <>
       <BackButton />
       <section>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-10">
           <div className="">
             {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
               <h2 className="h2 mb-4">Academy</h2>
               <p className="text-xl text-gray-400">
                 Aprende sobre el mundo de la inversion

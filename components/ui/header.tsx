@@ -3,14 +3,13 @@ import MobileMenu from "./mobile-menu";
 import Image from "next/image";
 import Logo from "@/public/images/logo.png";
 
-// import ClerkAuth from "../ClerkAuth";
-
 export default function Header() {
   return (
-    <header className=" w-full z-30 shadow-md py-6 md:py-4 px-4 md:px-6 ">
+    <header className="w-full z-30 shadow-md py-6 md:py-4 px-4 md:px-6">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-20">
-          <div className="shrink-0 mr-4">
+        <div className="h-20 flex items-center justify-center md:justify-between">
+          {/* Logo */}
+          <div className="mr-4 md:mr-0">
             <a href="/" className="block" aria-label="Cruip" target="_self">
               <Image
                 className="max-w-full mx-auto md:max-w-none h-auto mt-8"
@@ -25,7 +24,7 @@ export default function Header() {
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
-            <ul className="flex grow justify-end flex-wrap items-center">
+            <ul className="flex justify-end flex-wrap items-center">
               <li className="mt-">{/* <ClerkAuth /> */}</li>
             </ul>
           </nav>

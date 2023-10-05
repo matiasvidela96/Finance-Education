@@ -23,7 +23,7 @@ export default function AccionesExtranjeras(this: any) {
               data-aos-id-blocks
             >
               {/* Mapear los distintos videos */}
-              {Videos.plazoFijo.map((video, index) => (
+              {Videos.accionesExtranjeras.map((video, index) => (
                 <div
                   data-aos="fade-up"
                   data-aos-delay="100"

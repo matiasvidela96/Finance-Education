@@ -54,7 +54,7 @@ function ConservativeProfile({ income }: ProfileProps) {
         <h2 className="text-3xl font-bold  text-purple-600">Estrategia 1</h2>
       </div>
       <div
-        className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-2 lg:gap-16 items-start md:max-w-2xl lg:max-w-none text-center mb-5"
+        className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-2 lg:gap-16 items-start md:max-w-2xl lg:max-w-none text-center mb-5 py-5"
         data-aos-id-blocks
       >
         {strategyOne.map((item, index) => (
@@ -86,7 +86,7 @@ function ConservativeProfile({ income }: ProfileProps) {
         </h2>
       </div>
       <div
-        className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none text-center"
+        className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none text-center py-5"
         data-aos-id-blocks
       >
         {strategyTwo.map((item, index) => (
