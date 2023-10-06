@@ -9,19 +9,19 @@ export default function misEstrategias() {
       <BackButton />
       <section className="relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="py-5">
+          <div className="">
             {/* Page header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-10">
+            <div className="max-w-3xl mx-auto text-center">
               <h1 className="h1">Bienvenido a Mis Estrategias</h1>
               <h3 className="mt-1">
                 "Lugar donde podras encontrar la mejor estrategia en funcion de
                 tu presupuesto y de tu perfil de riesgo"
               </h3>
             </div>
-            <MisEtrategias />
           </div>
         </div>
       </section>
+      <MisEtrategias />
     </>
   );
 }

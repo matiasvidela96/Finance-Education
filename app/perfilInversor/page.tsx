@@ -109,7 +109,7 @@ export default function PerfilInversor() {
           <div className="flex flex-auto items-center justify-center">
             <div>
               <a href={"/misEstrategias"}>
-                <div className="max-w-4xl mx-auto rounded-xl sm:px-6 flex flex-col px-5 py-5 text-center hover:bg-zinc-900  ">
+                <div className="max-w-4xl mx-auto rounded-xl sm:px-6 flex flex-col px-5 py-5 text-center hover:bg-zinc-900 border border-purple-700 ">
                   <h1 className="text-3xl font-bold text-green-700 mb-2">
                     ¡Felicitaciones haz realizado tu perfil de inversor!
                   </h1>
