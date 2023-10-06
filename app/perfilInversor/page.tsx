@@ -141,9 +141,7 @@ export default function PerfilInversor() {
                         color={"#f5f5f5"}
                         weight={"light"}
                         title={"Mis estrategias"}
-                        description={
-                          "Revisa las estrategias personalizadas en base a tu perfil del inversor."
-                        }
+                        description={"Haz click aqui para ver tus estrategias"}
                         link={"/misEstrategias"}
                       ></Icon>
                     </div>
