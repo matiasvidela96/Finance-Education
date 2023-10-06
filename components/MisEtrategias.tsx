@@ -78,7 +78,7 @@ function MisEtrategias() {
   //Muestra una vez el perfil ya esta realizado
   return (
     <>
-      <div className=" items-center justify-center py-10 md:py-36">
+      <div className=" items-center justify-center flex-auto py-10">
         <div>
           <form
             onSubmit={(e) => {
@@ -94,12 +94,12 @@ function MisEtrategias() {
             // className="items-center justify-center flex-auto "
           >
             <div className="max-w-sm mx-auto">
-              <div className="flex flex-wrap -mx-3 mb-4">
+              <div className="flex flex-wrap -mx-3">
                 <div className="w-full px-2">
-                  <h1 className="text-2xl font-bold mb-2 text-purple-600">
+                  <h1 className="text-3xl font-bold mb-2 text-purple-600">
                     {"-"} {perfilLocalStorage}
                   </h1>
-                  <div className="mt-8">
+                  <div className="py-5">
                     <label
                       htmlFor="income"
                       className="block text-lg font-semibold text-gray-100 mb-2"
@@ -141,7 +141,7 @@ function MisEtrategias() {
           <div>
             <section>
               <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                <div className="py-6 md:py-10">
+                <div className="">
                   <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
                     <h2 className="h2 mb-4">Posibles estrategias</h2>
                     <p className="text-xl text-gray-400">
