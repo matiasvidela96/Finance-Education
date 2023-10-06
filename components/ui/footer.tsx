@@ -18,8 +18,8 @@ export default function Footer() {
                   <Image
                     className="max-w-full mx-auto md:max-w-none h-auto mt-8"
                     src={Logo}
-                    width={75}
-                    height={75}
+                    width={60}
+                    height={60}
                     alt="footer-Logo"
                   />
                 </a>
