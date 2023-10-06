@@ -2,7 +2,6 @@
 import questions from "./questions.json";
 import "../css/style.css";
 import { useState, useContext, useEffect } from "react";
-import Head from "next/head";
 import BackButton from "@/components/ui/backButton";
 import { AnswerProps } from "answer";
 import Icon from "@/components/main-section/icon";
@@ -107,48 +106,52 @@ export default function PerfilInversor() {
       <BackButton />
       {showScore ? (
         <>
-          <a href={"/misEstrategias"}>
-            <div className="max-w-4xl mx-auto rounded-xl sm:px-6 flex flex-col px-5 py-5 text-center hover:bg-zinc-900 justify-center items-center mb-8">
-              <h1 className="text-3xl font-bold text-purple-600 mb-2">
-                Felicitaciones haz realizado tu perfil de inversor!
-              </h1>
-              <p className="text-gray-400 mb-5">
-                Ahora puedes revisar tus estrategias personalizadas en base a tu
-                perfil de riesgo y el monto de inversión
-              </p>
+          <div className="flex flex-auto items-center justify-center">
+            <div>
+              <a href={"/misEstrategias"}>
+                <div className="max-w-4xl mx-auto rounded-xl sm:px-6 flex flex-col px-5 py-5 text-center hover:bg-zinc-900  ">
+                  <h1 className="text-3xl font-bold text-green-700 mb-2">
+                    ¡Felicitaciones haz realizado tu perfil de inversor!
+                  </h1>
+                  <p className="text-gray-400 mb-5">
+                    Ahora puedes revisar tus estrategias personalizadas en base
+                    a tu perfil de riesgo y el monto de inversión
+                  </p>
 
-              <div className="rounded-lg shadow-md">
-                {/* <h1 className="text-3xl font-semibold text-center text-purple-600">
+                  <div className="rounded-lg shadow-md">
+                    {/* <h1 className="text-3xl font-semibold text-center text-purple-600">
                   Tu Puntaje es: {score}
                 </h1> */}
-                <h1 className="text-3xl  font-semibold text-center text-gray-400">
-                  Tu Perfil de riesgo es:
-                </h1>
-                <p className="text-3xl font-semibold text-center mb-5 text-purple-600">
-                  {getRiskProfile(score)}
-                </p>
-                {/* Mis estrategias*/}
-                <div
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                  data-aos-anchor="[data-aos-id-blocks]"
-                  className="hover:bg-zinc-950 "
-                >
-                  <Icon
-                    name="Strategy"
-                    size={48}
-                    color={"#f5f5f5"}
-                    weight={"light"}
-                    title={"Mis estrategias"}
-                    description={
-                      "Revisa las estrategias personalizadas en base a tu perfil del inversor."
-                    }
-                    link={"/misEstrategias"}
-                  ></Icon>
+                    <h1 className="text-3xl  font-semibold text-center text-gray-300">
+                      Tu Perfil de riesgo es:
+                    </h1>
+                    <p className="text-3xl font-semibold text-center mb-5 text-purple-600">
+                      - {getRiskProfile(score)}
+                    </p>
+                    {/* Mis estrategias*/}
+                    <div
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                      data-aos-anchor="[data-aos-id-blocks]"
+                      className="hover:bg-zinc-950 "
+                    >
+                      <Icon
+                        name="Strategy"
+                        size={48}
+                        color={"#f5f5f5"}
+                        weight={"light"}
+                        title={"Mis estrategias"}
+                        description={
+                          "Revisa las estrategias personalizadas en base a tu perfil del inversor."
+                        }
+                        link={"/misEstrategias"}
+                      ></Icon>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-          </a>
+          </div>
         </>
       ) : (
         <section>
