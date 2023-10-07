@@ -14,8 +14,8 @@ export default function Header() {
               <Image
                 className="max-w-full mx-auto md:max-w-none h-auto mt-8"
                 src={Logo}
-                width={100}
-                height={100}
+                width={85}
+                height={85}
                 alt="header-Logo"
               />
             </a>
