@@ -8,11 +8,11 @@ export default function BackButton() {
   };
   return (
     <>
-      <div className="w-full shadow-md py-1  md:px-6">
+      <div className="w-full shadow-md py-1 md:px-6">
         <div className="max-w-6xl mx-auto sm:px-6">
           <button
             type="button"
-            className="bg-purple-600 hover:bg-purple-700 text-white rounded py-2 px-3 flex items-center"
+            className="bg-purple-600 hover:bg-purple-700 text-white py-2 px-2 flex items-center rounded-xl"
             onClick={(e) => {
               handleBack();
               e.stopPropagation();
